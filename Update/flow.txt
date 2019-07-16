@@ -23,9 +23,9 @@ void BrandLogo()
 	DrawBG( "07thlogo", 1000, TRUE );
 	Wait( 2000 );
 	DrawSceneWithMask( "mangagamer", "logomask", 0, 0, 1000 );
-
 	Wait( 2000 );
-
+	DrawSceneWithMask( "07th-mod", "logomask", 0, 0, 1000 );
+	Wait( 2000 );
 	DrawSceneWithMask( "black", "logomask", 0, 0, 1000 );
 
 	ModCallScriptSection("&opening", "OpeningLaunch");
@@ -37,7 +37,7 @@ void Title()
 
 	DrawScene("white", 1000);
 
-	PlayBGM( 2, "lsys11", 128, 0 );
+	PlayBGM( 2, "lsys11", 56, 0 );
 
 	DrawSpriteWithFiltering( 10, "Logo", "centerblind", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
 
@@ -328,14 +328,14 @@ void Day15_3()
 
 void ChapterPreview()
 {
-	SetValidityOfInput( FALSE );
+	// SetValidityOfInput( FALSE );
 
 	Wait( 200 );
 	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 	DisableWindow();
 
-	PlayBGM( 0, "lsys13", 128, 0 );
+	PlayBGM( 0, "lsys13", 56, 0 );
 	DrawSceneWithMask("black", "2", 1, 0, 1200 );
 	Wait( 1500 );
 
@@ -351,13 +351,13 @@ void ChapterPreview()
 	DrawBustshotWithFiltering(9, "scenario/description", "5", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 1000, TRUE );
 	Wait( 200 );
 
-	SetValidityOfInput( TRUE );
+	// SetValidityOfInput( TRUE );
 
 	ShowChapterPreview();
 
 	if (LoadValueFromLocalWork( LOCALWORK_NO_RESULT ) == 1) {
 		StopBGM( 0 );
-		PlaySE( 1, "wa_037", 128, 64 );
+		PlaySE( 1, "wa_037", 56, 64 );
 		FadeBustshot( 9, FALSE, 0, 0, 0, 0, 1000, TRUE );
 		DrawBustshot(9, "scenario/shortcuts", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1000, TRUE );
 		Wait(10000);
