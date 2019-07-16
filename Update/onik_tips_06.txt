@@ -39,7 +39,7 @@ void main()
 		   NULL, "Lynching and murder/dismemberment!", Line_Normal);
 	ClearMessage();
 	SetStyleOfMessageSwinging( 0 );
-	PlayBGM( 1, "msys07", 128, 0 );
+	PlayBGM( 1, "msys07", 56, 0 );
 
 //　Ｘ月Ｘ日、ＸＸ県鹿骨市の雛見沢ダム建設作業現場で起こった血も凍るバラバラ殺人＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -132,7 +132,7 @@ void main()
 //「しかしリーダー格のＸＸは、他の５人が良心の呵責に耐えられなくなり＠自首して事件が発覚することを恐れ、恐るべき方法でその口封じを図ったのです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「しかしリーダー格のＸＸは、他の５人が良心の呵責に耐えられなくなり、",
-		   NULL, "\"But the de facto leader feared that the consciences of the other five wouldn't be able to bear the burden", Line_WaitForInput);
+		   NULL, "But the de facto leader feared that the consciences of the other five wouldn't be able to bear the burden", Line_WaitForInput);
 	OutputLine(NULL, "自首して事件が発覚することを恐れ、恐るべき方法でその口封じを図ったのです。」",
 		   NULL, " and came up with a horrifying method to keep them from turning him in to the police...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -161,7 +161,7 @@ void main()
 		   NULL, " Person A spoke out reluctantly:", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_027", 128, 64 );
+	PlaySE( 4, "wa_027", 56, 64 );
 
 //「ＸＸは、ひとりひとりに自らの手で遺体を切断するよう命じたのです＠彼らは始めは渋りましたが、結局誰も逆らえませんでした。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -191,8 +191,8 @@ void main()
 	OutputLine(NULL, "「被害者たちは泣きながら嘔吐しながら、死体を切断しました。",
 		   NULL, "\"The perpetrators wept and vomited as they performed the gruesome task. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "頑強に抵抗する者もいましたが、ＸＸに『今さらもうひとり死んでも同じことだぞ。』と凄まれ、結局は抗えなかったのです。」",
-		   NULL, "There was one person who stubbornly refused, but XX threatened them, saying, 'Nothing would change if someone else ended up dead,' and he gave up in his objections.", Line_Normal);
+	OutputLine(NULL, "頑強に抵抗する者もいましたが、ＸＸに「今さらもうひとり死んでも同じことだぞ。」と凄まれ、結局は抗えなかったのです。」",
+		   NULL, "There was one person who stubbornly refused, but XX threatened them, saying, \"Nothing would change if someone else ended up dead,\" and he gave up in his objections.", Line_Normal);
 	ClearMessage();
 
 //　だがＸＸの目論見はわずか一晩で崩れた＠
@@ -291,8 +291,8 @@ void main()
 		   NULL, " Could it be that he had returned to hell through the marsh...?", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_029", 128, 64 );
-	PlayBGM( 1, "msys03", 128, 0 );
+	PlaySE( 4, "wa_029", 56, 64 );
+	PlayBGM( 1, "msys03", 56, 0 );
 
 //　超運と勝利を招く紫金龍＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
