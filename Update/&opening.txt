@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -6,13 +6,13 @@ void OpeningQuestion()
 {
 	if (GetGlobalFlag(GVideoOpening) == 0) {
 		OutputLine(NULL, "オープニング動画は多少のネタバレ要素を含んでいますが、再生を有効にしますか？",
-			   NULL, "Video opening might contain minor spoilers. Do you want to enable it anyway?", Line_Normal);
+			   NULL, "La cinématique d'introduction peut contenir des spoilers mineurs. Voulez-vous l'activer malgré tout ?", Line_Normal);
 
 		char Item[2];
 
 		if (GetGlobalFlag(GLanguage) == 1) {
-			Item[0] = "Enable opening";
-			Item[1] = "Disable opening";
+			Item[0] = "Activer la cinématique";
+			Item[1] = "Désactiver la cinématique";
 		} else {
 			Item[0] = "動画再生を有効化";
 			Item[1] = "動画再生を無効化";

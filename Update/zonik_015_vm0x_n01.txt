@@ -1,13 +1,13 @@
-void main()
+﻿void main()
 {
 }
 
 void dialog000()
 {
-//斧。!w2000
+//斧。 !w2000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "鉈。",
-		   NULL, " was a hatchet.", Line_ContinueAfterTyping);
+		   NULL, " une hache.", Line_ContinueAfterTyping);
 }
 
 void dialog001()
@@ -15,7 +15,7 @@ void dialog001()
 //　...だがあの斧はなんだよッ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だがあの鉈はなんだよッ？！",
-		   NULL, "But for that hatchet!?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais une hache ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -23,7 +23,7 @@ void dialog001()
 //　ごまかしも何もない！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ごまかしも何もない！！！",
-		   NULL, "There was no excuse for that!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il n'y avait absolument aucune chance de faire croire à une utilisation innocente !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -31,7 +31,7 @@ void dialog001()
 //　そのまんまの...斧だッ？！？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのまんまの…鉈だッ？！？！",
-		   NULL, "A hatchet... just like that!!??", Line_Normal);
+		   NULL, "C'était une hache, et rien d'autre qu'une hache !", Line_Normal);
 	ClearMessage();
 }
 
@@ -41,7 +41,7 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100687", 256, TRUE);
 	OutputLine(NULL, "「じゃあその鉈は何だよッ？！」",
-		   NULL, "\"Then what about that hatchet!?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Alors pourquoi t'as la hache en main ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -50,7 +50,7 @@ void dialog003()
 //　...そして頭上で両手が組まれた時、そこには斧が握られていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そして頭上で両手が組まれた時、そこには鉈が握られていた。",
-		   NULL, "...Then as both of her hands met above her head... the hatchet that she held came into focus.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mes yeux se fixèrent sur ses mains, au-dessus de sa tête, et je vis qu'elles tenaient la hache.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -59,7 +59,7 @@ void dialog004()
 //　レナはそのまま、斧を振り上げたまま、厳かに口を開いた...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナはそのまま、鉈を振り上げたまま、厳かに口を開いた…。",
-		   NULL, "Rena stayed like that, with that hatchet raised above her head, and solemnly opened her mouth...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rena, toujours prête à frapper avec la hache, me répondit sur un ton très solennel.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -68,7 +68,7 @@ void dialog005()
 //　レナは斧を大きく振り上げたまま......さらに一歩踏み込んでくる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは鉈を大きく振り上げたまま……さらに一歩踏み込んでくる。",
-		   NULL, "Rena took one step forward... still holding the hatchet high above her head.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La hache toujours levée bien haut, Rena fit encore un pas vers moi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -77,6 +77,6 @@ void dialog006()
 //　不釣合いな斧の重さに大きく振られ、まるで風に乗るかのように軽々と飛ばされる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　不釣合いな鉈の重さに大きく振られ、まるで風に乗るかのように軽々と飛ばされる。",
-		   NULL, "Thrown about by the unbalanced weight of the hatchet, she was sent backwards as if she had been carried off by the wind.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et le poids de la hache, s'il la lestait, l'entraînait aussi vers l'arrière.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

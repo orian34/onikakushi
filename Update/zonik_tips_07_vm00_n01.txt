@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -6,14 +6,14 @@ void dialog000()
 {
 //「レナー＠　トイレじゃない＠　最近、お通じが来ないって言ってたなぁ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300023", 256, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300023", 128, TRUE);
 	OutputLine(NULL, "「レナー？",
-		   NULL, "\"Rena~?", Line_Continue);
+		   NULL, "— Rena ?", Line_Continue);
 	Wait (400)
 	OutputLine(NULL, "　トイレじゃない？",
-		   NULL, " Didn't she go to the washroom?", Line_WaitForInput);
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300024", 256, TRUE);
+		   NULL, " Elle est aux chiottes, sûrement.", Line_WaitForInput);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300024", 128, TRUE);
 	OutputLine(NULL, "　最近、お通じが来ないって言ってたなぁ。」",
-		   NULL, " She did say that she's been having bowel troubles lately.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Elle a dit qu'elle était constipée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

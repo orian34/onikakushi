@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	// Max Number for Global Flags hotkey
 	SetGlobalFlag(GCensorMaxNum , 5);

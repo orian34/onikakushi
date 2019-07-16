@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 
@@ -13,7 +13,7 @@ void main()
 	DisableWindow();
 	DrawScene("black", 1000 );
 	DrawScene("background/simen3", 1000 );
-	PlayBGM( 1, "msys13", 56, 0 );
+	PlayBGM( 1, "msys13", 128, 0 );
 
 //locate 2,7
 
@@ -24,7 +24,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（新聞には掲載されなかった……）",
-		   NULL, "(It wasn't reported in the newspaper...)", Line_Normal);
+		   NULL, "(Les journaux ne font aucune mention de ce fait divers...)", Line_Normal);
 	ClearMessage();
 	SetStyleOfMessageSwinging( 0 );
 	SetValidityOfInput( FALSE );

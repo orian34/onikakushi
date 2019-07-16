@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -9,10 +9,10 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300130", 256, TRUE);
 	OutputLine(NULL, "「ケンタくん人形ー？！",
-		   NULL, "\"A Colonel Sanders!?", Line_WaitForInput);
+		   NULL, "— Une statue du colonel Randy ?", Line_WaitForInput);
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300131", 256, TRUE);
 	OutputLine(NULL, "　あ〜そりゃあレナのツボだわなぁ！」",
-		   NULL, " Ah~ Of course that's right up her alley!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Aah, ça, effectivement... C'est son point faible...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -21,10 +21,10 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei02890", 256, TRUE);
 	OutputLine(NULL, "「…レナが沙都子や梨花ちゃんをお持ち帰りしたくなるのは分かる。",
-		   NULL, "\"...I understand her wanting to take home Satoko and Rika-chan.", Line_WaitForInput);
+		   NULL, "— Je peux comprendre qu'elle veuille enlever Satoko ou Rika.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei02900", 256, TRUE);
 	OutputLine(NULL, "だが、ケンタくん人形だけは理解できないぞ！　あんな眼鏡親父のどこがいいんだ！」",
-		   NULL, " But I can't understand the Colonel Sanders! What's so good about that four-eyed geezer!?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais lui ? Qu'est-ce qu'elle peut lui trouver, à ce personnage ? C'est un vieux mec avec des binocles !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -33,7 +33,7 @@ void dialog001()
 //　きっと昨日持ち帰り損ねた、かぁいいケンタくん人形を掘り出しに行くのだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　きっと昨日持ち帰り損ねた、かぁいいケンタくん人形を掘り出しに行くのだろう。",
-		   NULL, "Probably so she could dig out that 'kyute' Colonel Sanders that she wasn't able to take home yesterday.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je parie qu'elle va essayer de prendre la statue du colonel Randy de l'autre jour.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -42,7 +42,7 @@ void dialog002()
 //　ひょっとするとケンタくん人形の発掘に手間取っているのかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ひょっとするとケンタくん人形の発掘に手間取っているのかもしれない。",
-		   NULL, "The excavation of Colonel Sanders was probably taking her a while.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle a peut-être eu du mal à déloger la statue du colonel.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -51,7 +51,7 @@ void dialog003()
 //　ケンタくん人形は、かなりしっかり埋まってしまっているように見える＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ケンタくん人形は、かなりしっかり埋まってしまっているように見える。",
-		   NULL, "It looked like Colonel Sanders was lodged in there pretty firmly.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Le colonel était bien enterré...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -61,7 +61,7 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei04700", 256, TRUE);
 	OutputLine(NULL, "「ケンタくん人形がゴミ山に生き埋めになっているとの通報でしたが…？！」",
-		   NULL, "\"But there was a report Colonel Sanders was buried alive in the trash pile...!\"", Line_Normal);
+		   NULL, "— Notre central a reçu un appel de détresse disant que le colonel Randy était retenu prisonnier, enseveli sous une tonne de gravas. Est-ce bien vrai ?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -73,10 +73,10 @@ void dialog005()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei04740", 256, TRUE);
 	OutputLine(NULL, "「ほれ、どいたどいた。",
-		   NULL, "\"Okay, now move out of the way.", Line_WaitForInput);
+		   NULL, "— Allez, pousse-toi de là.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei04750", 256, TRUE);
 	OutputLine(NULL, "で、どこだよケンタくんは。」",
-		   NULL, " So where is Colonel Sanders?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Elle est où, cette statue ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -85,32 +85,32 @@ void dialog006()
 //　横たわるケンタくん人形を、複雑に絡み合った木材や建材がまるで牢屋のように閉じこめていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　横たわるケンタくん人形を、複雑に絡み合った木材や建材がまるで牢屋のように閉じこめていた。",
-		   NULL, "The Colonel Sanders was sideways, surrounded by boards and other construction materials, like they were caging him inside.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La statue était allongée à plat, coincée entre des tas de poutres, de branches, j'en passe et des meilleures. Cela formait un enchevêtrement qui la retenait prisonnière.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()
 {
-//「……でも……ケンタくん人形…かぁいいんだもん……＠お店のケンタくんには鎖がついてるけど……これならお持ち帰りできる!d200……はぅ……。￥
+//「……でも……ケンタくん人形…かぁいいんだもん……＠お店のケンタくんには鎖がついてるけど……これならお持ち帰りできる !d200……はぅ……。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200209", 256, TRUE);
 	OutputLine(NULL, "「……でも……ケンタくん人形…かぁいいんだもん……。",
-		   NULL, "\"...But... Colonel Sanders... so kyute...", Line_WaitForInput);
+		   NULL, "— Mais oui, mais il est tellement mimi...", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200210", 256, TRUE);
 	OutputLine(NULL, "お店のケンタくんには鎖がついてるけど……これならお持ち帰りできる",
-		   NULL, " There's a chain on the Colonel Sanders at the store... This one, though... I should be able to take this one home...", Line_Continue);
+		   NULL, " Les statues devant les restaurants sont enchaînées à un gros bloc de béton, je ne pourrais pas en prendre un comme ça, alors que celui-ci est libre !...", Line_Continue);
 
 	Wait( 200 );
 
 	OutputLine(NULL, "……はぅ……。」",
-		   NULL, " Hau...\"", Line_Normal);
+		   NULL, " hauu...", Line_Normal);
 	ClearMessage();
 
 
 //　このケンタくんを諦めさせれば、レナは多分、お店の店頭の人形の強奪を計画するだろう…＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このケンタくんを諦めさせれば、レナは多分、お店の店頭の人形の強奪を計画するだろう…。",
-		   NULL, "If Rena gave up on this Colonel Sanders, she'll probably start devising a plan to steal the one in front of the store...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si je la convainc d'abandonner ce projet, elle est capable de planifier un cambriolage devant le prochain restaurant... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -119,7 +119,7 @@ void dialog008()
 //　ケンタくん人形は見えているのに！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ケンタくん人形は見えているのに！！",
-		   NULL, "Even though I could see Colonel Sanders right there!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La statue est pourtant là, juste devant moi !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -128,15 +128,15 @@ void dialog009()
 //　…斧で＠…つるはしで＠…斧、で￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…斧で。",
-		   NULL, "...With axes.", Line_WaitForInput);
+		   NULL, "À coup de machettes...", Line_WaitForInput);
 	OutputLine(NULL, "…つるはしで。",
-		   NULL, " ...With pickaxes.", Line_WaitForInput);
+		   NULL, " de pioches...", Line_WaitForInput);
 	OutputLine(NULL, "…斧、で。",
-		   NULL, " ...With... an axe.", Line_Normal);
+		   NULL, " de hache.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
-	PlaySE( 4, "wa_027", 56, 64 );
+	PlaySE( 4, "wa_027", 128, 64 );
 
 	//draw big CG
 	SetValidityOfInterface(FALSE);
@@ -155,7 +155,7 @@ void dialog009()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05020", 256, TRUE);
 	OutputLine(NULL, "「わああぁあぁあぁあぁあッ！！！」",
-		   NULL, "\"AhhHhhhHhHhhh!!!\"", Line_ContinueAfterTyping);
+		   NULL, "— Hwaaaaaaaaaaaaaaaaaaaaaa ", Line_ContinueAfterTyping);
 
 	WaitToFinishVoicePlaying(3);
 
@@ -164,7 +164,7 @@ void dialog009()
 	//adjust character size and reset big CG layer and add shaking
 	ModDrawCharacter(2, 2, "sprite/sunset/re1b_bikkuri_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/mo_g1_01", 300 );
-	PlaySE( 4, "wa_003", 56, 64 );
+	PlaySE( 4, "wa_003", 128, 64 );
 	StartShakingOfAllObjects( 1, 50, 10, 4, 20, TRUE);
 	SetValidityOfInterface(TRUE);
 	SetValidityOfSaving(TRUE);
@@ -175,19 +175,19 @@ void dialog009()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200220", 256, TRUE);
 	OutputLine(NULL, "「きゃッ！、ごご、ごめんなさい…！！！",
-		   NULL, "\"Eek! S-S-Sorry...!!!", Line_WaitForInput);
+		   NULL, "— Hé ! Ça va, c'est que moi !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200221", 256, TRUE);
 	OutputLine(NULL, "　驚いたかな？！驚いたかな？！」",
-		   NULL, " Did I startle you!? Did I startle you!?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais qu'est-ce qui te prend, je t'ai effrayé !? Je t'ai effrayé !?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　レナもまた、俺の声に驚き、その手の斧をどさりと草むらに落とした￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナもまた、俺の声に驚き、その手の斧をどさりと草むらに落とした。",
-		   NULL, "Rena dropped the axe she was holding onto the grass after being startled by my voice.", Line_Normal);
+		   NULL, "Rena, elle aussi surprise par mon cri de frayeur, laissa tomber la hache qu'elle avait ramenée dans l'herbe.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys11", 56, 0 );
+	PlayBGM( 1, "msys11", 128, 0 );
 	DisableWindow();
 	ModDrawCharacter(2, 2, "sprite/sunset/re1a_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
@@ -195,23 +195,23 @@ void dialog009()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200222", 256, TRUE);
 	OutputLine(NULL, "「圭一くんね、さっきほら、斧とかがあると便利だって言ったじゃない？！",
-		   NULL, "\"Keiichi-kun, you see, earlier, yeah, you said it would help if you had an axe or something, didn't you!?", Line_WaitForInput);
+		   NULL, "— Ben, euh, tu disais qu'il nous faudrait une hache,", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200223", 256, TRUE);
 	OutputLine(NULL, "　そ、それでねレナ、物置からちゃんと斧、持ってきたんだよ…！！」",
-		   NULL, " S-So then I... brought an axe for you... from the shed...!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " alors je suis allée dans notre remise et j'en ai pris une, je me suis dit que ça pourrait servir, et...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog010()
 {
-//「最後の梁はその斧じゃないと壊せそうにない＠せっかく持ってきてくれたんだし。…明日借りるよ。!d500な？＠
+//「最後の梁はその斧じゃないと壊せそうにない＠せっかく持ってきてくれたんだし。…明日借りるよ。 !d500な？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05040", 256, TRUE);
 	OutputLine(NULL, "「最後の梁はその斧じゃないと壊せそうにない。",
-		   NULL, "\"Doesn't look like we can break that last beam without that axe.", Line_WaitForInput);
+		   NULL, "— Il reste encore une grosse poutre, je crois qu'on va avoir besoin de ta hache de toute façon.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05050", 256, TRUE);
 	OutputLine(NULL, "せっかく持ってきてくれたんだし。…明日借りるよ。",
-		   NULL, " You brought it after all... I'll have to borrow it tomorrow.", Line_Continue);
+		   NULL, " Rapporte-la encore demain, d'accord ? Je crois que ça va m'être très utile.", Line_Continue);
 }
 
 void dialog011()
@@ -220,7 +220,7 @@ void dialog011()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05060", 256, TRUE);
 	OutputLine(NULL, "「なにしょんぼりしてるんだよ。明日にはケンタくんが掘り出せるんだぜ？！」",
-		   NULL, "\"Why do you look so glum? Tomorrow we'll be digging out Colonel Sanders, right!?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Mais tire pas cette tête, voyons. Tu l'auras demain, ta statue, promis-juré !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -230,10 +230,10 @@ void dialog011()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200226", 256, TRUE);
 	OutputLine(NULL, "「そうだよね。…あははは！",
-		   NULL, "\"You're right. ...Ahahaha!", Line_WaitForInput);
+		   NULL, "— Oui, après tout, ce n'est pas si mal ! Ahahahaha !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200227", 256, TRUE);
 	OutputLine(NULL, "　早くケンタくんをお持ち帰りしたい〜！」",
-		   NULL, " I really want to take Colonel Sanders home soon~!\"", Line_Normal);
+		   NULL, " Je l'aurai demain ! Demain !", Line_Normal);
 	ClearMessage();
 }
 
@@ -242,7 +242,7 @@ void dialog012()
 //　富竹さんは「事件」と言い「腕が一本見つからない」と言っていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹さんは「事件」と言い「腕が一本見つからない」と言っていた。",
-		   NULL, "Tomitake-san said, \"one arm wasn't found\" in the 'incident.'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tomitake avait parlé d'une « sale histoire » et parlait d'un bras que l'on n'aurait « jamais retrouvé ».", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -250,7 +250,7 @@ void dialog012()
 //　俺はてっきり…バラバラ殺人とかがあったのかと思っていたのだが…違うのだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺はてっきり…バラバラ殺人とかがあったのかと思っていたのだが…違うのだろうか。",
-		   NULL, "I thought... that a murder by dismemberment had occurred... but I guess I was wrong.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "À vrai dire, j'avais tout de suite pensé qu'il y avait eu une sordide affaire de meurtre ici. Mais peut-être pas, après tout.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -259,7 +259,7 @@ void dialog013()
 //　…本当に雛見沢でバラバラ殺人なんかあったんですか？、って＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…本当に雛見沢でバラバラ殺人なんかあったんですか？、って。",
-		   NULL, "...To ask, \"Was there really a dismemberment here in Hinamizawa?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Lui demander, Il y a vraiment eu un démembrement à Hinamizawa ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -268,9 +268,9 @@ void dialog014()
 //（……嫌な事件だったね＠…腕が一本、まだ見つかってないんだろ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（……嫌な事件だったね。",
-		   NULL, "\"...It was quite a disturbing incident.", Line_WaitForInput);
+		   NULL, "— C'était vraiment une sale histoire...", Line_WaitForInput);
 	OutputLine(NULL, "…腕が一本、まだ見つかってないんだろ？）",
-		   NULL, " ...They still haven't found one of the arms.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La police n'a jamais retrouvé le deuxième bras, c'est bien ça ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -278,6 +278,6 @@ void dialog014()
 //　富竹さんの言葉通りなら、それは間違いなくバラバラ殺人を示唆していた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹さんの言葉通りなら、それは間違いなくバラバラ殺人を示唆していた。",
-		   NULL, "If it was just as Tomitake-san said, then undoubtedly there would be mention of the murder.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si Tomitake ne m'a pas raconté d'histoires, quelqu'un a été tué et découpé dans le coin.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
