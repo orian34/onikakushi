@@ -18,7 +18,7 @@ void dialog001()
 		   NULL, "— Aaaah, c'était donc ça !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/500300732", 256, TRUE);
 	OutputLine(NULL, "　てっきりおじさんは圭ちゃんの・・・　あははははっはぁ〜！！」",
-		   NULL, " Moi je croyais qu'il lui avait montré son... Ahahaha.. haaa ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Moi je croyais qu'il lui avait montré son... Ahahaha.. haaa !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -31,7 +31,7 @@ void dialog002()
 		   NULL, "— Vous allez voir ce que vous allez voir !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei34020", 256, TRUE);
 	OutputLine(NULL, "　地獄の底に叩き落としてやるぜぇえぇえッ！！！！」",
-		   NULL, " On va vous envoyer au fin fond des enfers ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " On va vous envoyer au fin fond des enfers !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -41,7 +41,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/500300718", 256, TRUE);
 	OutputLine(NULL, "「…カレーに…蚊取線香…昔なつかしのブリキ看板だっ！！！",
-		   NULL, "— Une pub du Bon Curry... le poster des Encens Calmants... et le type d'Oronamin C ", Line_Continue);
+		   NULL, "— Une pub du Bon Curry... des encens calmants en spirale... et de l'Oronamin C !", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
