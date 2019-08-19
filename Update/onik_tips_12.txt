@@ -14,12 +14,12 @@
 	DisableWindow();
 	DrawScene("black", 1000 );
 	DrawScene("background/m_y4", 1000 );
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //「興宮ＳＴより、３号どうぞ＠３号どうぞ。＠
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Commissariat d'Okinomiya</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 0, "ps2/00/keijic44001", 128, TRUE);
+	ModPlayVoiceLS(3, 0, "ps2/00/keijic44001", 256, TRUE);
 	OutputLine(NULL, "「興宮ＳＴより、３号どうぞ。",
 		   NULL, "— Central d'Okinomiya, à vous, voiture n°3.", Line_Continue);
 	Wait( 900 );
@@ -31,7 +31,7 @@
 
 //「３号です＠感度良好ー。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700001", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700001", 256, TRUE);
 	OutputLine(NULL, "「３号です。",
 		   NULL, "— Ici voiture n°3. ", Line_Continue);
 	Wait( 800 );
@@ -41,13 +41,13 @@
 
 //「応援が向かいました＠別命あるまで維持で願いします＠どうぞー。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Commissariat d'Okinomiya</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44002", 128, TRUE);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44002", 256, TRUE);
 	OutputLine(NULL, "「応援が向かいました。",
 		   NULL, "— Nous vous avons envoyé des renforts.", Line_Continue);
 	Wait( 500 );
 	OutputLine(NULL, "別命あるまで維持で願いします。",
 		   NULL, " Restez en place jusqu'à nouvel ordre.", Line_WaitForInput);
-	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44003", 128, TRUE);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44003", 256, TRUE);
 	OutputLine(NULL, "どうぞー。」",
 		   NULL, " À vous !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -56,14 +56,14 @@
 
 //「はいー、３号了解。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700002", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700002", 256, TRUE);
 	OutputLine(NULL, "「はいー、３号了解。」",
 		   NULL, "— Voiture n°3, bien compris.", Line_Normal);
 	ClearMessage();
 
 //「それから回転灯は付けないでお願いします＠静か静かで願います。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Commissariat d'Okinomiya</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44004", 128, TRUE);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44004", 256, TRUE);
 	OutputLine(NULL, "「それから回転灯は付けないでお願いします。",
 		   NULL, "— Éteignez les gyrophares.", Line_Continue);
 	Wait( 1500 );
@@ -75,20 +75,20 @@
 
 //「ＳＴー、今、先生が到着しました＠運びたいそうですがどうしますか＠どうぞ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700003", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700003", 256, TRUE);
 	OutputLine(NULL, "「ＳＴー、今、先生が到着しました。",
 		   NULL, "— Allô Central, le médecin légiste est arrivé.", Line_Continue);
 	Wait( 1400 );
 	OutputLine(NULL, "運びたいそうですがどうしますか。",
 		   NULL, " Il veut transporter le corps, est-ce qu'il peut ?", Line_WaitForInput);
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700004", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700004", 256, TRUE);
 	OutputLine(NULL, "どうぞ。」",
 		   NULL, " À vous !", Line_Normal);
 	ClearMessage();
 
 //「了解しました＠先生に任せてください。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Commissariat d'Okinomiya</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44005", 128, TRUE);
+	ModPlayVoiceLS(3, 0, "ps3/s20/00/keijic44005", 256, TRUE);
 	OutputLine(NULL, "「了解しました。",
 		   NULL, "— Bien compris.", Line_Continue);
 	Wait( 400 );
@@ -100,19 +100,19 @@
 
 //「はいー＠了解です＠......あ、応援も到着しました＠先に写真取らせた方がいいんじゃないですか＠...ガイ者、もームダだと思いますしー。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700005", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700005", 256, TRUE);
 	OutputLine(NULL, "「はいー。",
 		   NULL, "— Affirmatif.", Line_Continue);
 	Wait( 300 );
 	OutputLine(NULL, "了解です。",
 		   NULL, " Bien compris.", Line_WaitForInput);
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700006", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700006", 256, TRUE);
 	OutputLine(NULL, "……あ、応援も到着しました。",
 		   NULL, " Ah, les renforts sont arrivés.", Line_WaitForInput);
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700007", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700007", 256, TRUE);
 	OutputLine(NULL, "先に写真取らせた方がいいんじゃないですか？",
 		   NULL, " On peut commencer avec la balistique ?", Line_WaitForInput);
-	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700008", 128, TRUE);
+	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700008", 256, TRUE);
 	OutputLine(NULL, "…ガイ者、もームダだと思いますしー。」",
 		   NULL, " On n'a plus besoin du corps ici, je pense...", Line_Normal);
 	ClearMessage();

@@ -15,29 +15,29 @@
 	DrawScene("text/si_onikakusi", 1000 );
 	Wait( 15000 );
 	DrawScene("black", 3000 );
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	DrawScene("text/tyuui", 100 );
 	ShakeScreen( 0, 25, 10, 4, 0, );
 
 	DrawScene("black", 4000 );
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	DrawScene("text/tyuui2", 100 );
 	ShakeScreen( 0, 25, 10, 4, 0, );
 
 
 	DrawScene("black", 4000 );
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	Wait( 350 );
 	DrawScene("black", 50 );
-	PlaySE( 4, "wa_030", 128, 64 );
+	PlaySE( 4, "wa_030", 56, 64 );
 	DrawSceneWithMask("background/ryuuketu1", "aa", 0, 0, 250 );
-	PlayBGM( 2, "lsys11", 128, 0 );
+	PlayBGM( 2, "lsys11", 56, 0 );
 	DrawScene("red", 2000 );
 	DrawScene("black", 2000 );
 	Wait( 1000 );
@@ -69,9 +69,9 @@
 	OutputLine(NULL, "信じてた。",
 		   NULL, "Je croyais en notre amitié.", GetGlobalFlag(GLinemodeSp));
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -80,9 +80,9 @@
 	OutputLine(NULL, "…いや、信じてる。",
 		   NULL, "... ou plutôt, je crois en notre amitié.", GetGlobalFlag(GLinemodeSp));
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -92,9 +92,9 @@
 		   NULL, "J'y crois encore, même maintenant.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 //locate 0,3
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 3 ); }
@@ -111,9 +111,9 @@
 	OutputLine(NULL, "信じたいのは、認めたくないだけだからだ。",
 		   NULL, "Si je veux y croire, c'est parce que je ne peux pas accepter de reconnaître la vérité.", GetGlobalFlag(GLinemodeSp));
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -127,9 +127,9 @@
 	OutputLine(NULL, "そんな涙声が…もうたまらなく馬鹿馬鹿しくて…。",
 		   NULL, " tout cela était si stupide...", GetGlobalFlag(GLinemodeSp));
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -212,11 +212,8 @@
 
 //　彼女に、俺のために流す涙がないのなら、 !w1000俺にだって。 !w2000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "彼女に、俺のために流す涙がないのなら、",
-		   NULL, "Puisqu'elle avait jugé inutile de verser des larmes pour moi, alors, moi non plus.", Line_ContinueAfterTyping);
-
-//	OutputLine(NULL, "俺にだって。",
-//		   NULL, " ", Line_WaitForInput);
+	OutputLine(NULL, "彼女に、俺のために流す涙がないのなら、俺にだって。",
+		   NULL, "Puisqu'elle avait jugé inutile de verser des larmes pour moi, alors, moi non plus.", Line_WaitForInput);
 
 
 //　...彼女らのために流す涙はいらないはずなのだ。 !w4000
@@ -406,9 +403,9 @@
 //locate 0,4
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 //　親切が、うれしかった。 !w2000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -417,9 +414,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 //　愛らしい笑顔がうれしかった。 !w2000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -428,9 +425,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 //　頭を撫でるのが、好きだった。 !w2000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -439,9 +436,9 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 //　そんな君がはにかむのが、好きだった。 !w2000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -450,12 +447,12 @@
 	ClearMessage();
 
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 1000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	Wait( 300 );
 	DrawSceneWithMask("background/ryuuketu1", "aa", 0, 0, 250 );
-	PlaySE( 4, "wa_030", 128, 64 );
+	PlaySE( 4, "wa_030", 56, 64 );
 	DrawScene( "black", 1500 );
 
 //locate 0,2
@@ -523,9 +520,9 @@
 //bg $862,0
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 2000 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 	DrawBustshot(5, "logo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, TRUE );
 	ShakeScreen( 0, 25, 10, 4, 0, );
 	FadeBG( 3000, TRUE );

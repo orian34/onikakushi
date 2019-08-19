@@ -41,7 +41,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/500300718", 256, TRUE);
 	OutputLine(NULL, "「…凡カレーに…緊張蚊取線香…オロ波ンＣぃッ！！！",
-		   NULL, "— Une pub du Bon Curry... le poster des Encens Calmants... et le type d'Oronamin C ", Line_Continue);
+		   NULL, "— Une pub du Bon Curry... des encens calmants en spirale... et de l'Oronamin C !", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
