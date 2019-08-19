@@ -27,8 +27,8 @@
 	Wait( 7000 );
 	DrawScene("black", 1000 );
 
-	PlayBGM( 1, "msys13", 128, 0 );
-	PlayBGM( 2, "lsys19", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
+	PlayBGM( 2, "lsys19", 56, 0 );
 
 //　沢の流れをぼんやりと見詰めていた俺は、いつのまにかレナとはぐれていた￥
 	ClearMessage();
@@ -429,7 +429,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 5, "down", 0, FALSE, 0, 0, 1300, TRUE );
-	PlayBGM( 2, "lsys19", 128, 0 );
+	PlayBGM( 2, "lsys19", 56, 0 );
 
 //「ダムの完成に伴って生まれるダム湖はかなりの面積になったらしいね＠この雛見沢からずーっと上流の谷河内（やごうち）辺りまでが全部沈むことになったらしい。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -584,7 +584,7 @@
 	ClearMessage();
 
 
-	PlayBGM( 1, "msys15", 128, 0 );
+	PlayBGM( 1, "msys15", 56, 0 );
 //「……ちょうど４年前の今頃だったかなぁ＠あれも確か綿流しの日だったね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800023", 256, TRUE);
@@ -838,7 +838,7 @@
 	OutputLine(NULL, "………誰かが死ぬんだよ。」",
 		   NULL, " ... ... quelqu'un est retrouvé mort.", Line_ContinueAfterTyping);
 	Negative( 400 , TRUE );
-	PlaySE( 4, "wa_025", 128, 64 );
+	PlaySE( 4, "wa_025", 56, 64 );
 	Wait( 600 );
 	FadeFilm( 400 , TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -846,7 +846,7 @@
 
 
 
-	PlayBGM( 1, "msys07", 128, 0 );
+	PlayBGM( 1, "msys07", 56, 0 );
 
 //「バラバラ殺人の翌年の綿流しの日＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -1146,7 +1146,7 @@
 	ModDrawCharacter(3, 8, "sprite/night/tomi1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/y_kawa3", 3000 );
 
-	PlayBGM( 2, "lsys19", 128, 0 );
+	PlayBGM( 2, "lsys19", 56, 0 );
 	FadeOutBGM( 1, 1000, TRUE );
 
 //「で＠　その翌年の綿流しの晩にもまた人が死ぬわけですよね…＠　今度は誰です？＠
@@ -1171,7 +1171,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800044", 256, TRUE);
 	OutputLine(NULL, "「さぁてね",
-		   NULL, "— Aaah ça... ", Line_Continue);
+		   NULL, "— Aaah ça...", Line_Continue);
 // !s200
 
 	SetSpeedOfMessage( TRUE, 0, );
@@ -1248,7 +1248,7 @@
 	DisableWindow();
 	ModDrawCharacter(1, 9, "sprite/night/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
-	PlaySE( 4, "wa_026", 128, 64 );
+	PlaySE( 4, "wa_026", 56, 64 );
 
 //「今日よ。」 !w1500@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Femme</color>", NULL, Line_ContinueAfterTyping); }
@@ -1277,11 +1277,11 @@
 //　……じっとりとした汗を誘う、嫌な風がどっと吹く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……じっとりとした汗を誘う、嫌な風がどっと吹く。",
-		   NULL, "... ... Je sentis soudain le souffle froid du vent sur la sueur de mon visage.", Line_Normal);
+		   NULL, "...Je sentis soudain le souffle froid du vent sur la sueur de mon visage.", Line_Normal);
 	ClearMessage();
 
 
-	PlayBGM( 2, "lsys19", 128, 0 );
+	PlayBGM( 2, "lsys19", 56, 0 );
 
 //「みんな口にしないけど……今夜また何か起こるんじゃないかって思ってる。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Femme</color>", NULL, Line_ContinueAfterTyping); }
@@ -1490,8 +1490,8 @@
 	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 100, TRUE );
 
 	FadeBustshotWithFiltering( 5, "down", 0, FALSE, 0, 0, 1300, TRUE );
-	PlayBGM( 2, "lsys19", 128, 0 );
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 2, "lsys19", 56, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //「…やっぱり刺激が強過ぎたかしら？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Femme</color>", NULL, Line_ContinueAfterTyping); }
@@ -1618,15 +1618,14 @@
 		   NULL, " Tous sauf un.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800060", 256, TRUE);
 	OutputLine(NULL, "残った１人だって時間の問題さ。",
-		   NULL, " Mais pour celui-là aussi, ce n'est qu'une question de temps.", Line_WaitForInput);
-	ClearMessage();
+		   NULL, " Mais pour celui-là aussi, ce n'est qu'une question de temps. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800061", 256, TRUE);
 	OutputLine(NULL, "動機だって、酒の上での口論からと判明してる。",
-		   NULL, " Et le mobile... il est évident, le mobile. On a un groupe de gens qui avaient trop bu et qui se sont disputés.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et le mobile... il est évident, le mobile. On a un groupe de gens qui avaient trop bu et qui se sont disputés.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800062", 256, TRUE);
 	OutputLine(NULL, "祟りなんかじゃない。",
-		   NULL, "Cela n'a rien à voir avec une quelconque malédiction. ", Line_WaitForInput);
+		   NULL, " Cela n'a rien à voir avec une quelconque malédiction. ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800063", 256, TRUE);
 	OutputLine(NULL, "……だろ？」",
 		   NULL, "... Tu ne crois pas ?", GetGlobalFlag(GLinemodeSp));
@@ -2081,7 +2080,7 @@
 
 	DisableWindow();
 	DrawSceneWithMask("background/y_kawa3", "left", 0, 0, 1300 );
-	PlayBGM( 1, "msys02", 128, 0 );
+	PlayBGM( 1, "msys02", 56, 0 );
 	StopBGM( 2 );
 
 
@@ -2530,7 +2529,7 @@
 		   NULL, "— Vous pourriez aussi le mettre lorsque vous reviendrez !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200004", 256, TRUE);
 	OutputLine(NULL, "…いいな！」",
-		   NULL, " Ca serai sympa !", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ça serai sympa !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　感極まった様子だった＠
@@ -2592,7 +2591,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 	ModDrawCharacterWithFiltering(1, 3, "sprite/night/me2_akuwarai_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「お連れ様がお待ちみたいじゃ～ん＠　そろそろお時間かなぁ＠　ん～？＠
@@ -2661,7 +2660,7 @@
 //　わりとあっさりとした別れ際だったな＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　わりとあっさりとした別れ際だったな。",
-		   NULL, "— Finalement, cela s'était plutôt bien passé.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Finalement, cela s'était plutôt bien passé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2912,7 +2911,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100045", 256, TRUE);
 	OutputLine(NULL, "「母さんは行った？",
-		   NULL, "Finalement,", Line_WaitForInput);
+		   NULL, "— Finalement,", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100046", 256, TRUE);
 	OutputLine(NULL, "　綿流しのお祭り。」",
 		   NULL, " tu es allée à la fête ou pas ?", GetGlobalFlag(GLinemodeSp));
