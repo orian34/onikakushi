@@ -12,7 +12,7 @@
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("background/ke5", 400 );
-	PlayBGM( 1, "msys09", 128, 0 );
+	PlayBGM( 1, "msys09", 56, 0 );
 
 
 //「よく映画などに登場しますが、簡単にいうとどのようなものでしょうか。＠
@@ -152,22 +152,22 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>リポーター</color>", NULL, "<color=#f5e6d3>Journaliste</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/repoa44008", 256, TRUE);
 	OutputLine(NULL, "「７つの人格を持つ青年Ａ。",
-		   NULL, "— Le Jeune Homme A possède sept personnalités.", Line_WaitForInput);
+		   NULL, "Le Jeune Homme A possède sept personnalités.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/repoa44009", 256, TRUE);
 	OutputLine(NULL, "ではＶＴＲの続きをどうぞ。",
 		   NULL, " Vous en saurez plus avec notre reportage, regardez ! ", Line_WaitForInput);
 
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlaySE( 4, "wa_011", 128, 64 );
+	PlaySE( 4, "wa_011", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 4, "wa_010", 128, 64 );
+	PlaySE( 4, "wa_010", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
-	PlaySE( 4, "wa_029", 128, 64 );
+	PlaySE( 4, "wa_029", 56, 64 );
 
 //...ですがその前にコマーシャル！！￥
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/repoa44010", 256, TRUE);
