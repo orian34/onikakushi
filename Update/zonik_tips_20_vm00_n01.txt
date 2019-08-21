@@ -1,64 +1,64 @@
-void main()
+﻿void main()
 {
 }
 
 void dialog000()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「なぁに、圭一。",
-		   NULL, "\"What's this, Keiichi?", Line_WaitForInput);
+		   NULL, "— Qu'est-ce qu'il y a, Keiichi ?", Line_WaitForInput);
 	OutputLine(NULL, "こんなにたくさん！",
-		   NULL, " So many!", Line_WaitForInput);
+		   NULL, " Mais ? qu'est-ce que c'est que tout ça ?", Line_WaitForInput);
 	OutputLine(NULL, "　全部違う種類にすることはないでしょ？！」",
-		   NULL, " There's no reason to get all the different kinds, is there!?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tu n'avais pas besoin d'en prendre une de chaque, voyons !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　色とりどりのカップめんをどっさりとカートに載せたんだ。",
-		   NULL, "I flopped all the different colored cup noodle bowls into the cart.", Line_Normal);
+		   NULL, "Je mis un assortiment bigarré de portions de nouilles déshydratées dans notre caddie.", Line_Normal);
 	ClearMessage();
 }
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Papa de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「圭一。",
-		   NULL, "\"Keiichi.", Line_WaitForInput);
+		   NULL, "— Keiichi.", Line_WaitForInput);
 	OutputLine(NULL, "箱売りしてるのにしなさい。安いから。」",
-		   NULL, " Buy them in the big case. It's cheaper.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Va prendre une des sortes qu'ils vendent par carton complet, elles sont moins chères.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　親父が渋る。",
-		   NULL, "Dad faltered.", Line_Normal);
+		   NULL, "Mon père se montra ferme et inflexible.", Line_Normal);
 	ClearMessage();
 }
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「決められないならお母さんが決めちゃうわよ。」",
-		   NULL, "\"If you can't pick, then Mommy will pick for you.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Si tu ne peux pas te décider, je choisirai à ta place.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう急かされても困る…！",
-		   NULL, "You don't have to rush me...!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nan mais, une seconde, quand même !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　手早く目当てのラーメンの箱を探しに行く。",
-		   NULL, "I quickly search the cases of noodles for what I want.", Line_Normal);
+		   NULL, "Je me dirigeai rapidement vers une sorte bien précise.", Line_Normal);
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Keiichi's mom</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Maman de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「豚骨ショウガ味、デカカップ？",
-		   NULL, "\"Pork -bone & Ginger, large cup?", Line_WaitForInput);
+		   NULL, "— Des nouilles à la moelle de porc et au gingembre, taille maxi ?", Line_WaitForInput);
 	OutputLine(NULL, "　ねぇ圭一、もう少し普通のにしない？」",
-		   NULL, " Hey, Keiichi, can't you get a more normal one?\"", Line_Normal);
+		   NULL, " Tu pouvais pas prendre une sorte un peu plus normale ?", Line_Normal);
 	ClearMessage();
 }
 

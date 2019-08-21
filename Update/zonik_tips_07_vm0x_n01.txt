@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -8,12 +8,12 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300023", 256, TRUE);
 	OutputLine(NULL, "「レナー？",
-		   NULL, "\"Rena~?", Line_Continue);
+		   NULL, "— Rena ?", Line_Continue);
 	Wait (400)
 	OutputLine(NULL, "　トイレじゃない？",
-		   NULL, " Didn't she go to the washroom?", Line_WaitForInput);
+		   NULL, " Elle est aux chiottes, sûrement.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300024", 256, TRUE);
 	OutputLine(NULL, "　除きたいなら止めないけど、通報するからねぇ〜」",
-		   NULL, " If you're planning to peep, I won't stop you. I'll call the cops, though~!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Si tu comptes zieuter, c'est le moment. Mais je préviendrai les flics par contre~ !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
