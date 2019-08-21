@@ -13,7 +13,7 @@
 	DisableWindow();
 	DrawScene("black", 1000 );
 	DrawSceneWithMask("background/ke5", "down", 0, 0, 1300 );
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //　富竹ジロウ（仏＠
 	ClearMessage();
@@ -57,7 +57,7 @@
 		   NULL, "・Son vélo a été trouvé à 300m du corps, sur un sentier.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_021", 128, 64 );
+	PlaySE( 4, "wa_021", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -84,7 +84,7 @@
 		   NULL, "・Vu par un policier vers 21h. La suite des événements est inconnue.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_021", 128, 64 );
+	PlaySE( 4, "wa_021", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -133,7 +133,7 @@
 		   NULL, " Vérifier les lignes connexes ?", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_021", 128, 64 );
+	PlaySE( 4, "wa_021", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -172,7 +172,7 @@
 		   NULL, "・Faire le tour des maisons d'éditions.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_021", 128, 64 );
+	PlaySE( 4, "wa_021", 56, 64 );
 
 //　鷹野みよ（失踪＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -213,7 +213,7 @@
 		   NULL, "・Vue avec Tomitake sur la place du sanctuaire pendant la fête, personne ne l'a revue depuis.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_021", 128, 64 );
+	PlaySE( 4, "wa_021", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
