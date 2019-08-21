@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 }
 
@@ -7,10 +7,10 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei02310", 256, TRUE);
 	OutputLine(NULL, "「さぁねぇ。",
-		   NULL, "\"Dunno.", Line_WaitForInput);
+		   NULL, "— Aucune idée.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei02320", 256, TRUE);
 	OutputLine(NULL, "昔、殺して埋めたバラバラ死体でも確認してるんじゃないすか？」",
-		   NULL, " Maybe she's checking on that dismembered corpse that was out here long ago.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Elle a peut-etre tué et découpé un mec et vérifie que personne n'a découvert le cadavre ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -20,31 +20,31 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200154", 256, TRUE);
 	OutputLine(NULL, "「うん聞いて聞いて！",
-		   NULL, "\"Oh, yes~ So listen!", Line_WaitForInput);
+		   NULL, "— Oui ! Écoute ça et tiens-toi bien :", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200155", 256, TRUE);
 	OutputLine(NULL, "　あ、…あのね！",
-		   NULL, " Ah ...um, you see!", Line_WaitForInput);
+		   NULL, " Ah ...um, tu vois !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200156", 256, TRUE);
 	OutputLine(NULL, "　あったの！",
-		   NULL, " There was...!", Line_WaitForInput);
+		   NULL, " je l'ai trouvée !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200157", 256, TRUE);
 	OutputLine(NULL, "　ケンタくん人形ッ♪！！」",
-		   NULL, " A Colonel Sanders doll!♪\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " J'ai trouvé un Colonel Randy !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//「ランディーくん人形？＠　…ってあれか、ランディーくんフライドチキンの店の前に必ず置いてある…!d600あの等身大人形の？＠
+//「ランディーくん人形？＠　…ってあれか、ランディーくんフライドチキンの店の前に必ず置いてある… !d600あの等身大人形の？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei02350", 256, TRUE);
 	OutputLine(NULL, "「ケンタくん人形？！",
-		   NULL, "\"A Colonel Sanders doll!?", Line_WaitForInput);
+		   NULL, "— Colonel Randy ?", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei02360", 256, TRUE);
 	OutputLine(NULL, "　…ってあれか、ケンタくんフライドチキンの店の前に必ず置いてある…",
-		   NULL, " ...Oh, that thing. Those statues they always have out in front of that fried chicken place...", Line_Continue);
+		   NULL, " ... Oh, tu veux parler du général des Kentucky Fried euh Trucmuche ? La même que celle qui est devant leurs restaurants ?", Line_Continue);
 
 	Wait( 600 );
 	OutputLine(NULL, "あの等身大人形の？」",
-		   NULL, " That life-sized dummy?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Tu as trouvé une statue grandeur nature ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -52,33 +52,33 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200158", 256, TRUE);
 	OutputLine(NULL, "「…そう！　ケンタくん☆",
-			   NULL, "\"...Yes! Colonel Sanders.☆", Line_WaitForInput);
+			   NULL, "— Exactement ! Aaah, Colonel Randy...", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200159", 256, TRUE);
 	OutputLine(NULL, "　……はぅ……かぁいい……お持ち帰りしたいぃ…☆」",
-		   NULL, " ...Hau... kyute... I want to take it hooome...☆\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "  il est tellement mimi... Je veux le ramener chez moi...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
-//「圭一くんが手伝ってくれる☆!d300…ランディーくんをお持ち帰りできる……はぅ…。＠
+//「圭一くんが手伝ってくれる☆ !d300…ランディーくんをお持ち帰りできる……はぅ…。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200164", 256, TRUE);
 	OutputLine(NULL, "「圭一くんが手伝ってくれる☆",
-		   NULL, "\"Keiichi-kun is going to help.☆", Line_Continue);
+		   NULL, "— Keiichiiii va m'aider,", Line_Continue);
 	Wait( 1500 );
 	OutputLine(NULL, "…ケンタくんをお持ち帰りできる……はぅ…。」",
-		   NULL, " ...I can take Colonel Sanders home... hau...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " j'vais ramener Colonel Randy chez moi ! Hauu !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
 {
-//「……嫌な事件だったね。…腕が一本、まだ見つかってないんだろ？」!w5000
+//「……嫌な事件だったね。…腕が一本、まだ見つかってないんだろ？」 !w5000
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s19/08/990800016", 256, TRUE);
 	OutputLine(NULL, "「……嫌な事件だったね。…腕が一本、まだ見つかってないんだろ？」",
-		   NULL, "\"...It was quite a disturbing incident... They still haven't found one of the arms.\"", Line_Continue);
+		   NULL, "— C'était vraiment une sale histoire... La police n'a jamais retrouvé le deuxième bras, c'est bien ça ?", Line_Continue);
 }
 
 void dialog004()
@@ -86,6 +86,6 @@ void dialog004()
 //"... …嫌な事件だったね。…腕が一本、まだ見つかってないんだろ？"@\
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "“……嫌な事件だったね。…腕が一本、まだ見つかってないんだろ？”",
-		   NULL, "\"...It was quite a disturbing incident... They still haven't found one of the arms.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était vraiment une sale histoire... La police n'a jamais retrouvé le deuxième bras, c'est bien ça ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
