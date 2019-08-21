@@ -18,7 +18,7 @@
 	DisableWindow();
 	DrawScene("black", 1000 );
 
-	PlayBGM( 1, "msys02", 128, 0 );
+	PlayBGM( 1, "msys02", 56, 0 );
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1a_wink_a1_", "1", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/gk3", 1000 );
 
@@ -26,7 +26,7 @@
 //「...圭ちゃんってさ、すごいお金持ちってわけでもないの？＠
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300016", 128, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300016", 256, TRUE);
 	OutputLine(NULL, "「…圭ちゃんってさ、すごいお金持ちってわけでもないの？」",
 		   NULL, "— Mais dis voir, Kei, je croyais que tes parents étaient blindés de fric ? C'est pas le cas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -35,7 +35,7 @@
 
 //「何だよ、突然＠...俺がいつリムジンで登校したよ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100023", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100023", 256, TRUE);
 	OutputLine(NULL, "「何だよ、突然。",
 		   NULL, "— De quoi tu parles ?", Line_Continue);
 	Wait( 1200 );
@@ -47,7 +47,7 @@
 
 //「月の小遣いはいくらもらってる？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300017", 128, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300017", 256, TRUE);
 	OutputLine(NULL, "「月の小遣いはいくらもらってる？」",
 		   NULL, "— Tu reçois combien d'argent de poche dans le mois ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -56,7 +56,7 @@
 
 //「１０００円。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100024", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100024", 256, TRUE);
 	OutputLine(NULL, "「１０００円。」",
 		   NULL, "— 1000Y.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -67,7 +67,7 @@
 
 //「あら。結構、小市民的ですのねぇ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400008", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400008", 256, TRUE);
 	OutputLine(NULL, "「あら。結構、小市民的ですのねぇ。」",
 		   NULL, "— Oh... Nous avons ici affaire au petit peuple...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -78,7 +78,7 @@
 
 //「......お弁当のおかずも普通ですよ＠お金持ちじゃないです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 5, "ps3/s20/05/440500001", 128, TRUE);
+	ModPlayVoiceLS(3, 5, "ps3/s20/05/440500001", 256, TRUE);
 	OutputLine(NULL, "「……お弁当のおかずも普通ですよ。",
 		   NULL, "— Son panier-repas est tout ce qu'il y a de plus normal.", Line_Continue);
 	Wait( 1800 );
@@ -106,7 +106,7 @@
 
 //「あはははは。ごめんねごめんね！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200030", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200030", 256, TRUE);
 	OutputLine(NULL, "「あはははは。ごめんねごめんね！」",
 		   NULL, "— Ahahahaha ! Ah, désolée, ce n'est rien !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -126,7 +126,7 @@
 
 //「圭ちゃん家ってさ、すっごく大きいでしょ＠　だから建築中から雛見沢中で前原屋敷って呼ばれて注目の的だったんだよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300018", 128, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300018", 256, TRUE);
 	OutputLine(NULL, "「圭ちゃん家ってさ、すっごく大きいでしょ？",
 		   NULL, "— Tu vis dans une grande maison. Je veux dire, une très grande maison, vraiment.", Line_Continue);
 	Wait( 1800 );
@@ -148,7 +148,7 @@
 
 //「あんなに大きいお家だから、どんなお金持ちなのかなって、みんなで噂し合ってたの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200031", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200031", 256, TRUE);
 	OutputLine(NULL, "「あんなに大きいお家だから、どんなお金持ちなのかなって、みんなで噂し合ってたの。」",
 		   NULL, "— Les gens se demandaient quel genre de riches pouvaient se permettre de faire construire une maison grande comme celle-là.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -177,7 +177,7 @@
 
 //「私の推理では、お家を建てるのにお金をかけ過ぎて、貧乏になってしまったと考えてますのよ～！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400009", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400009", 256, TRUE);
 	OutputLine(NULL, "「私の推理では、お家を建てるのにお金をかけ過ぎて、貧乏になってしまったと考えてますのよ〜！」",
 		   NULL, "— D'après ce que je peux constater en vous regardant, vous avez tellement investi dans la construction de cette maison que vous en êtes devenus pauvres !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -188,7 +188,7 @@
 
 //「......貧乏でかわいそかわいそです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 5, "ps3/s20/05/440500002", 128, TRUE);
+	ModPlayVoiceLS(3, 5, "ps3/s20/05/440500002", 256, TRUE);
 	OutputLine(NULL, "「……貧乏でかわいそかわいそです。」",
 		   NULL, "— Ooh, pauvre, pauvre petit... Aaah, mon bien pauvre ami...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -205,7 +205,7 @@
 
 //「あー、諸君らの楽しい想像をぶち壊すようで悪いが、うちは金持ちでも貧乏でもないぞ＠極めて平均的な普通の家庭だ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100025", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100025", 256, TRUE);
 	OutputLine(NULL, "「あー、諸君らの楽しい想像をぶち壊すようで悪いが、うちは金持ちでも貧乏でもないぞ。",
 		   NULL, "— Euh, désolé de casser l'image que vous vous faites toutes de moi, mais je ne suis ni riche ni pauvre.", Line_Continue);
 	Wait( 4200 );
@@ -220,13 +220,13 @@
 
 //「あれだけ大きな家は普通とは言わないって＠　しかも玄関は立派で、門は大型車も入れるようになってるし！＠　絶対、普通じゃないって！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300019", 128, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300019", 256, TRUE);
 	OutputLine(NULL, "「あれだけ大きな家は普通とは言わないって！",
 		   NULL, "— Allez l'autre, eh, t'as regardé votre maison ?", Line_Continue);
 	Wait( 2800 );
 	OutputLine(NULL, "　しかも玄関は立派で、門は大型車も入れるようになってるし！！",
 		   NULL, " C'est un truc de dingue, avec un vestibule immense et un portail à l'entrée qui pourrait accueillir une grosse berline !", Line_WaitForInput);
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300020", 128, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300020", 256, TRUE);
 	OutputLine(NULL, "　絶対、普通じゃないって！」",
 		   NULL, " C'est tout sauf normal !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -297,13 +297,13 @@
 
 //「ぜひ今度、圭ちゃんの家を探検してみたいよなぁ＠...お金持ちじゃないと主張しながらもあの邸宅！＠　一体何が隠されているのか！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300021", 128, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300021", 256, TRUE);
 	OutputLine(NULL, "「ぜひ今度、圭ちゃんの家を探検してみたいよなぁ。",
 		   NULL, "— Il faut absolument qu'on aille un jour explorer ta maison !", Line_Continue);
 	Wait( 1600 );
 	OutputLine(NULL, "…お金持ちじゃないと主張しながらもあの邸宅！！",
 		   NULL, " J'imagine déjà le truc, une baraque immense avec toi à côté en train de nous répéter que non, c'est une maison tout ce qu'il y a de plus banal...", Line_WaitForInput);
-	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300022", 128, TRUE);
+	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300022", 256, TRUE);
 	OutputLine(NULL, "　一体何が隠されているのか！！」",
 		   NULL, " Je me demande ce qu'elle peut receler comme trésors !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -314,7 +314,7 @@
 
 //「か、かぁいいものが隠されてるといいなぁ！　はぅ～！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200032", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200032", 256, TRUE);
 	OutputLine(NULL, "「か、かぁいいものが隠されてるといいなぁ！　はぅ〜！」",
 		   NULL, "— S'il pouvait y avoir un truc mimi, ce serait bien... Hauuuuu...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -326,7 +326,7 @@
 
 //「きっと家具を買うお金もなくなってて、殺風景な部屋がいっぱいなのですわ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400010", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400010", 256, TRUE);
 	OutputLine(NULL, "「きっと家具を買うお金もなくなってて、殺風景な部屋がいっぱいなのですわ！」",
 		   NULL, "— Ils n'ont sûrement plus rien pour acheter des meubles. Je parie que toutes leurs pièces sont spartiates !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -337,7 +337,7 @@
 
 //「......絨毯のお部屋なら、ぜひごろごろしてみたいですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 5, "ps3/s20/05/440500003", 128, TRUE);
+	ModPlayVoiceLS(3, 5, "ps3/s20/05/440500003", 256, TRUE);
 	OutputLine(NULL, "「……絨毯のお部屋なら、ぜひごろごろしてみたいですよ。」",
 		   NULL, "— S'ils ont une salle avec des tapis tressés, j'aimerais bien pouvoir me rouler dessus...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -346,7 +346,7 @@
 
 //「わぁぁ～！　それいいねそれいいね！　レナもごろごろしたい～！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200033", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200033", 256, TRUE);
 	OutputLine(NULL, "「わぁぁ〜！　それいいねそれいいね！　レナもごろごろしたい〜！」",
 		   NULL, "— Oh ouiiii ! Ça ce serait vraiment super ! Moi aussi je veux me rouler dessus !", Line_Normal);
 	ClearMessage();
@@ -373,7 +373,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/g1", 1000 );
-	PlayBGM( 2, "lsys12", 128, 0 );
+	PlayBGM( 2, "lsys12", 56, 0 );
 
 //　セミの声はいよいよにぎやかで、空はどこまでも高い＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
