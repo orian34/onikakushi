@@ -14,7 +14,7 @@
 	DisableWindow();
 	DrawScene("background/hu_tenjyou", 10000 );
 
-	PlayBGM( 1, "msys06", 128, 0 );
+	PlayBGM( 1, "msys06", 56, 0 );
 
 //　見慣れた天井だった￥
 	ClearMessage();
@@ -24,7 +24,7 @@
 	ClearMessage();
 
 
-//　... ... ... ...  ... ... ... ... ... ... ... ... ... ... まくらや布団のにおいも...とても馴染んだもの＠
+//　...まくらや布団のにおいも...とても馴染んだもの＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…まくらや布団のにおいも…とても馴染んだもの。",
 		   NULL, "Cet oreiller aussi... cette couette aussi.", GetGlobalFlag(GLinemodeSp));
@@ -35,7 +35,7 @@
 //　......ここは......俺の部屋だ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……ここは……俺の部屋だ？",
-		   NULL, "— Mais alors... je suis dans ma chambre ?", Line_Normal);
+		   NULL, "Mais alors... je suis dans ma chambre ?", Line_Normal);
 	ClearMessage();
 
 
@@ -251,7 +251,7 @@
 		   NULL, "Et pourtant, elle ne l'a pas fait. Elle a d'ailleurs fait exactement le contraire.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys06", 128, 0 );
+	PlayBGM( 1, "msys06", 56, 0 );
 
 //「......よく、俺を引きずってここまでこれたな＠...重かったろ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -436,7 +436,7 @@
 	OutputLine(NULL, "　瞳の輝きも暖かだった。",
 		   NULL, "Son regard était tendre et chaleureux.", GetGlobalFlag(GLinemodeSp));
 
-	PlayBGM( 2, "lsys25", 128, 0 );
+	PlayBGM( 2, "lsys25", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -466,7 +466,7 @@
 //　...そのわずかな予兆に...背筋がぞくりとした......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そのわずかな予兆に…背筋がぞくりとした……。",
-		   NULL, "qu'il se faisait plus dur.", Line_Normal);
+		   NULL, " qu'il se faisait plus dur.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 2, 1000, TRUE );
@@ -532,8 +532,8 @@
 
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlayBGM( 2, "lsys22", 128, 0 );
-	PlayBGM( 1, "lsys12", 128, 0 );
+	PlayBGM( 2, "lsys22", 56, 0 );
+	PlayBGM( 1, "lsys12", 56, 0 );
 
 //　レナを部屋に残し、足早に階下へ降りて居間の電話機を目指す￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -542,7 +542,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	PlaySE( 4, "wa_028", 128, 64 );
+	PlaySE( 4, "wa_028", 56, 64 );
 	DrawSceneWithMask("background/ma_g3_01", "right", 0, 0, 300 );
 
 //　玄関の前にさしかかったとき、ピンポーンというチャイムの音がなった￥
@@ -662,7 +662,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200472", 256, TRUE);
 	OutputLine(NULL, "「そうだね。",
-		   NULL, "Oui,", Line_WaitForInput);
+		   NULL, "— Oui,", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200473", 256, TRUE);
 	OutputLine(NULL, "レナも心配して損したかな？」",
 		   NULL, " moi aussi, apparemment.", Line_Normal);
@@ -954,7 +954,7 @@
 	DisableWindow();
 	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
 	FadeOutBGM( 1, 0, FALSE );
-	PlayBGM( 2, "lsys15", 128, 0 );
+	PlayBGM( 2, "lsys15", 56, 0 );
 
 //　俺に関係のある監督という単語を全記憶の中から洗い出す＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1081,7 +1081,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100788", 256, TRUE);
 	OutputLine(NULL, "「……だから監督って誰だよ。」",
-		   NULL, " Mais c'est qui, ce chef ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Mais c'est qui, ce chef ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1209,20 +1209,20 @@
 		   NULL, "Tu as déjà oublié ?", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200488", 256, TRUE);
 	OutputLine(NULL, "……おはぎの宿題。",
-		   NULL, " Tu n'as pas fait tes devoirs le jour où nous t'avions apportés des gâteaux.", Line_WaitForInput);
+		   NULL, " Tu n'as pas fait tes devoirs le jour où nous t'avions apporté des gâteaux.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200489", 256, TRUE);
 	OutputLine(NULL, "どれがレナの作ったおはぎかを当てる宿題。",
 		   NULL, " Ceux où tu devais deviner lesquels avaient été cuisinés par Rena ?", Line_WaitForInput);
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200490", 256, TRUE);
 	OutputLine(NULL, "……あれ、確か宿題忘れだったよねぇ？」",
-		   NULL, " ... Ta oublié, n'est ce pas ?", Line_Normal);
+		   NULL, " ... T'as oublié, n'est ce pas ?", Line_Normal);
 	ClearMessage();
 
 
 //　そんな宿題も確かあった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな宿題も確かあった。",
-		   NULL, "Oui, c'est vrai, elles m'avaient donner ce genre de devoirs.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oui, c'est vrai, elles m'avaient donné ce genre de devoirs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1257,7 +1257,7 @@
 	ClearMessage();
 
 
-	PlayBGM( 0, "lsys25", 128, 0 );
+	PlayBGM( 0, "lsys25", 56, 0 );
 ////dwaveplayloop 12
 
 //「 !s200あははははははははははははははははははははははははははは !sd。￥
@@ -1330,7 +1330,7 @@
 		   NULL, " et maintenant Mion et Rena veulent me donner un gage.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "lsys12", 128, 0 );
+	PlayBGM( 0, "lsys12", 56, 0 );
 ////dwaveplayloop 10
 
 //「 !s150あははははははははははははははははははははははははははは !sd。＠
@@ -1340,7 +1340,7 @@
 	ModPlayVoiceLS(3, 2, "ps3/s01/02/120200492", 256, TRUE);
 	ModPlayVoiceLS(2, 3, "ps3/s01/03/120300219", 256, TRUE);
 	OutputLine(NULL, "「「あははははははははははははははははははははははははははは。」」",
-		   NULL, "Ahahahahahahahahahahahahahahahahaha !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ahahahahahahahahahahahahahahahahaha !", GetGlobalFlag(GLinemodeSp));
 
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1406,7 +1406,7 @@
 		   NULL, "Avant que j'aie eu le temps de me demander comment elle avait fait pour se placer ici, elle me bloqua les bras en me chopant les aisselles.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys08", 128, 0 );
+	PlayBGM( 1, "msys08", 56, 0 );
 
 //「な、何の真似だよッ？！？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1728,7 +1728,7 @@
 	DrawFilm( 2, 255, 34, 34, 255, 0, 0, TRUE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 1000, TRUE );
 
-	PlayBGM( 2, "lsys15", 128, 0 );
+	PlayBGM( 2, "lsys15", 56, 0 );
 
 //「...え、.........え？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1816,7 +1816,7 @@
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 
-	PlayBGM( 2, "lsys25", 128, 0 );
+	PlayBGM( 2, "lsys25", 56, 0 );
 
 //「みんな始めは轢き逃げされたものだと思っていました＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1937,7 +1937,7 @@
 
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlayBGM( 1, "msys16", 128, 0 );
+	PlayBGM( 1, "msys16", 56, 0 );
 	DisableWindow();
 //	DrawScene( "bg_080", 1000 );
 	DrawScene("background/ma_j3", 1000 );
@@ -2100,7 +2100,7 @@
 //print 1
 	DisableWindow();
 	Negative( 100, TRUE );
-	PlayBGM( 2, "lsys25", 128, 0 );
+	PlayBGM( 2, "lsys25", 56, 0 );
 
 //　後頭部に電気が走り、世界中が停電になったような錯覚を感じた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2153,7 +2153,7 @@
 	DrawScene("black", 3000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlayBGM( 1, "msys11", 128, 0 );
+	PlayBGM( 1, "msys11", 56, 0 );
 //　......しばししゃがみ込み、...意識がしっかり戻った時、部屋は一変していた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……しばししゃがみ込み、…意識がしっかり戻った時、部屋は一変していた。",
@@ -2502,7 +2502,7 @@
 		   NULL, "Elle était couverte de sang... Il ne faisait aucun doute que c'était l'arme avec laquelle elles avaient été tuées.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys16", 128, 0 );
+	PlayBGM( 1, "msys16", 56, 0 );
 
 //　その、明らかに凶器の金属バットを俺が持っている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2520,7 +2520,7 @@
 
 	DisableWindow();
 	Negative( 0 , TRUE );
-	PlaySE( 4, "wa_025", 128, 64 );
+	PlaySE( 4, "wa_025", 56, 64 );
 	DrawScene("background/ma_j3_05", 1500 );
 	FadeFilm( 1000 , TRUE );
 	DrawFilm( 2, 255, 153, 153, 255, 0, 100, TRUE );
@@ -2529,14 +2529,14 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100801", 256, TRUE);
 	OutputLine(NULL, "「え、",
-		   NULL, "Mais alors... ", Line_Continue);
+		   NULL, "— Mais alors... ", Line_Continue);
 // !s150
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "………………",
 		   NULL, " ...", Line_Continue);
 
-	PlaySE( 4, "wa_027", 128, 64 );
+	PlaySE( 4, "wa_027", 56, 64 );
 
 //俺、 !sd」 !w4000@
 	OutputLine(NULL, "俺、」",
@@ -2581,7 +2581,7 @@
 //　俺がやったんじゃないか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺がやったんじゃないか。",
-		   NULL, " C'est bien toi le meurtrier.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est bien toi le meurtrier.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2784,7 +2784,7 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	PlayBGM( 2, "lsys25", 128, 0 );
+	PlayBGM( 2, "lsys25", 56, 0 );
 	ModDrawCharacterWithFiltering(1, 2, "sprite/flashback/re1a_hig_def_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacterWithFiltering(3, 3, "sprite/flashback/me2_hig_maji_a1_", "0", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("flashback/ma_j3_05", 3000 );
@@ -2811,10 +2811,10 @@
 		   NULL, "Et juste avant qu'elles ne pussent le faire, j'avais contre-attaqué...", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 
 	DrawScene("white", 100 );
-	PlaySE( 4, "wa_002", 128, 64 );
+	PlaySE( 4, "wa_002", 56, 64 );
 	Wait( 500 );
 
 //　羽交い絞めにするレナを全身をひねって投げ飛ばした＠
@@ -2825,8 +2825,8 @@
 
 
 
-	PlaySE( 4, "wa_008", 128, 64 );
-	PlaySE( 4, "wa_003", 128, 64 );
+	PlaySE( 4, "wa_008", 56, 64 );
+	PlaySE( 4, "wa_003", 56, 64 );
 	Wait( 500 );
 
 //　そのままさらに回転し、踵で思い切り魅音の腹部を蹴り抜いた＠...柔らかかった＠
@@ -2848,7 +2848,7 @@
 
 
 
-	PlaySE( 4, "wa_005", 128, 64 );
+	PlaySE( 4, "wa_005", 56, 64 );
 
 //　二人が共に体勢を崩し、一瞬の隙が生じたことをその時の俺は見逃さない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2887,7 +2887,7 @@
 		   NULL, "Comme si le magnétoscope en moi n'avait pas enregistré la suite...", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 2, "lsys25", 128, 0 );
+	PlayBGM( 2, "lsys25", 56, 0 );
 
 //　いや...違う＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2899,7 +2899,7 @@
 
 //　.........録画してないんじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………録画してないんじゃない。",
+	OutputLine(NULL, "　………録画してないんじゃない。　ちゃんと録画されている。",
 		   NULL, "En fait, l'enregistrement était bel et bien là.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2907,7 +2907,7 @@
 
 //　ちゃんと録画されている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ちゃんと録画されている。",
+	OutputLine(NULL, "　ただ………俺の中のもう一人が……見るなといってテレビを消しただけなのだ。",
 		   NULL, "Sauf que... quelqu'un d'autre en moi avait décidé que ce programme n'était pas pour moi, et il avait éteint le téléviseur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2915,62 +2915,54 @@
 
 //　ただ.........俺の中のもう一人が......見るなといってテレビを消しただけなのだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ただ………俺の中のもう一人が……見るなといってテレビを消しただけなのだ。",
+	OutputLine(NULL, "　画面が真っ暗になって見えなくなっただけで……俺の中のビデオテープには間違いなく録画されている。",
 		   NULL, "L'écran était devenu tout noir, parce qu'il avait été éteint, mais la bande vidéo continuait.", Line_Normal);
 	ClearMessage();
 
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 800 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 //　画面が真っ暗になって見えなくなっただけで......俺の中のビデオテープには間違いなく録画されている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　画面が真っ暗になって見えなくなっただけで……俺の中のビデオテープには間違いなく録画されている。",
+	OutputLine(NULL, "　テレビを切っただけで……ビデオの再生はまだ続いている。",
 		   NULL, "Le magnétoscope lisait la bande vidéo, mais l'écran ne me relayait plus les informations.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 800 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 //　テレビを切っただけで......ビデオの再生はまだ続いている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　テレビを切っただけで……ビデオの再生はまだ続いている。",
+	OutputLine(NULL, "　俺の中のビデオが……カラカラと…再生を続けている。",
 		   NULL, "Et la bande continuait... et continuait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
 
-	PlaySE( 4, "wa_015", 128, 64 );
+	PlaySE( 4, "wa_015", 56, 64 );
 	Wait( 800 );
-	PlaySE( 4, "wa_017", 128, 64 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 //　俺の中のビデオが......カラカラと...再生を続けている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　俺の中のビデオが……カラカラと…再生を続けている。",
-		   NULL, "Des scènes horribles se jouaient de l'autre côté du tube cathodique...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-
-
-	PlaySE( 4, "wa_015", 128, 64 );
-	Wait( 800 );
-	PlaySE( 4, "wa_017", 128, 64 );
-
-//　真っ暗になったブラウン管の向こうで.........恐ろしい映像を流し続けている...￥
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　真っ暗になったブラウン管の向こうで………恐ろしい映像を流し続けている…。",
-//		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　真っ暗になったブラウン管の向こうで………恐ろしい映像を流し続けている…。",
+		   NULL, "Des scènes horribles se jouaient de l'autre côté du tube cathodique...", Line_Normal);
 	ClearMessage();
+
+
+	PlaySE( 4, "wa_015", 56, 64 );
+	Wait( 800 );
+	PlaySE( 4, "wa_017", 56, 64 );
 
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
-	PlayBGM( 1, "msys11", 128, 0 );
+	PlayBGM( 1, "msys11", 56, 0 );
 	DrawSceneWithMask("background/ma_j3_05", "up", 0, 0, 1300 );
 
 //　それと比べたにしたって...＠
@@ -3207,7 +3199,7 @@
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene("background/ma_j3_05", 1000 );
 
-	PlayBGM( 1, "msys07", 128, 0 );
+	PlayBGM( 1, "msys07", 56, 0 );
 
 //　その時、思い出す＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3369,7 +3361,7 @@
 //nega 1
 //print 1
 
-	PlaySE( 4, "wa_027", 128, 64 );
+	PlaySE( 4, "wa_027", 56, 64 );
 
 //　......白い......ワゴン車ッ！！！！！ !w3000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3389,7 +3381,7 @@
 ////print 22
 	DisableWindow();
 	FadeFilm( 400, TRUE );
-	PlayBGM( 2, "lsys15", 128, 0 );
+	PlayBGM( 2, "lsys15", 56, 0 );
 //　間違いない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　間違いない。",
@@ -3882,7 +3874,7 @@
 		   NULL, " plusieurs fois !", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_028", 128, 64 );
+	PlaySE( 4, "wa_028", 56, 64 );
 
 //　ピンポーン.........￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3904,7 +3896,7 @@
 		   NULL, "Ça y est, ils sont là !", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "lsys25", 128, 0 );
+	PlayBGM( 0, "lsys25", 56, 0 );
 //dwaveplayloop 1
 
 //　もうこれ以上を書くことはできない＠
@@ -3956,7 +3948,7 @@
 //"これをあなたが読んだなら、その時、私は死んでいるでしょう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "“これをあなたが読んだなら、その時、私は死んでいるでしょう。",
-		   NULL, "— “Si vous lisez ce message, c'est que je suis mort.”", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— “Si vous lisez ce message, c'est que je suis mort.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3964,7 +3956,7 @@
 //　...死体があるか、ないかの違いはあるでしょうが。"@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…死体があるか、ないかの違いはあるでしょうが。”",
-		   NULL, "Peut-être aurez-vous trouvé mon cadavre, ou peut-être pas.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Peut-être aurez-vous trouvé mon cadavre, ou peut-être pas.”", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -4441,7 +4433,7 @@
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 1000, TRUE );
-	PlaySE( 4, "wa_028", 128, 64 );
+	PlaySE( 4, "wa_028", 56, 64 );
 
 //　再びチャイムが鳴り響く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4558,7 +4550,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
-	PlaySE( 4, "wa_028", 128, 64 );
+	PlaySE( 4, "wa_028", 56, 64 );
 	DrawSceneWithMask("background/ma_g3_01", "right", 0, 0, 300 );
 
 //　玄関へ走り、靴を鷲づかみにした時、急かすように再びチャイムが鳴った＠
@@ -4598,7 +4590,7 @@
 		   NULL, "Personne ?", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys16", 128, 0 );
+	PlayBGM( 1, "msys16", 56, 0 );
 
 //　靴を履き...音をさせないようにゆっくりと扉を開く...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4609,7 +4601,7 @@
 	DrawSceneWithMask("white", "m1", 0, 0, 1300 );
 	DrawScene("background/ma1_02", 400 );
 
-	PlaySE( 4, "wa_027", 128, 64 );
+	PlaySE( 4, "wa_027", 56, 64 );
 
 //「いたぞ！！　裏口だ！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
@@ -4807,7 +4799,7 @@
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene("white", 3000 );
-	PlayBGM( 1, "msys11", 128, 0 );
+	PlayBGM( 1, "msys11", 56, 0 );
 	DrawSceneWithMask("background/mo1_01", "left", 0, 0, 300 );
 
 //　カナカナカナカナ......￥
