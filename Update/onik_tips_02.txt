@@ -16,7 +16,7 @@
 	DisableWindow();
 	DrawScene("black", 1000 );
 	DrawScene("background/gk1", 1000 );
-	PlayBGM( 2, "lsys12", 128, 0 );
+	PlayBGM( 2, "lsys12", 56, 0 );
 
 //　まだ６月だってのに... !w1000暑い＠
 	ClearMessage();
@@ -53,7 +53,7 @@
 
 //「暑いでございますわねぇ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400001", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400001", 256, TRUE);
 	OutputLine(NULL, "「暑いでございますわねぇ！」",
 		   NULL, "— Quelle chaleur !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -85,7 +85,7 @@
 
 //「圭一はワイシャツ１枚で涼しそうですわねぇ...＠羨ましいですわ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400002", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400002", 256, TRUE);
 	OutputLine(NULL, "「圭一はワイシャツ１枚で涼しそうですわねぇ…。",
 		   NULL, "— Je dois vous avouer que je vous jalouse, mon cher.", Line_Continue);
 	Wait( 2000 );
@@ -107,7 +107,7 @@
 
 //「レナの夏服は涼しそうな色合いがいいよな＠見てるこっちも涼しくなる。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100017", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100017", 256, TRUE);
 	OutputLine(NULL, "「レナの夏服は涼しそうな色合いがいいよな。",
 		   NULL, "— J'adore la couleur claire de tes habits, Rena.", Line_Continue);
 	Wait( 1900 );
@@ -121,13 +121,13 @@
 
 //「あはははは＠ありがと＠　本当に涼しいんだよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200021", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200021", 256, TRUE);
 	OutputLine(NULL, "「あはははは。",
 		   NULL, "— Ahahaha !", Line_Continue);
 	Wait( 1300 );
 	OutputLine(NULL, "ありがと！",
 		   NULL, " Merci du compliment, je suppose !", Line_WaitForInput);
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200022", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200022", 256, TRUE);
 	OutputLine(NULL, "　本当に涼しいんだよ。」",
 		   NULL, " Ce sont des habits qui tiennent vraiment frais, tu sais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -138,7 +138,7 @@
 
 //「私もレナさんみたいな涼しい夏服がよかったですわねぇ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400003", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400003", 256, TRUE);
 	OutputLine(NULL, "「私もレナさんみたいな涼しい夏服がよかったですわねぇ。」",
 		   NULL, "— Aah, j'aurais dû mettre le même genre de choses ce matin...", Line_Normal);
 	ClearMessage();
@@ -147,7 +147,7 @@
 
 //「でも沙都子ちゃんの夏服、ワンピースですっごい可愛いし＠　レナは沙都子ちゃんの夏服、着てみたいなー☆＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200023", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200023", 256, TRUE);
 	OutputLine(NULL, "「でも沙都子ちゃんの夏服、ワンピースですっごい可愛いし！",
 		   NULL, "— Oh, mais tes habits sont très mignons, Satoko !", Line_Continue);
 	Wait( 2900 );
@@ -161,7 +161,7 @@
 
 //「これ、結構蒸しますわよ＠　絶対にレナさんの方が涼しいですわぁ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400004", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400004", 256, TRUE);
 	OutputLine(NULL, "「これ、結構蒸しますわよ？",
 		   NULL, "— Ah, mais je vous préviens, on transpire beaucoup là-dessous !", Line_Continue);
 	Wait( 1375 );
@@ -175,7 +175,7 @@
 
 //「でもかぁいい服の方がきっと楽しいよ。......はぅ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200024", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200024", 256, TRUE);
 	OutputLine(NULL, "「でもかぁいい服の方がきっと楽しいよ。……はぅ！」",
 		   NULL, "— Mais je préférerais quand même être dans des habits tout mignons... Haaa...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -190,7 +190,7 @@
 
 //「そう言えば...、この学校って指定の制服とかないんだよな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100018", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100018", 256, TRUE);
 	OutputLine(NULL, "「そう言えば…、この学校って指定の制服とかないんだよな。」",
 		   NULL, "— Mais au fait, j'y pense ! Il n'y a pas d'uniforme, ici ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -201,13 +201,13 @@
 
 //「うん＠ないよ＠相応しい服であれば私服でも大丈夫なんだよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200025", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200025", 256, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "— Eh non.", Line_Continue);
 	Wait( 200 );
 	OutputLine(NULL, "ないよ。",
 		   NULL, " L'école n'en a pas.", Line_WaitForInput);
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200026", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200026", 256, TRUE);
 	OutputLine(NULL, "相応しい服であれば私服でも大丈夫なんだよ。」",
 		   NULL, " On peut porter ce que l'on veut, tant que c'est approprié.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -226,7 +226,7 @@
 
 //「...他の連中が着てる制服は何なんだよ＠みんなお揃いだよな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100019", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100019", 256, TRUE);
 	OutputLine(NULL, "「…他の連中が着てる制服は何なんだよ。",
 		   NULL, "— Et ceux-là, alors ?", Line_Continue);
 	Wait( 1600 );
@@ -240,7 +240,7 @@
 
 //「あれは町の学校の制服なんですのよ＠別に決まってるわけじゃないですけど、みんな着てますわね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400005", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400005", 256, TRUE);
 	OutputLine(NULL, "「あれは町の学校の制服なんですのよ。",
 		   NULL, "— C'est l'uniforme de l'école d'Okinomiya.", Line_Continue);
 	Wait( 1800 );
@@ -252,7 +252,7 @@
 
 //「そこへ行くと、俺らの仲間はみんないろいろな制服を着てるよな＠...わざわざどこかから取り寄せたのか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100020", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100020", 256, TRUE);
 	OutputLine(NULL, "「そこへ行くと、俺らの仲間はみんないろいろな制服を着てるよな。",
 		   NULL, "— Oui mais là-bas, j'ai déjà vu plusieurs modèles d'uniformes...", Line_Continue);
 	Wait( 3000 );
@@ -264,7 +264,7 @@
 
 //「えぇ。魅音さんが調達して下さいますの。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400006", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400006", 256, TRUE);
 	OutputLine(NULL, "「えぇ。魅音さんが調達して下さいますの。」",
 		   NULL, "— C'est Mion qui se débrouille pour les avoir.", Line_Normal);
 	ClearMessage();
@@ -273,7 +273,7 @@
 
 //「魅ぃちゃんの親類で、古着商をやってる人がいて、全国の学校の服を格安で仕入れてるんですって。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200027", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200027", 256, TRUE);
 	OutputLine(NULL, "「魅ぃちゃんの親類で、古着商をやってる人がいて、全国の学校の服を格安で仕入れてるんですって。」",
 		   NULL, "— L'un de ses oncles a un magasin de vêtements. Il se débrouille pour obtenir des tas d'uniformes, venant de tout le Japon.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -282,7 +282,7 @@
 
 //「んで、その親類に頼んで、いろいろ個性的な制服を取り寄せてもらってるわけか。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100021", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100021", 256, TRUE);
 	OutputLine(NULL, "「んで、その親類に頼んで、いろいろ個性的な制服を取り寄せてもらってるわけか。」",
 		   NULL, "— Je vois... et donc il a en stock un tas d'uniformes tous différents mais tous bien spéciaux...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -327,13 +327,13 @@
 
 //「...うん。それはレナも思うよ＠他にも体操服とかスクール水着のお古とかも扱ってるの＠...そういうののお古はちょっと嫌だよねぇ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200028", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200028", 256, TRUE);
 	OutputLine(NULL, "「…うん。それはレナも思うよ。",
 		   NULL, "— Oui, moi aussi je me suis posé la question.", Line_Continue);
 	Wait( 2650 );
 	OutputLine(NULL, "他にも体操服とかスクール水着のお古とかも扱ってるの。",
 		   NULL, " Il vend aussi des justaucorps de gym et des maillots de bain du cours de sport. Pourtant... ce n'est pas le genre d'habits qu'on prête, non ? Alors porter celui qu'un parfait inconnu a porté avant soi...", Line_WaitForInput);
-	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200029", 128, TRUE);
+	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200029", 256, TRUE);
 	OutputLine(NULL, "…そういうののお古はちょっと嫌だよねぇ。」",
 		   NULL, " Moi en tout cas, ça m'écœure un peu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -342,7 +342,7 @@
 
 //「あんまり儲かってなさそうな商売だ＠。......きっと少しでも儲けさせるために、魅音が一肌脱いでやってるんだろうな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100022", 128, TRUE);
+	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100022", 256, TRUE);
 	OutputLine(NULL, "「あんまり儲かってなさそうな商売だな",
 		   NULL, "— Je sais pas s'il fait un gros chiffre d'affaires avec ça...", Line_Continue);
 	Wait( 1800 );
@@ -356,7 +356,7 @@
 
 //「......でも、いつも魅音さんが自信満々に言いますのよ＠　今にきっと大ブレイクしてすごい商売になる！！って。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400007", 128, TRUE);
+	ModPlayVoiceLS(3, 4, "ps3/s20/04/440400007", 256, TRUE);
 	OutputLine(NULL, "「……でも、いつも魅音さんが自信満々に言いますのよ？",
 		   NULL, "— Mais vous savez, Mion en parle toujours avec fierté !", Line_Continue);
 	OutputLine(NULL, "　今にきっと大ブレイクしてすごい商売になる！！って。」",
