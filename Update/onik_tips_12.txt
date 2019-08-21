@@ -19,7 +19,7 @@
 //「興宮ＳＴより、３号どうぞ＠３号どうぞ。＠
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Commissariat d'Okinomiya</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(3, 0, "ps2/00/keijic44001", 256, TRUE);
+	ModPlayVoiceLS(3, 0, "ps2/00/keijic44001", 540, TRUE);
 	OutputLine(NULL, "「興宮ＳＴより、３号どうぞ。",
 		   NULL, "— Central d'Okinomiya, à vous, voiture n°3.", Line_Continue);
 	Wait( 900 );

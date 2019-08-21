@@ -3754,7 +3754,7 @@
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700145", 256, TRUE);
 	OutputLine(NULL, "最初の事件、ご存知ですよね？",
 		   NULL, " vous savez ce qu'il s'est passé pour le premier incident ?", Line_WaitForInput);
-	ModPlayVoiceLS(3, 11, "ps2/11/120700146", 256, TRUE);
+	ModPlayVoiceLS(3, 11, "ps2/11/120700146", 540, TRUE);
 	OutputLine(NULL, "　バラバラ殺人。」",
 		   NULL, " Le meurtre avec démembrement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
