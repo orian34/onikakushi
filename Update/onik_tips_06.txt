@@ -39,7 +39,7 @@
 		   NULL, "LYNCHÉ ET DÉPECÉ !", Line_Normal);
 	ClearMessage();
 	SetStyleOfMessageSwinging( 0 );
-	PlayBGM( 1, "msys07", 128, 0 );
+	PlayBGM( 1, "msys07", 56, 0 );
 
 //　Ｘ月Ｘ日、ＸＸ県鹿骨市の雛見沢ダム建設作業現場で起こった血も凍るバラバラ殺人＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -161,7 +161,7 @@
 		   NULL, " Notre source déclare, d'un ton lourd et grave :", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_027", 128, 64 );
+	PlaySE( 4, "wa_027", 56, 64 );
 
 //「ＸＸは、ひとりひとりに自らの手で遺体を切断するよう命じたのです＠彼らは始めは渋りましたが、結局誰も逆らえませんでした。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -267,7 +267,7 @@
 	OutputLine(NULL, "「もちろんそれも疑っています。",
 		   NULL, "— Oui, c'est une possibilité.", Line_WaitForInput);
 	OutputLine(NULL, "…車はないはずなので、逃げられる範囲にも限度があると思うのですが…。",
-		   NULL, " Mais il faut admettre que sans voiture, son champ d'action et ses possibilités de fuite sont très restreints.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais il faut admettre que sans voiture, son champ d'action et ses possibilités de fuite sont très restreints. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "署内では、死体を捨てる時に誤って自分も沼に溺れてしまったのではないかと囁かれています…。」",
 		   NULL, "Certains au commissariat pensent qu'en voulant se débarrasser du corps, il serait lui-même tombé dans le marais, où il serait mort noyé.", Line_Normal);
@@ -291,8 +291,8 @@
 		   NULL, " Ne serait-il pas tout simplement rentré chez lui, au pays des démons ? ", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 4, "wa_029", 128, 64 );
-	PlayBGM( 1, "msys03", 128, 0 );
+	PlaySE( 4, "wa_029", 56, 64 );
+	PlayBGM( 1, "msys03", 56, 0 );
 
 //　超運と勝利を招く紫金龍＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
