@@ -98,11 +98,11 @@ void dialog003()
 	OutputLine(NULL, "　レナんちに墜落したのはなんと……",
 		   NULL, " Chez Rena, tu devineras jamais ce qui est tombé !", Line_Continue);
 
-	PlaySE( 4, "wa_008", 128, 64 );
+	PlaySE( 4, "wa_008", 56, 64 );
 	Wait( 200 );
-	PlaySE( 4, "wa_008", 128, 64 );
+	PlaySE( 4, "wa_008", 56, 64 );
 	Wait( 200 );
-	PlaySE( 4, "wa_008", 128, 64 );
+	PlaySE( 4, "wa_008", 56, 64 );
 	Wait( 200 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -111,7 +111,7 @@ void dialog003()
 	OutputLine(NULL, "小惑星だッ！！」",
 		   NULL, " Une météorite ", Line_Continue);
 
-	PlaySE( 4, "wa_007", 128, 64 );
+	PlaySE( 4, "wa_007", 56, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -136,13 +136,13 @@ void dialog003()
 		   NULL, " J'avoue que, même moi, je ne l'ai pas vu venir.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05910", 256, TRUE);
 	OutputLine(NULL, "　しかも、続いて今度は百個も！！",
-		   NULL, " Mais c'est pas le pire, ils prévoient d'en tirer une centaine !", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais c'est pas le pire, ils prévoient d'en tirer une centaine ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05920", 256, TRUE);
 	OutputLine(NULL, "　地球軍の完全な誤算だッ！！」",
 		   NULL, "La Fédération Terrestre n'est absolument pas prête !", Line_Continue);
 
-	PlaySE( 4, "wa_007", 128, 64 );
+	PlaySE( 4, "wa_007", 56, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
@@ -174,7 +174,7 @@ void dialog003()
 		   NULL, "— Si ca continue comme ça, la Terre est finie !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05970", 256, TRUE);
 	OutputLine(NULL, "　しかし！レナなら、レナの放つ音速の「マッハレナパンチ」なら小惑星を全て迎撃することが出来る！！",
-		   NULL, " Mais pas de panique  Si on a Rena et son coup poing ultra-sonique à nos cotés, le  Mach-Rena-Punch, on sera en mesure d'intercepter les météorites !", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais pas de panique ! Si on a Rena et son coup poing ultra-sonique à nos cotés, le Mach-Rena-Punch, on sera en mesure d'intercepter les météorites ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05980", 256, TRUE);
 	OutputLine(NULL, "　そう、地球軍のトップエース、それが竜宮レナなのだぁッ！！」",
