@@ -14,7 +14,7 @@
 	FadeOutBGM( 2, 1000, TRUE );
 
 	DisableWindow();
-	PlayBGM( 2, "lsys12", 128, 0 );
+	PlayBGM( 2, "lsys12", 56, 0 );
 	DrawScene("background/ke_ky2", 3000 );
 
 //　喫煙スペースには紫煙が立ち込めていた￥
@@ -191,7 +191,7 @@
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlaySE( 4, "wa_020", 128, 64 );
+	PlaySE( 4, "wa_020", 56, 64 );
 	DrawSceneWithMask("background/ke_s2", "left", 0, 0, 200 );
 
 //　大石の向かいの席の男が受話器を振っている＠
@@ -224,14 +224,14 @@
 		   NULL, " Désolé de vous avoir fait attendre, Ôishi à l'appareil.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700523", 256, TRUE);
 	OutputLine(NULL, "もしもし？」",
-		   NULL, " — Allô ?", Line_Normal);
+		   NULL, " Allô ?", Line_Normal);
 	ClearMessage();
 
 //「お、大石さんですか？＠　もしもし？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100808", 256, TRUE);
 	OutputLine(NULL, "「お、大石さんですか？！",
-		   NULL, "— Ah, — M. Ôishi ? C'est vous ?", Line_WaitForInput);
+		   NULL, "— Ah, M. Ôishi ? C'est vous ?", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100809", 256, TRUE);
 	OutputLine(NULL, "　もしもし？！」",
 		   NULL, " Allô ? Allô ??", GetGlobalFlag(GLinemodeSp));
@@ -257,7 +257,7 @@
 		   NULL, "D'après sa voix, il a dû se passer quelque chose.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 2, "lsys15", 128, 0 );
+	PlayBGM( 2, "lsys15", 56, 0 );
 
 //　…前原くんからこちらに電話をかけてくるのは始めて＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -382,7 +382,7 @@
 		   NULL, "Je sentais de la peur et de la résignation dans sa voix.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlaySE( 4, "wa_023", 128, 64 );
+	PlaySE( 4, "wa_023", 56, 64 );
 
 //　……まさか、電話をかけながら、すでに何者かに囲まれている？！ !w3000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -716,7 +716,7 @@
 
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	PlayBGM( 1, "msys08", 128, 0 );
+	PlayBGM( 1, "msys08", 56, 0 );
 
 //　……脳裏に最悪の予感が過ぎる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -728,7 +728,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700549", 256, TRUE);
 	OutputLine(NULL, "「前原さん！！",
-		   NULL, "M. Maebara,", Line_WaitForInput);
+		   NULL, "— M. Maebara,", Line_WaitForInput);
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700550", 256, TRUE);
 	OutputLine(NULL, "　犯人は誰です？！",
 		   NULL, " qui est l'assassin ?", Line_WaitForInput);
@@ -1084,7 +1084,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700566", 256, TRUE);
 	OutputLine(NULL, "「もしもし！",
-		   NULL, "Allô ?", Line_WaitForInput);
+		   NULL, "— Allô ?", Line_WaitForInput);
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700567", 256, TRUE);
 	OutputLine(NULL, "　もしもし？！",
 		   NULL, " ALLÔ !", Line_WaitForInput);
@@ -1216,17 +1216,9 @@
 
 //　唐突に切られたから＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　唐突に切られたから。",
-		   NULL, "La fin abrupte de notre conversation déclencha quelque chose en moi, et je compris enfin ce qu'il avait dit.", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　唐突に切られたから。　…むしろ最後の一言は鮮明に脳裏に戻った。",
+		   NULL, "La fin abrupte de notre conversation déclencha quelque chose en moi, et je compris enfin ce qu'il avait dit.", Line_Normal);
 	ClearMessage();
-
-
-
-//　…むしろ最後の一言は鮮明に脳裏に戻った￥
-//	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-//	OutputLine(NULL, "　…むしろ最後の一言は鮮明に脳裏に戻った。",
-//		   NULL, "A REMOVE", Line_Normal);
-//	ClearMessage();
 
 	DrawScene("background/ke_s2", 1000 );
 	ModDrawCharacter(3, 19, "sprite/normal/kuma_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1255,7 +1247,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 19, "ps3/s01/19/123100013", 256, TRUE);
 	OutputLine(NULL, "「大石さん……？？」",
-		   NULL, "M. Ôishi ?", Line_Normal);
+		   NULL, "— M. Ôishi ?", Line_Normal);
 	ClearMessage();
 
 //　前原くんはずっと繰り返してたんだ＠
@@ -1287,7 +1279,7 @@
 		   NULL, "Je sus que nous n'avions plus besoin de nous dépêcher.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys11", 128, 0 );
+	PlayBGM( 1, "msys11", 56, 0 );
 
 //　……その時、開け放たれた窓の向こうから…ひぐらしの声が聞こえてきた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1352,14 +1344,14 @@
 	DrawScene("black", 3000 );
 
 
-	PlayBGM( 1, "msys12", 128, 0 );
+	PlayBGM( 1, "msys12", 56, 0 );
 // !s100
 //locate 7,4
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
 	SetStyleOfMessageSwinging( 1 );
 	SetValidityOfTextFade( FALSE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //昭和５８年６月。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "昭和５８年６月。",
@@ -1370,7 +1362,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	SetStyleOfMessageSwinging( 0 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　某県鹿骨市の寒村、雛見沢で女子生徒殺人事件が起こった。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1382,7 +1374,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　容疑者は、前原圭一（１Ｘ歳）/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1394,7 +1386,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/ma3", "left", 0, 0, 1300 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　容疑者は自宅にクラスメートの女子２名/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1405,7 +1397,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //（竜宮礼奈・園崎魅音）を呼び寄せ、金属バットで撲殺。
 	OutputLine(NULL, "（竜宮礼奈・園崎魅音）を呼び寄せ、金属バットで撲殺。",
@@ -1421,7 +1413,7 @@
 //locate 0,2
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 2 ); }
 	SetStyleOfMessageSwinging( 0 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　犯行現場は自宅２階の容疑者の自室だった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1432,7 +1424,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　室内は凄まじい返り血に彩られ、被害者ともみ合った形跡が認められた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1443,7 +1435,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　また、犯行現場とは別に、玄関、居間、台所でも荒らされた形跡が認められた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1460,7 +1452,7 @@
 	DisableWindow();
 	DrawSceneWithMask("background/ma_g3_01", "left", 0, 0, 1300 );
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　玄関では、靴箱と壁に激しい打撲の痕跡。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　玄関では、靴箱と壁に激しい打撲の痕跡。",
@@ -1471,7 +1463,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　凶器のバットによるものと断定。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1483,7 +1475,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　痕跡に血液反応が出なかったことから、犯行以前に破壊したものと推定。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1495,7 +1487,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　被害者の逃走を阻止するため、容疑者が威圧行為を行なった可能性がある。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1508,7 +1500,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask("background/ma_d1", "right", 0, 0, 1300 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //locate 0,2
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 2 ); }
@@ -1522,7 +1514,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　これは被害者ともみ合った際のものとは考え難く、その真意は不明。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1535,7 +1527,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/ma_s1", "right", 0, 0, 1300 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //locate 0,2
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 2 ); }
@@ -1549,7 +1541,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　ゴミは周囲に飛散し、容疑者のものと思われる手形も発見された。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1560,7 +1552,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　容疑者は何らかの理由でゴミを出し、それを掌で叩いたものと考えられる。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1571,7 +1563,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　その真意は不明。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1586,17 +1578,17 @@
 //locate 0,4
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　また、冷蔵庫に貼り付けられていたメモには「針がなかった？」と記されていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、冷蔵庫に貼り付けられていたメモには「針がなかった？」と記されていた。",
-		   NULL, "De plus, il y avait un sticker aimanté sur la porte du réfrigérateur portant la mention Il n'y avait pas une aiguille ?", Line_ContinueAfterTyping);
+		   NULL, "De plus, il y avait un sticker aimanté sur la porte du réfrigérateur portant la mention “Il n'y avait pas une aiguille ?”", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　意味不明。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1606,7 +1598,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　念のためゴミを探すが、針は発見できなかった。
 	OutputLine(NULL, "　念のためゴミを探すが、針は発見できなかった。",
@@ -1621,7 +1613,7 @@
 //locate 0,3
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 3 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　荒らされてはいなかったが、引越し以来、開放したままになっているガレージのシャッターが閉じられていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　荒らされてはいなかったが、引越し以来、開放したままになっているガレージのシャッターが閉じられていた。",
@@ -1632,7 +1624,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　シャッターからは容疑者の指紋を検出。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1643,7 +1635,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　その真意は不明。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1656,7 +1648,7 @@
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　容疑者は犯行現場から逃走したが、/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1666,7 +1658,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //警邏中の警察官（雛見沢駐在所）が電話ボックス内で倒れているのを発見する。/
 	OutputLine(NULL, "警邏中の警察官（雛見沢駐在所）が電話ボックス内で倒れているのを発見する。",
@@ -1679,7 +1671,7 @@
 //locate 0,5
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 5 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　発見時、容疑者は意識不明の重体。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　発見時、容疑者は意識不明の重体。",
@@ -1689,7 +1681,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　直ちに村内の診療所に搬送し手当てをしたが、意識は戻らず２４時間後に死亡した。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1706,7 +1698,7 @@
 //locate 0,4
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　検死の結果、直接の死因は出血性ショック死。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　検死の結果、直接の死因は出血性ショック死。",
@@ -1716,7 +1708,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　自らの爪で喉を引き裂き、その結果の出血で死に至ったと断定した。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1731,7 +1723,7 @@
 //locate 0,3
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 3 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　先週に発生した富竹氏事件の異常な死に方との酷似に、警察は関連性があるものとして捜査を開始する。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　先週に発生した富竹氏事件の異常な死に方との酷似に、警察は関連性があるものとして捜査を開始する。",
@@ -1741,7 +1733,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //（ただし、地元からの強い要望により非公開捜査）
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1752,7 +1744,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　異常な死に方に何らかの薬物の使用を疑うが、富竹氏事件と同様に一切検出されない。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1766,7 +1758,7 @@
 //locate 0,5
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 5 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　当初はあまりの不可解さに、衝動的な突発的犯行と断定していた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　当初はあまりの不可解さに、衝動的な突発的犯行と断定していた。",
@@ -1776,7 +1768,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　だが、容疑者の犯行直前までの奇行が次々と露呈するに従い、その方針は変更されることとなる。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1790,7 +1782,7 @@
 //locate 0,2
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 2 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　親しかったグループとの離縁。孤立。意味不明の言動。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　親しかったグループとの離縁。孤立。意味不明の言動。",
@@ -1800,7 +1792,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　犯行の数日前からは金属バットを持ち歩くようになっていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1811,7 +1803,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　攻撃的な言動、独り言は学校でもしばしば見られ、クラスメートが実際にその一部を聞いている。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1825,7 +1817,7 @@
 //locate 0,3
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 3 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　犯行の前々日には、両親に自らの死をほのめかす発言もしていた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　犯行の前々日には、両親に自らの死をほのめかす発言もしていた。",
@@ -1835,7 +1827,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　警察は、これらの状況から、この事件が突発的なものでなく、数日前から予定された計画的犯行の可能性があるとして捜査を開始する。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1848,7 +1840,7 @@
 	DisableWindow();
 	DrawScene("background/tegami1", 1000 );
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //locate 0,4
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
 
@@ -1859,7 +1851,7 @@
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　容疑者の自室から直筆のメモが発見された。
 	OutputLine(NULL, "　容疑者の自室から直筆のメモが発見された。",
@@ -1869,7 +1861,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　メモはＢ５の大学ノートを半分に裂いたもの２枚で構成され、 !s200まるで隠蔽するかのように、 !s100壁時計の裏に貼られ、隠されていた。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1881,7 +1873,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "まるで隠蔽するかのように、",
@@ -1892,7 +1884,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 	OutputLine(NULL, "壁時計の裏に貼られ、隠されていた。",
 		   NULL, " la lettre était placée très soigneusement derrière son horloge murale.", Line_ContinueAfterTyping);
@@ -1900,7 +1892,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　内容は別添の通り。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1913,7 +1905,7 @@
 	DisableWindow();
 	DrawScene("background/sora5", 1000 );
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　警察は事件と密接に関係するものとして重視。
@@ -1925,7 +1917,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　容疑者が、何らかの事件に巻き込まれていた可能性があるとして再び捜査方針を転換した。
@@ -1937,7 +1929,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　だが、その後なんの手がかりも掴めず、メモそのものの信憑性も疑われるようになる。
@@ -1949,7 +1941,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　この事件は突発的なものなのか、計画的なものなのか。
@@ -1960,7 +1952,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　真相もわからず進展もなく、事件は文字通り迷宮入りの様相となった。/
 	OutputLine(NULL, "　真相もわからず進展もなく、事件は文字通り迷宮入りの様相となった。",
@@ -1970,10 +1962,10 @@
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	PlayBGM( 1, "msys11", 128, 0 );
+	PlayBGM( 1, "msys11", 56, 0 );
 	DrawScene("black", 1000 );
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //locate 0,5
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 5 ); }
 
@@ -1984,7 +1976,7 @@
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　そのメモにひとつの不審が浮上した。/
 	OutputLine(NULL, "　そのメモにひとつの不審が浮上した。",
@@ -1994,7 +1986,7 @@
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //locate 0,2
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 2 ); }
 
@@ -2006,28 +1998,28 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　元はＢ５の１ページに書かれたものを…何者かが、
 	OutputLine(NULL, "　元はＢ５の１ページに書かれたものを…何者かが、",
-		   NULL, "mais d'une seule et même feuille, ", Line_ContinueAfterTyping);
+		   NULL, " mais d'une seule et même feuille, ", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　"真ん中の数行を削除するために"/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　“真ん中の数行を削除するために”",
-		   NULL, "dont quelqu'un aurait... ", Line_ContinueAfterTyping);
+		   NULL, "dont quelqu'un aurait...", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //破り捨てたのではないか…というのだ。/
 	OutputLine(NULL, "破り捨てたのではないか…というのだ。",
@@ -2036,7 +2028,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //locate 0,2
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 2 ); }
 
@@ -2049,7 +2041,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　削除した人物は容疑者以外である可能性が高い。/
@@ -2061,7 +2053,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　また、時計裏に付着していた大量のセロテープ跡から、/
@@ -2072,7 +2064,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //"メモ以外にも何かが貼り付けられていたのではないか"との憶測も出た。
 	OutputLine(NULL, "“メモ以外にも何かが貼り付けられていたのではないか”との憶測も出た。",
@@ -2085,7 +2077,7 @@
 //locate 0,4
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　第一発見者は、かねてから事件との関係を噂される疑惑の刑事。大石蔵人。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　第一発見者は、かねてから事件との関係を噂される疑惑の刑事。大石蔵人。",
@@ -2095,7 +2087,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　任意で事情聴取をしたが、メモの破損については否定する………。/
@@ -2111,9 +2103,9 @@
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 10, TRUE );
 
-	PlayBGM( 0, "lsys15", 128, 0 );
+	PlayBGM( 0, "lsys15", 56, 0 );
 //dwaveplayloop 9
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //locate 4,6
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
 	SetStyleOfMessageSwinging( 1 );
@@ -2125,7 +2117,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　私、前原圭一は命を狙われています
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2136,7 +2128,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　なぜ、誰に、命を狙われているのかはわかりません。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2147,7 +2139,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　ただひとつ判る事は、オヤシロさまの祟りと関係があるということです。
@@ -2159,7 +2151,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　レナと魅音は犯人の一味。/
@@ -2169,7 +2161,7 @@
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //他にも大人が４～５人以上。/
 	OutputLine(NULL, "他にも大人が４〜５人以上。",
@@ -2177,7 +2169,7 @@
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //白いワゴン車を所有。
 	OutputLine(NULL, "白いワゴン車を所有。",
@@ -2187,7 +2179,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //（ここまでが１枚目。ここから下は真横に破られている。）
@@ -2204,7 +2196,7 @@
 //locate 0,2
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 2 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //（ここからが２枚目。ここから上が真横に破られている。）
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "（ここからが２枚目。ここから上が真横に破られている。）",
@@ -2214,7 +2206,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　どうしてこんなことになったのか、私にはわかりません。
@@ -2226,7 +2218,7 @@
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 
 //　これをあなたが読んだなら、その時、私は死んでいるでしょう。/
@@ -2237,7 +2229,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　…死体があるか、ないかの違いはあるでしょうが。
 	OutputLine(NULL, "…死体があるか、ないかの違いはあるでしょうが。",
@@ -2250,7 +2242,7 @@
 //locate 0,6
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 //　これを読んだあなた。どうか真相を暴いてください。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "これを読んだあなた。どうか真相を暴いてください。",
@@ -2259,7 +2251,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //それだけが私の望みです。
 	OutputLine(NULL, "それだけが私の望みです。",
@@ -2271,7 +2263,7 @@
 //locate 15,12
 //	SetDrawingPointOfMessage( 0, 12 );
 //	SetStyleOfMessageSwinging( 2 );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
 
 //　前原圭一/
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n\n\n\n", Line_ContinueAfterTyping); }
@@ -2293,7 +2285,7 @@
 
 	DisableWindow();
 	DrawScene("white", 100 );
-	PlaySE( 4, "wa_036", 128, 64 );
+	PlaySE( 4, "wa_036", 56, 64 );
 	DrawScene("end_1", 100 );
 //	DrawScene( "end_2", 200 );
 	DrawScene("end_3", 4000 );
@@ -2329,15 +2321,15 @@
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 
 //	DrawSceneWithMask( "s_jump_back", "4", 0, 0, 1000 );
-	PlaySE( 4, "wa_041", 128, 64 );
+	PlaySE( 4, "wa_041", 56, 64 );
 	DrawSceneWithMask("ex_otsu", "5", 0, 0, 1000 );
 	Wait( 10000 );
 //	DrawSceneWithMask( "s_jump_back", "4", 0, 0, 1000 );
-//	PlaySE( 4, "wa_041", 128, 64 );
+//	PlaySE( 4, "wa_041", 56, 64 );
 //	DrawSceneWithMask( "ex_Tips", "5", 0, 0, 1000 );
 //	Wait( 10000 );
 //	DrawSceneWithMask( "s_jump_back", "4", 0, 0, 1000 );
-//	PlaySE( 4, "wa_041", 128, 64 );
+//	PlaySE( 4, "wa_041", 56, 64 );
 //	DrawSceneWithMask( "ex_jump", "5", 0, 0, 1000 );
 //	Wait( 10000 );
 
