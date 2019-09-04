@@ -295,7 +295,7 @@
 
 	PlayBGM( 1, "msys12", 56, 0 );
 //「みなさん、おはようございます＠昨日はお祭りでしたね＠最後まで後片付けに参加した人たちは本当にお疲れ様でした。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400001", 256, TRUE);
 	OutputLine(NULL, "「みなさん、おはようございます。",
 		   NULL, "— Bonjour à tous.", Line_WaitForInput);
@@ -325,7 +325,7 @@
 
 
 //「さて、この時期にはお祭りの取材で遠くから雑誌なんかの取材の方が見えたりします。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400004", 256, TRUE);
 	OutputLine(NULL, "「さて、この時期にはお祭りの取材で遠くから雑誌なんかの取材の方が見えたりします。」",
 		   NULL, "— Bien. Comme chaque année, des journalistes viendront de loin pour faire un reportage sur la fête du village. Certains sont déjà arrivés, d'ailleurs.", GetGlobalFlag(GLinemodeSp));
@@ -346,7 +346,7 @@
 
 
 //「皆さんが取材を受けることがあるかもしれませんが、曖昧なことやいい加減なことは言わないように＠……いいですね？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400005", 256, TRUE);
 	OutputLine(NULL, "「皆さんが取材を受けることがあるかもしれませんが、曖昧なことやいい加減なことは言わないように。",
 		   NULL, "— Il se peut que les journalistes vous posent des questions, alors faites bien attention à bien répondre et à ne pas inventer d'histoires...", Line_WaitForInput);
@@ -1711,7 +1711,7 @@
 
 	PlayBGM( 1, "msys12", 56, 0 );
 //「前原くーん＠ちょっといいですか？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400007", 256, TRUE);
 	OutputLine(NULL, "「前原くーん。",
 		   NULL, "— Ah, tiens, Maebara ?", Line_WaitForInput);
@@ -1741,7 +1741,7 @@
 
 
 //「前原くんにお客さんがいらしてますよ＠昇降口へ行って下さい。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400009", 256, TRUE);
 	OutputLine(NULL, "「前原くんにお客さんがいらしてますよ。",
 		   NULL, "— Il y a quelqu'un dans l'entrée qui veut te voir.", Line_WaitForInput);
@@ -1765,7 +1765,7 @@
 
 
 //「待たせていますよ。早く行ってきなさい。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400011", 256, TRUE);
 	OutputLine(NULL, "「待たせていますよ。早く行ってきなさい。」",
 		   NULL, "— Il t'attend. Allez, dépêche-toi.", Line_Normal);

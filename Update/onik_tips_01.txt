@@ -587,7 +587,7 @@
 	DrawSceneWithMask("background/gk3", "right", 0, 0, 300 );
 
 //「こら＠　そこ、うるさいですよ＠　自習は静かに！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s20/22/441400001", 256, TRUE);
 	OutputLine(NULL, "「こら！",
 		   NULL, "— Bon hé !", Line_Continue);

@@ -1025,7 +1025,7 @@
 
 
 //「こら＠　前原くん、下級生をいじめてはいけません＠　謝りなさい！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400012", 256, TRUE);
 	OutputLine(NULL, "「こら！",
 		   NULL, "— Eh bien alors,", Line_WaitForInput);
@@ -1052,7 +1052,7 @@
 	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
 
 //「ほら！　前原くん？！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 22, "ps3/s01/22/121400015", 256, TRUE);
 	OutputLine(NULL, "「ほら！　前原くん？！」",
 		   NULL, "— Eh bien ? J'attends toujours, Maebara !", GetGlobalFlag(GLinemodeSp));
