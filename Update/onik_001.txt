@@ -502,7 +502,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…だろ？」",
-		   NULL, " — — — Hein ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -546,7 +546,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200007", 256, TRUE);
 	OutputLine(NULL, "「…わ、…あ、ありがと…。」",
-		   NULL, "— — Oh... je... merci...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Oh... je... merci...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1221,7 +1221,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300024", 256, TRUE);
 	OutputLine(NULL, "「へぇ…いいよ！",
-		   NULL, "— Ah ouais ? — OK ! Enfin bon, si t'y tiens, hein.", Line_WaitForInput);
+		   NULL, "— Ah ouais ? OK ! Enfin bon, si t'y tiens, hein.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300025", 256, TRUE);
 	OutputLine(NULL, "　圭ちゃんさえ良ければね。でもウチらのレベルは高いよぅ？」",
 		   NULL, " Je te préviens, on est toutes assez balèzes !", GetGlobalFlag(GLinemodeSp));
