@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //■ダム推進派の夫婦の転落事故

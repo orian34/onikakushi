@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //■古手神社の神主の病死
