@@ -1,0 +1,103 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+# For more info on Actions used, see:
+# https://github.com/actions/create-release
+# https://github.com/actions/upload-release-asset
+
+name: Deploy
+
+# Run this workflow when any tag is pushed
+# Can set custom wildcards instead of '*', like 'v*' for tags starting with v
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+
+    # Download the repository
+    - uses: actions/checkout@v2
+
+    # Setup Python
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    # Install Dependencies (no dependencies require at the moment)
+#    - name: Install dependencies
+#      run: |
+#        sudo apt-get install -y p7zip-full #p7zip is already installed!
+#        python -m pip install --upgrade pip
+#        pip install -r requirements.txt
+
+    # Run Python Deploy Script
+    - name: Run Deploy Script
+      run: |
+        python deploy.py
+
+    # Create the release
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Onikakushi Patch Traduction Française ${{ github.ref }}
+        body: |
+          Cette version du patch est mise à jour pour être compatible avec les récents changements dans la branche anglaise.
+
+          Bonjour à tous !
+          Aujourd’hui, nous vous proposons la suite du patch qui combine le meilleur de la sphère anglophone et
+          francophone d’Higurashi.
+          A savoir, le [très bon patch de 07th-mod](http://07th-mod.com/home/) qui permet (entre autres) d’ajouter les voix des comédiens, les sprites PS3, etc…
+          Ainsi que [l’excellente traduction française de Pierre Bancov](http://www.hinamizawa.fr/main.htm) qui a traduit et édité Higurashi en France sous le titre « Le Sanglot des cigales ».
+          Si jamais vous ne possédez pas encore le jeu sur Steam, ou que vous souhaitez supporter Pierre, alors allez plutôt [acheter la version dématérialisée française](https://store.cubsworks.com/products/le-sanglot-des-cigales-windowsxp-7) directement. Rien ne vous empêche de [prendre les deux](https://www.hinamizawa.fr/trouver.htm) si vous le pouvez.
+
+          ## INSTRUCTIONS :
+          Installer, si ce n’est pas déjà fait, le patch de 07th-mod en suivant les instructions rédigées ici :
+          http://07th-mod.com/wiki/Higurashi/Higurashi-Part-1---Voice-and-Graphics-Patch/
+          Une fois ce dernier installé et fonctionnel :
+
+          ### Télécharger le patch FR ici :
+          1 - Dézipper l’archive
+          2 - Déposer le dossier contenu dans l’archive à la racine de votre jeu (là où se trouve votre .exe).
+          3 - Remplacer les fichiers si demandés.
+          4 - Par défaut, le fichier sharedassets0.assets correspond à la version Steam de Windows.
+          Si jamais votre système d’exploitation et/ou version du jeu diffère de cette dernière, vous pouvez
+          renommer le fichier qui correspond à votre situation en « sharedassets0 ».
+          Une fois que vous vous êtes assuré du bon fonctionnement du patch, vous pouvez éventuellement
+          supprimer les fichiers sharedassets0.assets qui ne correspondent pas à votre version.
+
+          ## AVERTISSEMENTS :
+          Vous avez en face de vous un patch amateur. N’hésitez pas à rapporter les bugs que vous
+          rencontrerez. De plus, si vous êtes un peu dév’ sur les bords, les commits sont appréciés.
+          Garder en tête que si la traduction est à 99.9% l’œuvre d’un professionnel (Pierre Bancov), il reste
+          malgré tout une infime partie du script qui n’était pas présente dans la version originale éditée par ce
+          dernier (dialogues censurés principalement).
+
+          ## REMERCIEMENTS :
+        draft: true
+        prerelease: false
+
+    # Upload the release
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: ./07th-mod-french-patch-staging/built_release.7z
+        asset_name: Onikakushi.Patch.FR.${{ github.ref }}.7z
+        asset_content_type: application/x-7z-compressed
