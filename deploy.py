@@ -92,11 +92,16 @@ def archive(input_path, output_filename):
 
 
 def hash_file(file_path: str):
+	BLOCKSIZE = 65536
+	file_hash = hashlib.blake2b()
+
 	with open(file_path, "rb") as f:
-		file_hash = hashlib.blake2b()
-		while chunk := f.read(65536):
+		chunk = f.read(BLOCKSIZE)
+		while len(chunk) > 0:
 			file_hash.update(chunk)
-		return file_hash.digest(), file_hash.hexdigest()
+			chunk = f.read(BLOCKSIZE)
+
+	return file_hash.digest(), file_hash.hexdigest()
 
 
 def get_unity_version_from_file(filepath):
