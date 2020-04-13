@@ -19,6 +19,30 @@ This repository is in constant change. Sometimes new releases might get on hold 
 
 Usually, older contributors are welcome to join the repository and push their own changes without supervision. However, you can also aid the development just by forking the repository and working on your own changes. After you are done, commit the changes, make a pull request and if it's good enough, the changes will be merged. Both approaches are more than welcome!
 
+## Publishing new releases
+
+Github Actions is setup to automatically build and publish every tagged commit. When you want to create a new release:
+
+- tag the latest commit (`git tag v1.2.3`)
+- push the tag to github (`git push --tags`)
+- wait for the build to finish
+- on github, check the 'Releases' tab for a new draft release
+- edit this draft as needed, then publish this draft
+
+(your git GUI can probably do this without entering any commands)
+
+## Updating the installer
+
+The `installData.json` file of the installer must be updated each time a new release is published to update the download links.
+
+To update the links
+
+- navigate inside the `update_installdata_urls` folder
+- run `update_installdata_urls.bat`. This will produce an updated `installData.json`
+- overwrite the `installData.json` in the [07th-mod/python-patcher repo](https://github.com/07th-mod/python-patcher)
+- double check the changes seem correct (should just update URLs in the .json file)
+- push the updated `installData.json` file to the python-patcher repo
+
 # Credits
 
 - @enumag - For coding the new automation script
