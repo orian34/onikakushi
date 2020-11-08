@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 
@@ -42,7 +42,7 @@
 	ClearMessage();
 
 //「左様です＠そのメカニズムは完全には解明されていませんが、精神を守るために脳が行なう防御行動のひとつではないかと考えられています。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Expert</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Expert</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/profa44002", 256, TRUE);
 	OutputLine(NULL, "「左様です。",
 		   NULL, "— Il semble que ce soit le cas, en effet.", Line_Continue);
@@ -125,7 +125,7 @@
 	ClearMessage();
 
 //「なれるといいますか...、なりやすいといいますか...＠最近の研究では、遺伝と心因が複雑に絡み合い...＠中でも幼少期の虐待が大きく作用するのではないかと言われています。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Expert</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Expert</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/profa44007", 256, TRUE);
 	OutputLine(NULL, "「なれるといいますか…、なりやすいといいますか…。",
 		   NULL, "— Ça ne s'attrape pas comme un vulgaire rhume, il y a des personnes... disons prédisposées.", Line_Continue);

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //■自殺を誘発するクスリは？
@@ -13,7 +13,8 @@
 	DisableWindow();
 	DrawScene("black", 1000 );
 	PlayBGM( 1, "msys12", 56, 0 );
-	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 11, "sprite/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/ke_ky1", 400 );
 
 
@@ -62,7 +63,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...難しい言い方になりましたねぇ＠何ですかその、自殺したくなる精神状態ってのは。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -94,9 +95,10 @@
 //　鬱病は鬱状態という非常にネガティブな精神状態のみを引き起こすが＠躁鬱病は、このネガティブな鬱状態と交互に、非常にアクティブな躁状態を引き起こす￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬱病は鬱状態という非常にネガティブな精神状態のみを引き起こすが、",
-		   NULL, "La dépression est provoquée par un état mental très négatif, le patient voit tout en noir, et cela entraîne un état très passif.", Line_WaitForInput);
+		   NULL, "La dépression est provoquée par un état mental très négatif, le patient voit tout en noir, et cela entraîne un état très passif.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "躁鬱病は、このネガティブな鬱状態と交互に、非常にアクティブな躁状態を引き起こす。",
-		   NULL, " Un maniaco-dépressif, par contre, alterne des périodes passives avec des périodes d'activités extrêmement intenses.", Line_Normal);
+		   NULL, "Un maniaco-dépressif, par contre, alterne des périodes passives avec des périodes d'activités extrêmement intenses.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/ke_ky1", 400 );
@@ -126,7 +128,7 @@
 
 
 //　極度の緊張が続いて、それに分泌異常が重なって、さらに打ち所が悪くて脳に障害が起こり自虐行動に走った...可能性もあるかもしれんの。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200039", 256, TRUE);
 	OutputLine(NULL, "　極度の緊張が続いて、それに分泌異常が重なって、さらに打ち所が悪くて脳に障害が起こり自虐行動に走った…可能性もあるかもしれんの。」",
 		   NULL, "Un taux de stress anormal qui s'ajouterait à des sécrétions endocrinales trop élevées, et il est fort possible qu'un choc violent à la tête ait occasionné une lésion cérébrale qui aurait entraîné une automutilation... C'est pas impossible.", Line_Normal);
@@ -154,10 +156,11 @@
 		   NULL, "— Ahahahahahahaha !", Line_Continue);
 	Wait ( 2000 );
 	OutputLine(NULL, "　じゃあホシには殺意はなかったってことですかねぇ。",
-		   NULL, " Mais alors, le meurtrier n'avait pas l'intention de tuer !", Line_WaitForInput);
+		   NULL, " Mais alors, le meurtrier n'avait pas l'intention de tuer !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700031", 256, TRUE);
 	OutputLine(NULL, "ちょいと小銭を巻き上げようと殴ったら、たまたま殴り所が悪かったと！」",
-		   NULL, " Il voulait seulement faire l'aumône en se servant dans le portefeuille, et, par un hasard extraordinaire, il a frappé au mauvais endroit !", Line_Normal);
+		   NULL, "Il voulait seulement faire l'aumône en se servant dans le portefeuille, et, par un hasard extraordinaire, il a frappé au mauvais endroit !", Line_Normal);
 	ClearMessage();
 
 //　でっぷりした中年が二人してげらげらと下品に笑い合う￥
@@ -186,7 +189,7 @@
 	ClearMessage();
 
 //「薬物の常用にせよ、精神的なものにせよ、仏の身元がカギを握っとるぞい＠そっちはどうなっとるんじゃ？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200042", 256, TRUE);
 	OutputLine(NULL, "「薬物の常用にせよ、精神的なものにせよ、仏の身元がカギを握っとるぞい。",
 		   NULL, "— De toutes manières, que le suicide soit dû à des drogues ou à une cause mentale, c'est la vie du macchabée qui nous en apprendra le plus sur ce qui peut s'être passé.", Line_Continue);

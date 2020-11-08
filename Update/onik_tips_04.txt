@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 
@@ -32,7 +32,7 @@
 
 
 //　建設作業員ＸＸＸＸ、ＸＸＸ、ＸＸＸＸ、ＸＸＸＸＸ、ＸＸＸＸを殺人、死体遺棄の容疑で逮捕し、逃走中の主犯格ＸＸＸＸを全国に指名手配した＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　建設作業員ＸＸＸＸ、ＸＸＸ、ＸＸＸＸ、ＸＸＸＸＸ、ＸＸＸＸを殺人、死体遺棄の容疑で逮捕し、逃走中の主犯格ＸＸＸＸを全国に指名手配した。",
 		   NULL, "Après avoir arrêté cinq ouvriers, soupçonnés de meurtre avec circonstances aggravantes, la police est maintenant à la recherche d'un sixième suspect, M. ****, qui a pris la fuite et qui est désigné comme le principal coupable dans cette affaire.", Line_Normal);
 	ClearMessage();
@@ -74,9 +74,10 @@
 //　他の容疑者も即日逮捕されたが、主犯格のＸＸＸＸは逃亡中＠警察は行方を追っている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　他の容疑者も即日逮捕されたが、主犯格のＸＸＸＸは逃亡中。",
-		   NULL, "Les autres suspects furent arrêtés le jour-même, à l'exception de ****, qui est désigné comme le principal responsable dans cette affaire. Il est toujours en fuite à l'heure où vous lisez ces lignes.", Line_WaitForInput);
+		   NULL, "Les autres suspects furent arrêtés le jour-même, à l'exception de ****, qui est désigné comme le principal responsable dans cette affaire. Il est toujours en fuite à l'heure où vous lisez ces lignes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "警察は行方を追っている。",
-		   NULL, " La police est à sa recherche.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La police est à sa recherche.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //■古手神社の神主の病死
@@ -47,7 +47,7 @@
 
 
 //　警察と青年団で捜索を続けているが、遺書で自殺をほのめかした鬼ヶ淵沼は地元では底なし沼として知られており難航している￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　警察と青年団で捜索を続けているが、遺書で自殺をほのめかした鬼ヶ淵沼は地元では底なし沼として知られており難航している。",
 		   NULL, "La police et les membres de l'amicale du village poursuivent les recherches, mais elles s'annoncent difficiles. La lettre d'adieu fait part de l'intention de la femme du prêtre de se noyer dans le marais d'Onigafuchi, réputé depuis des siècles pour être un marais sans fond.", Line_Normal);
 	ClearMessage();

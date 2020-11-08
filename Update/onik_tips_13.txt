@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 
@@ -40,7 +40,8 @@
 		   NULL, " Les empreintes correspondent.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 11, "sprite/normal/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 11, "sprite/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「えぇえぇ＠直接死因が自殺ってのはわかってますよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -64,7 +65,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「背中が痒くて掻きすぎて、血が出ちゃうのとはちょっと訳がちがいますからねぇ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -129,7 +130,7 @@
 
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「では乱闘になって、興奮のあまり自分の喉を引っ掻きだしたってことですか＠　襲った連中、さぞや度肝を抜かれたでしょうなぁ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -163,10 +164,11 @@
 	OutputLine(NULL, "「実はな、大石くん。",
 		   NULL, "— Écoute, Ôishi.", Line_Continue);
 	OutputLine(NULL, "仏が武器にしたらしい角材な。",
-		   NULL, " Tu te souviens de la branche en bois qu'on a trouvée près du macchabée ?", Line_WaitForInput);
+		   NULL, " Tu te souviens de la branche en bois qu'on a trouvée près du macchabée ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200007", 256, TRUE);
 	OutputLine(NULL, "砂粒とかガードレールの塗装片とかそんなのしか出んかったぞい。」",
-		   NULL, " On pensait qu'il s'en était servi comme d'une arme, mais l'analyse des traces relevées dessus ne montre que de la terre et de la peinture, celle de la glissière.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On pensait qu'il s'en était servi comme d'une arme, mais l'analyse des traces relevées dessus ne montre que de la terre et de la peinture, celle de la glissière.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -241,7 +243,8 @@
 	DisableWindow();
 	DrawBG("black", 1000, TRUE );
 	DrawFilm( 2, 119, 119, 119, 255, 0, 1000, TRUE );
-	ModDrawCharacter(2, 8, "sprite/normal/tomi1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 8, "sprite/tomi1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　...生前に何のスポーツを嗜んでいたか想像はつかないが、身体能力は高い方だと思う＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -410,10 +413,11 @@
 	OutputLine(NULL, "「こっちもそこは重視しとる。",
 		   NULL, "— Oui, moi aussi c'est ce qui m'intéresse le plus.", Line_Continue);
 	OutputLine(NULL, "徹底的に調べるつもりだが…あまり期待できんな。",
-		   NULL, " J'ai vraiment poussé les analyses à fond, mais... Je doute que ça nous fasse découvrir grand'chose.", Line_WaitForInput);
+		   NULL, " J'ai vraiment poussé les analyses à fond, mais... Je doute que ça nous fasse découvrir grand'chose.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200018", 256, TRUE);
 	OutputLine(NULL, "何しろ、過去にこんな例はないんだからな。」",
-		   NULL, " Ne t'attends pas à un miracle. C'est la première fois qu'une affaire pareille se présente.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ne t'attends pas à un miracle. C'est la première fois qu'une affaire pareille se présente.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

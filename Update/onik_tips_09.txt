@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //■ダム推進派の夫婦の転落事故
@@ -28,9 +28,10 @@
 //　県立白川自然公園内の展望台から２７ｍ下の渓流へ転落、行方不明になった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ＸＸ日午後２時頃、鹿骨市雛見沢村Ｘ丁目、会社員ＸＸＸさんと妻ＸＸＸＸさんが、",
-		   NULL, "Le ** vers 14 heures, M.**** et sa femme ****, domiciliés au *, quartier ** à Hinamizawa dans le district de Shishibone,", Line_WaitForInput);
+		   NULL, "Le ** vers 14 heures, M.**** et sa femme ****, domiciliés au *, quartier ** à Hinamizawa dans le district de Shishibone,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　県立白川自然公園内の展望台から２７ｍ下の渓流へ転落、行方不明になった。",
-		   NULL, " firent une chute de la terrasse d'observation panoramique du Parc Naturel de Shirakawa et tombèrent 27m en contrebas dans la rivière qui traverse la vallée.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "firent une chute de la terrasse d'observation panoramique du Parc Naturel de Shirakawa et tombèrent 27m en contrebas dans la rivière qui traverse la vallée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 
@@ -60,9 +60,10 @@
 	OutputLine(NULL, "郵便局一、",
 		   NULL, " un bureau de poste,", Line_WaitForInput);
 	OutputLine(NULL, "農協支所一、",
-		   NULL, " une exploitation agricole,", Line_WaitForInput);
+		   NULL, " une exploitation agricole,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "営林署貯木場一、",
-		   NULL, " une réserve de grumes,", Line_WaitForInput);
+		   NULL, "une réserve de grumes,", Line_WaitForInput);
 	OutputLine(NULL, "神社五、",
 		   NULL, " 5 sanctuaires shintoïstes,", Line_WaitForInput);
 	OutputLine(NULL, "寺院二、",

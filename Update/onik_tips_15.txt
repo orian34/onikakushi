@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //■本部長通達
@@ -102,7 +102,7 @@
 	SetStyleOfMessageSwinging( 0 );
 
 //　鹿骨市雛見沢村の近年の事件は、すでに一部マスコミでも報道されるように、/
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鹿骨市雛見沢村の近年の事件は、すでに一部マスコミでも報道されるように、",
 		   NULL, "Comme vous le savez, les événements qui se sont déroulés ces dernières années à Hinamizawa, dans le district de Shishibone, attisent la curiosité du public, comme le démontrent les articles déjà publiés par endroits dans la presse.", Line_ContinueAfterTyping);
 
