@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 
@@ -1320,7 +1320,7 @@ void main()
 	Wait( 400 );
 
 	OutputLine(NULL, "ってな。」",
-		   NULL, " s’il vous plaît.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " s'il vous plaît.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
