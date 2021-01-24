@@ -650,7 +650,7 @@ void main()
 	ModDrawCharacterWithFiltering(1, 5, "sprite/ri1_niko_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「…圭一もいますから、今年は五凶爆闘になりますです。」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 5, "ps3/s19/05/990500059", 256, TRUE);
 	OutputLine(NULL, "「…圭一もいますから、今年は五凶爆闘になりますです。」",
 		   NULL, "— Puisque Keiichi est maintenant l'un des nôtres, il nous faut passer à la bataille explosive sur cinq fronts.", Line_Normal);
@@ -2629,10 +2629,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400144", 256, TRUE);
 	OutputLine(NULL, "「圭一さん、何を期待してますの〜？！",
-		   NULL, "— Mon cher, il transpire que vous aviez bon espoir de vous délecter d'un spectacle tout autre... Me trompé-je ?", Line_WaitForInput);
+		   NULL, "— Mon cher, il transpire que vous aviez bon espoir de vous délecter d'un spectacle tout autre... Me trompé-je ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400145", 256, TRUE);
 	OutputLine(NULL, "　下に体操服着てなかったらさすがに脱げませんわぁ！」",
-		   NULL, " Mais rassurez-vous, nous n'aurions pu nous permettre ce gage si nous ne portions pas nos uniformes de sport en dessous !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais rassurez-vous, nous n'aurions pu nous permettre ce gage si nous ne portions pas nos uniformes de sport en dessous !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4348,7 +4349,7 @@ void main()
 
 
 //　……つまり、目の前に現われたものが何か理解できなければ、理解できるまでの一瞬は完全な空白時間となる…！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……つまり、目の前に現われたものが何か理解できなければ、理解できるまでの一瞬は完全な空白時間となる…！！！",
 		   NULL, "Ce qui veut dire, par déduction, que si votre cible ne comprend pas à qui ou à quoi elle a affaire, elle restera parfaitement immobile pendant que son cerveau essayera de trouver une explication à cette nouvelle situation !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

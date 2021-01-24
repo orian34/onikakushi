@@ -4121,7 +4121,7 @@ void main()
 
 
 //　...偏差値の上下に一喜一憂し、志望校が合格圏か安全圏かとか...そんな話しかしなかった＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…偏差値の上下に一喜一憂し、志望校が合格圏か安全圏かとか…そんな話しかしなかった。",
 		   NULL, "J'étais obnubilé par ma moyenne, et je ne parlais que de mes notes, je les comparais à celles qu'il me fallait obtenir pour accéder à l'école de mon choix, je regardais quelles étaient les écoles auxquelles j'aurais accès en cas de plantage aux examens, etc, etc, etc...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

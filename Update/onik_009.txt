@@ -2106,14 +2106,16 @@ void main()
 //　梨花ちゃんは額にこぶを作り、半分涙を溜めて……、袖からは指だけを覗かせて…。 !w1000（そしてここが肝心だッ！！）でも手の甲は袖に隠れて見えないようにし……ッ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんは額にこぶを作り、半分涙を溜めて……、袖からは指だけを覗かせて…。",
-		   NULL, "Rika s'était fait une bosse sur le front. Des larmes perlaient aux coins de ses yeux... Elle plaça ses mains près du visage, mais sans toucher les yeux. Elle fit en sorte de faire dépasser ses petits doigts", Line_ContinueAfterTyping);
+		   NULL, "Rika s'était fait une bosse sur le front. Des larmes perlaient aux coins de ses yeux... Elle plaça ses mains près du visage, mais sans toucher les yeux. Elle fit en sorte de faire dépasser ses petits doigts", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "（そしてここが肝心だッ！！）でも手の甲は袖に隠れて見えないようにし……ッ！！",
-		   NULL, " (et SEULEMENT ses doigts) des manches... et alors... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "(et SEULEMENT ses doigts) des manches... et alors... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -7012,14 +7014,14 @@ void main()
 
 
 //　雛見沢中の病魔を吸い取り、綿の花が次々と水面に咲き、そして流れに消えて行った￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢中の病魔を吸い取り、綿の花が次々と水面に咲き、そして流れに消えて行った。",
 		   NULL, "On aurait dit que le marais et la rivière étaient recouverts de nénuphars de coton. Gorgés des maux du village, ils dérivaient au fil de l'eau, emportant avec eux tous nos petits soucis, puis disparaissaient au loin, dans l'obscurité.", Line_Normal);
 	ClearMessage();
 
 
 //　テレビで見た灯篭流しのような華やかさはなかったが、雛見沢の住人として認めてもらえたような、通過儀礼的な心地よさがあった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　テレビで見た灯篭流しのような華やかさはなかったが、雛見沢の住人として認めてもらえたような、通過儀礼的な心地よさがあった。",
 		   NULL, "Ça n'était pas aussi beau que ce que l'on voit dans les reportages sur la cérémonie des lanternes, mais peu importait. Après avoir accompli ce rituel, je me sentais vraiment être un habitant du village à part entière, et je trouvais cette sentation très agréable.", Line_Normal);
 	ClearMessage();

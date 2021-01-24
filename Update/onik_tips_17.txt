@@ -64,13 +64,15 @@ void main()
 		   NULL, "— Ben tu penses, ils trichent comme des salauds.", Line_Continue);
 	Wait ( 1000 );
 	OutputLine(NULL, "お互いの名前で事前運動バンバン。",
-		   NULL, " Ils se mettent d'accord sur leurs programmes respectifs et tout.", Line_WaitForInput);
+		   NULL, " Ils se mettent d'accord sur leurs programmes respectifs et tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700038", 256, TRUE);
 	OutputLine(NULL, "片方の選挙中にはもう片方が別に講演会を開いて、二重に選挙運動やってんですよ。",
-		   NULL, " Pendant que l'un est élu à un endroit, l'autre fait des discours et des réunions ailleurs, et inversement. Ils font campagne l'un pour l'autre.", Line_WaitForInput);
+		   NULL, "Pendant que l'un est élu à un endroit, l'autre fait des discours et des réunions ailleurs, et inversement. Ils font campagne l'un pour l'autre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700039", 256, TRUE);
 	OutputLine(NULL, "堂々と。」",
-		   NULL, " Et ils n'ont même pas honte.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et ils n'ont même pas honte.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -507,10 +509,11 @@ void main()
 		   NULL, "— On voit bien que M. le Haut Commissaire vient de l'intelligentzia, ce qu'il propose là est exemplaire.", Line_Continue);
 	Wait (3400);
 	OutputLine(NULL, "…でもまぁ。",
-		   NULL, " ... Bah, enfin, bon.", Line_WaitForInput);
+		   NULL, " ... Bah, enfin, bon.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700057", 256, TRUE);
 	OutputLine(NULL, "私たちの給料が血税で支払われてることを思えば、",
-		   NULL, " Nos retraites sont payées par les impôts,", Line_Continue);
+		   NULL, "Nos retraites sont payées par les impôts,", Line_Continue);
 	Wait (2800);
 	OutputLine(NULL, "まぁ時代の流れですかねぇ。」",
 		   NULL, " donc je suppose que c'est l'évolution naturelle des choses qui veut ça...", GetGlobalFlag(GLinemodeSp));
@@ -529,10 +532,11 @@ void main()
 		   NULL, "— Oh, moi non plus, je ne pense pas que cela soit vraiment honnête vis-à-vis de nos concitoyens.", Line_Continue);
 	Wait (2600);
 	OutputLine(NULL, "でもまぁ、大石さんはそれだけの退職金をもらってもおかしくない活躍をしてきたからさ。",
-		   NULL, " Mais il faut bien avouer que vous avez mené une carrière exemplaire au service de la Nation.", Line_WaitForInput);
+		   NULL, " Mais il faut bien avouer que vous avez mené une carrière exemplaire au service de la Nation.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/442700016", 256, TRUE);
 	OutputLine(NULL, "僕としてはぜひもらって欲しいんだよ。」",
-		   NULL, " Je serais très heureux de te voir obtenir cette promotion, car à mon avis, tu la mérites amplement.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je serais très heureux de te voir obtenir cette promotion, car à mon avis, tu la mérites amplement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

@@ -7,10 +7,12 @@ void dialog000()
 //早く選べ、と急き立てる両親に悪態をつきながら、色とりどりのカップめんをどっさりとカートに載せる。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "早く選べ、と急き立てる両親に悪態をつきながら、色とりどりのカップめんをどっさりとカートに載せる。",
-		   NULL, "Je mis un assortiment bigarré de portions de nouilles déshydratées dans notre caddie, tout en marmonnant d'irritation pour avoir été pressé.", Line_WaitForInput);
+		   NULL, "Je mis un assortiment bigarré de portions de nouilles déshydratées dans notre caddie, tout en marmonnant d'irritation pour avoir été pressé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 //案の定、何でこれだけの種類を選んできたんだ、とお袋はあきれた声を上げた。
 	OutputLine(NULL, "案の定、何でこれだけの種類を選んできたんだ、とお袋はあきれた声を上げた。",
-		   NULL, " Comme prévu, ma mère, incrédule, me demanda pourquoi j'avais pris autant de parfums différents.", Line_Normal);
+		   NULL, "Comme prévu, ma mère, incrédule, me demanda pourquoi j'avais pris autant de parfums différents.", Line_Normal);
 	ClearMessage();
 }
 

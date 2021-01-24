@@ -2540,9 +2540,10 @@ void main()
 //　開き直りの潔さだけは天下一品だな＠受験前の達観したそれとは余裕が違う￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　開き直りの潔さだけは天下一品だな。",
-		   NULL, "C'est clair, elle a le moral.", Line_WaitForInput);
+		   NULL, "C'est clair, elle a le moral.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "受験前の達観したそれとは余裕が違う。",
-		   NULL, " En plus, elle prend cette optique bien avant les examens c'est pas du tout la même chose que les gros mythomanes qui veulent donner le change alors qu'ils se font dans le froc à l'approche de la date fatidique.", Line_Normal);
+		   NULL, "En plus, elle prend cette optique bien avant les examens c'est pas du tout la même chose que les gros mythomanes qui veulent donner le change alors qu'ils se font dans le froc à l'approche de la date fatidique.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/re1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -2712,7 +2713,7 @@ void main()
 
 
 //　勉強イコール受験というニュートンの法則並の常識をあっさり否定され、さしもの俺も狼狽する￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　勉強イコール受験というニュートンの法則並の常識をあっさり否定され、さしもの俺も狼狽する。",
 		   NULL, "La nouvelle me laissait sous le choc. J'avais toujours associé le fait de réussir l'année scolaire avec celui de réussir mes examens, et donc de bosser mes leçons comme un fou. Pour moi, c'était aussi naturel que les lois de la gravité.", Line_Normal);
 	ClearMessage();

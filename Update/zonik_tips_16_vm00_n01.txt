@@ -5,7 +5,7 @@ void main()
 void dialog000()
 {
 //「例えば重度の躁鬱病患者だが＠一般に鬱状態から躁状態に転じる時にもっとも自殺が多いと言われちょる。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200022", 256, TRUE);
 	OutputLine(NULL, "「例えば重度の躁鬱病患者だが、",
 		   NULL, "— La dépression est provoquée par un état mental très négatif, le patient voit tout en noir, et cela entraîne un état très passif.", Line_Continue);
@@ -56,7 +56,7 @@ void dialog001()
 	ClearMessage();
 
 //「鬱状態には自殺願望はあるが、自殺という大仕事をげる気力すらもない＠だが躁状態が始まると徐々に気力が充実し、体の自由が利くようになってくる。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200027", 256, TRUE);
 	OutputLine(NULL, "「鬱状態には自殺願望はあるが、自殺という大仕事を遂げる気力すらもない。",
 		   NULL, "— Le dépressif veut se suicider, mais il n'a pas la force de s'atteler à une tâche pareille, cela représente trop d'efforts pour lui.", Line_Continue);
@@ -174,10 +174,11 @@ void dialog001()
 		   NULL, "Certaines maladies auto-immunes comme la maladie de Barsedow déclenchent parfois des réactions semblables aux symptômes des troubles bipolaires, ", Line_Continue);
 	Wait ( 4400 );
 	OutputLine(NULL, "だがバセドー病は特徴的な症状が多い。",
-		   NULL, " mais la maladie de Barsedow a des tas de symptômes très caractéristiques.", Line_WaitForInput);
+		   NULL, " mais la maladie de Barsedow a des tas de symptômes très caractéristiques.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200035", 256, TRUE);
 	OutputLine(NULL, "仏は違うの。」",
-		   NULL, " Le macchabée ne les présente pas.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le macchabée ne les présente pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

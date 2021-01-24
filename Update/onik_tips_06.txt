@@ -187,7 +187,7 @@ void main()
 	ClearMessage();
 
 //「被害者たちは泣きながら嘔吐しながら、死体を切断しました＠頑強に抵抗する者もいましたが、ＸＸに『今さらもうひとり死んでも同じことだぞ。』と凄まれ、結局は抗えなかったのです。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「被害者たちは泣きながら嘔吐しながら、死体を切断しました。",
 		   NULL, "— Les agresseurs ont dû découper le corps, certains en pleurant, d'autres en vomissant. **** leur disait qu'un macchabée de plus ou de moins ne faisait plus une grosse différence, ils ont donc bien été obligés de le faire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -242,9 +242,10 @@ void main()
 //「ＸＸが死体（右腕）を沼に捨てに行くと言っていたらしいのです＠実際、沼の近くにＸＸの乗用車が乗り捨ててあったのですが、その後の足取りはまったくわかりません。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ＸＸが死体（右腕）を沼に捨てに行くと言っていたらしいのです。",
-		   NULL, "— Il semblerait qu'il ait dit vouloir cacher le corps (le bras droit, NdlR) dans le marais.", Line_WaitForInput);
+		   NULL, "— Il semblerait qu'il ait dit vouloir cacher le corps (le bras droit, NdlR) dans le marais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "実際、沼の近くにＸＸの乗用車が乗り捨ててあったのですが、その後の足取りはまったくわかりません。」",
-		   NULL, " Les enquêteurs ont effectivement trouvé sa voiture, abandonnée, près du marais. Mais il n'y a absolument aucune trace de pas autour.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les enquêteurs ont effectivement trouvé sa voiture, abandonnée, près du marais. Mais il n'y a absolument aucune trace de pas autour.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

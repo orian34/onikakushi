@@ -290,7 +290,7 @@ void main()
 
 
 //　それを......確かめようもない、今になって自覚することが......これほど恐ろしく、おぞましいものなのか......￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを……確かめようもない、今になって自覚することが……これほど恐ろしく、おぞましいものなのか……。",
 		   NULL, "Je ne pouvais m'en rendre compte que maintenant... et je n'aurais jamais cru que le fait de savoir qu'il y avait quelqu'un dans mon dos, mais que je ne pourrais jamais savoir qui c'était vraiment, était si terrifiant, si horrifiant que cela...", Line_Normal);
 	ClearMessage();
@@ -799,7 +799,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分の目の前の状況を、",
 		   NULL, "Je ne compris pas ce que je voyais. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "まるで人の口がリンゴをかじって汁を啜り、リンゴであることを知るように………脳がリンゴを食べ始める。",
 		   NULL, "C'est seulement par une suite de recoupements que je pus me rendre compte de ce qu'il se passait, un peu comme quand vous mangez quelque chose et que vous ne comprenez ce que c'est que lorsque votre langue a fait passer l'information du goût à votre cerveau.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

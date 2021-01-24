@@ -130,13 +130,15 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05890", 256, TRUE);
 	OutputLine(NULL, "「あぁ、宇宙人が作った装置でロシュの限界を解除し、まず一個落としたらしい。！",
-		   NULL, "— Ouais, les aliens sont passés oûtres la loi de Roche et peuvent maintenant nous lancer des météorites grâce à leur dernière création !", Line_WaitForInput);
+		   NULL, "— Ouais, les aliens sont passés oûtres la loi de Roche et peuvent maintenant nous lancer des météorites grâce à leur dernière création !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05900", 256, TRUE);
 	OutputLine(NULL, "　まさか俺もそこまでやるとは思わなかった。",
-		   NULL, " J'avoue que, même moi, je ne l'ai pas vu venir.", Line_WaitForInput);
+		   NULL, "J'avoue que, même moi, je ne l'ai pas vu venir.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05910", 256, TRUE);
 	OutputLine(NULL, "　しかも、続いて今度は百個も！！",
-		   NULL, " Mais c'est pas le pire, ils prévoient d'en tirer une centaine ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais c'est pas le pire, ils prévoient d'en tirer une centaine ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei05920", 256, TRUE);
 	OutputLine(NULL, "　地球軍の完全な誤算だッ！！」",
@@ -211,13 +213,15 @@ void dialog004()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei06000", 256, TRUE);
 	OutputLine(NULL, "「心配無用だ！",
-		   NULL, "— Tu te prends la tête pour rien !", Line_WaitForInput);
+		   NULL, "— Tu te prends la tête pour rien !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei06010", 256, TRUE);
 	OutputLine(NULL, "つい先日も、レナは地球に激突するはずの彗星爆弾を、一つ弾き飛ばしている。",
-		   NULL, " Il y a quelques jours, Rena a atomisé une comète explosive qui allait s'écraser sur Terre.", Line_WaitForInput);
+		   NULL, "Il y a quelques jours, Rena a atomisé une comète explosive qui allait s'écraser sur Terre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s19/01/hr_kei06020", 256, TRUE);
 	OutputLine(NULL, "小惑星の百個や二百個くらい、音速を超える光速のパンチで一撃だぁぁ！！」",
-		   NULL, " Alors tu penses bien que cent ou deux-cents météorites c'est rien par rapport à l'un de ses coups ultra-sonique !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors tu penses bien que cent ou deux-cents météorites c'est rien par rapport à l'un de ses coups ultra-sonique !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 

@@ -628,13 +628,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s01/03/120300025", 256, TRUE);
 	OutputLine(NULL, "「正解なら勝ちで１ポイント！",
-		   NULL, "— Si tu as bien trouvé, alors un point pour toi !", Line_WaitForInput);
+		   NULL, "— Si tu as bien trouvé, alors un point pour toi !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s01/03/120300026", 256, TRUE);
 	OutputLine(NULL, "　外れていればマイナス１ポイント！",
-		   NULL, " Mais si tu n'as pas donné la bonne réponse, alors tu auras un point de pénalité !", Line_WaitForInput);
+		   NULL, "Mais si tu n'as pas donné la bonne réponse, alors tu auras un point de pénalité !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s01/03/120300027", 256, TRUE);
 	OutputLine(NULL, "　正解してもしなくてもゲーム終了だからカードは集めて仕切り直しってわけ！」",
-		   NULL, " Quel que soit le résultat, les cartes sont redistribuées et on commence une nouvelle partie !", Line_Normal);
+		   NULL, "Quel que soit le résultat, les cartes sont redistribuées et on commence une nouvelle partie !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -2810,10 +2812,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700046", 256, TRUE);
 	OutputLine(NULL, "「他にもいくつか不審な点があります。",
-		   NULL, "— Il y a d'autres détails qui sont très suspects.", Line_WaitForInput);
+		   NULL, "— Il y a d'autres détails qui sont très suspects.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700047", 256, TRUE);
 	OutputLine(NULL, "体内分泌物、発汗、脱毛等から、富竹さんはお亡くなりになる直前、極度の興奮状態だったようなのです。」",
-		   NULL, " On a constaté des sécrétions anormales, une forte activité des glandes eccrines et sudoripares, ainsi qu'une perte de cheveux, ce qui indique un état de nervosité voire d'anxiété extrême juste avant son décès.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On a constaté des sécrétions anormales, une forte activité des glandes eccrines et sudoripares, ainsi qu'une perte de cheveux, ce qui indique un état de nervosité voire d'anxiété extrême juste avant son décès.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2830,16 +2833,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700048", 256, TRUE);
 	OutputLine(NULL, "「手の傷と付近に落ちていた角材が一致しました。",
-		   NULL, "— Les marques sur ses mains correspondent avec le morceau de bois que l'on a retrouvé près du corps.", Line_WaitForInput);
+		   NULL, "— Les marques sur ses mains correspondent avec le morceau de bois que l'on a retrouvé près du corps.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700049", 256, TRUE);
 	OutputLine(NULL, "…周囲の木やガードレールに叩いた跡。",
-		   NULL, " Il s'en est servi pour frapper tout autour de lui, on a d'ailleurs retrouvé des traces sur la glissière de la route.", Line_WaitForInput);
+		   NULL, "Il s'en est servi pour frapper tout autour de lui, on a d'ailleurs retrouvé des traces sur la glissière de la route.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700050", 256, TRUE);
 	OutputLine(NULL, "周囲に散乱する富竹さんの血痕…。",
-		   NULL, " Il y avait aussi des tas de petites gouttes de sang un peu partout.", Line_WaitForInput);
+		   NULL, "Il y avait aussi des tas de petites gouttes de sang un peu partout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700051", 256, TRUE);
 	OutputLine(NULL, "………つまりですね、」",
-		   NULL, " Ce qui veut dire...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce qui veut dire...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2855,13 +2861,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700052", 256, TRUE);
 	OutputLine(NULL, "「体からは本人によらない外傷がいくつか発見されました。",
-		   NULL, "— D'après les blessures de l'épiderme, on peut dire que M. Tomitake a été blessé par quelqu'un d'autre.", Line_WaitForInput);
+		   NULL, "— D'après les blessures de l'épiderme, on peut dire que M. Tomitake a été blessé par quelqu'un d'autre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700053", 256, TRUE);
 	OutputLine(NULL, "…富竹さんは何者かに暴行を受けた可能性があるということです。",
-		   NULL, " Cela veut dire que quelqu'un l'a attaqué délibérément.", Line_WaitForInput);
+		   NULL, "Cela veut dire que quelqu'un l'a attaqué délibérément.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700054", 256, TRUE);
 	OutputLine(NULL, "外傷の部位から見て、複数犯の可能性もあります。」",
-		   NULL, " D'ailleurs, il est fort probable que plusieurs personnes l'aient attaqué.", Line_Normal);
+		   NULL, "D'ailleurs, il est fort probable que plusieurs personnes l'aient attaqué.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
@@ -3429,10 +3437,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700081", 256, TRUE);
 	OutputLine(NULL, "「証拠はありません。",
-		   NULL, "— Je n'ai pas de preuves.", Line_WaitForInput);
+		   NULL, "— Je n'ai pas de preuves.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700082", 256, TRUE);
 	OutputLine(NULL, "しかも過去の事件は個々に解決し、いずれの犯人も村とは直接関係ありませんでしたしね。」",
-		   NULL, " De plus, les événements des années précédentes ont été traités comme des affaires indépendantes, et ont été menées à bien chacune de leur côté. Aucun des coupables n'avait de lien direct avec le village.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De plus, les événements des années précédentes ont été traités comme des affaires indépendantes, et ont été menées à bien chacune de leur côté. Aucun des coupables n'avait de lien direct avec le village.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3461,9 +3470,10 @@ void main()
 //　綿流しの日に神聖性を感じるのは雛見沢の人間だけだ＠……つまり、その日のみに事件が起こるのは「雛見沢と関係」があるからだ…？？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しの日に神聖性を感じるのは雛見沢の人間だけだ。",
-		   NULL, "Les seules personnes au monde à se soucier du jour de la purification du coton sont les gens de Hinamizawa.", Line_WaitForInput);
+		   NULL, "Les seules personnes au monde à se soucier du jour de la purification du coton sont les gens de Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……つまり、その日のみに事件が起こるのは「雛見沢と関係」があるからだ…？？？",
-		   NULL, " Par déduction, cela veut dire que si quelque chose se passe précisément à cette date, c'est qu'il y a un rapport direct avec la vie du village !", Line_Normal);
+		   NULL, "Par déduction, cela veut dire que si quelque chose se passe précisément à cette date, c'est qu'il y a un rapport direct avec la vie du village !", Line_Normal);
 	ClearMessage();
 
 
@@ -3471,13 +3481,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700085", 256, TRUE);
 	OutputLine(NULL, "「初めはダム工事の監督！",
-		   NULL, "— La première victime était le chef de chantier du barrage !", Line_WaitForInput);
+		   NULL, "— La première victime était le chef de chantier du barrage !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700086", 256, TRUE);
 	OutputLine(NULL, "　そして次にダムを誘致した村人！",
-		   NULL, " Puis l'un des plus fervents partisans du barrage est mort !", Line_WaitForInput);
+		   NULL, "Puis l'un des plus fervents partisans du barrage est mort !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700087", 256, TRUE);
 	OutputLine(NULL, "　村の仇敵は次々に怪死しました。",
-		   NULL, " Les ennemis du village sont morts les uns après les autres, dans des circonstances plus ou moins louches. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les ennemis du village sont morts les uns après les autres, dans des circonstances plus ou moins louches. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700088", 256, TRUE);
 	OutputLine(NULL, "過程はともかく、結果はそうなのです。」",
@@ -3515,7 +3527,7 @@ void main()
 
 
 //「神主はダム騒動当時、リーダーシップを期待されながらも、積極的な働きがなかったため、一部の村人から失望、反感を買っていました。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700089", 256, TRUE);
 	OutputLine(NULL, "「神主はダム騒動当時、リーダーシップを期待されながらも、積極的な働きがなかったため、一部の村人から失望、反感を買っていました。」",
 		   NULL, "— Non, mais le prêtre avait beaucoup baissé dans l'estime des fidèles. Il avait toujours refusé de jouer un rôle actif dans le conflit, alors que c'était quelque chose que les gens attendaient de lui. Les fidèles n'ont pas apprecié.", Line_Normal);
@@ -3535,10 +3547,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100125", 256, TRUE);
 	OutputLine(NULL, "　その次の主婦なんかどうだよ！",
-		   NULL, "Et la femme, l'année d'après ?", Line_WaitForInput);
+		   NULL, "Et la femme, l'année d'après ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100126", 256, TRUE);
 	OutputLine(NULL, "　誘致した男の弟夫婦だったってだけの理由だろ？！　もっと殺される理由が薄いじゃないか！！",
-		   NULL, " C'est la sœur de l'homme qui a vu l'homme qui a vu l'ours... enfin, vous comprenez ce que je veux dire ? Elle n'avait aucun rapport direct, c'est quand même mince comme raison pour tuer quelqu'un !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est la sœur de l'homme qui a vu l'homme qui a vu l'ours... enfin, vous comprenez ce que je veux dire ? Elle n'avait aucun rapport direct, c'est quand même mince comme raison pour tuer quelqu'un !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3697,10 +3710,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700096", 256, TRUE);
 	OutputLine(NULL, "　例えば園崎魅音さんについても同様です。",
-		   NULL, "D'ailleurs, mademoiselle Mion Sonozaki a déjà été placée plusieurs fois en garde à vue pour obstruction aux forces de l'Ordre et dégradation de biens publics.", Line_WaitForInput);
+		   NULL, "D'ailleurs, mademoiselle Mion Sonozaki a déjà été placée plusieurs fois en garde à vue pour obstruction aux forces de l'Ordre et dégradation de biens publics.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中年男</color>", NULL, "<color=#f5e6d3>Homme d'âge mûr</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700097", 256, TRUE);
 	OutputLine(NULL, "抵抗運動時、いくつかの軽犯罪と公務執行妨害で補導歴があります。」",
-		   NULL, " Elle a aussi été arrêtée pour d'autres délits mineurs. Son casier judiciaire est loin d'être vierge.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle a aussi été arrêtée pour d'autres délits mineurs. Son casier judiciaire est loin d'être vierge.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

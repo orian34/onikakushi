@@ -164,10 +164,11 @@ void main()
 	OutputLine(NULL, "「実はな、大石くん。",
 		   NULL, "— Écoute, Ôishi.", Line_Continue);
 	OutputLine(NULL, "仏が武器にしたらしい角材な。",
-		   NULL, " Tu te souviens de la branche en bois qu'on a trouvée près du macchabée ?", Line_WaitForInput);
+		   NULL, " Tu te souviens de la branche en bois qu'on a trouvée près du macchabée ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200007", 256, TRUE);
 	OutputLine(NULL, "砂粒とかガードレールの塗装片とかそんなのしか出んかったぞい。」",
-		   NULL, " On pensait qu'il s'en était servi comme d'une arme, mais l'analyse des traces relevées dessus ne montre que de la terre et de la peinture, celle de la glissière.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On pensait qu'il s'en était servi comme d'une arme, mais l'analyse des traces relevées dessus ne montre que de la terre et de la peinture, celle de la glissière.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -412,10 +413,11 @@ void main()
 	OutputLine(NULL, "「こっちもそこは重視しとる。",
 		   NULL, "— Oui, moi aussi c'est ce qui m'intéresse le plus.", Line_Continue);
 	OutputLine(NULL, "徹底的に調べるつもりだが…あまり期待できんな。",
-		   NULL, " J'ai vraiment poussé les analyses à fond, mais... Je doute que ça nous fasse découvrir grand'chose.", Line_WaitForInput);
+		   NULL, " J'ai vraiment poussé les analyses à fond, mais... Je doute que ça nous fasse découvrir grand'chose.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Médecin légiste</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 0, "ps3/s20/00/443200018", 256, TRUE);
 	OutputLine(NULL, "何しろ、過去にこんな例はないんだからな。」",
-		   NULL, " Ne t'attends pas à un miracle. C'est la première fois qu'une affaire pareille se présente.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ne t'attends pas à un miracle. C'est la première fois qu'une affaire pareille se présente.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

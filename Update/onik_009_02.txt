@@ -863,10 +863,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800034", 256, TRUE);
 	OutputLine(NULL, "　雛見沢の住人でありながらダムの誘致派だった男が旅行先で崖下の濁流に転落して死亡した。",
-		   NULL, "L'un des habitants de Hinamizawa parmi les rares qui avaient approuvés la construction du barrage fit une chute d'une falaise, là où il passait ses vacances, et fut retrouvé mort.", Line_WaitForInput);
+		   NULL, "L'un des habitants de Hinamizawa parmi les rares qui avaient approuvés la construction du barrage fit une chute d'une falaise, là où il passait ses vacances, et fut retrouvé mort.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800035", 256, TRUE);
 	OutputLine(NULL, "奥さんに至っては死体もあがってない。」",
-		   NULL, " Sa femme, tombée elle aussi, fut emportée par le courant, et son corps ne fut jamais retrouvé.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sa femme, tombée elle aussi, fut emportée par le courant, et son corps ne fut jamais retrouvé.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //「雛見沢の人間でありながらダムに賛成していた男だからね＠事故当時、お年寄りたちはオヤシロさまの祟りだと囁きあったものよ。＠
@@ -1738,10 +1739,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800073", 256, TRUE);
 	OutputLine(NULL, "「神主さんはもっと説明が付き易いよ。",
-		   NULL, "— Oh, sa mort est la plus facile à expliquer.", Line_WaitForInput);
+		   NULL, "— Oh, sa mort est la plus facile à expliquer.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800074", 256, TRUE);
 	OutputLine(NULL, "綿流しのお祭りは神主さんにとっては年に一度の大行事。過労に体調不良が重なったんだろうね。",
-		   NULL, " La cérémonie de la purification du coton était la chose la plus importante de l'année, il devait avoir fort à faire. Il était peut-être déjà faible physiquement, et la fatigue a fait le reste. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La cérémonie de la purification du coton était la chose la plus importante de l'année, il devait avoir fort à faire. Il était peut-être déjà faible physiquement, et la fatigue a fait le reste. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800075", 256, TRUE);
 	OutputLine(NULL, "あるいは元々持病持ちだったのかもしれない。」",
@@ -1777,7 +1779,7 @@ void main()
 		   NULL, "La troisième année, les gens vont être très sensibles à tout ce qui va se passer. La rumeur enfle, et enfle... ", Line_WaitForInput);
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800079", 256, TRUE);
 	OutputLine(NULL, "……急死は確かに不自然だったかもしれないけど。",
-		   NULL, " Parce que bon, c'est vrai qu'une mort subite, comme ça, cela ne paraît pas naturel.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Parce que bon, c'est vrai qu'une mort subite, comme ça, cela ne paraît pas naturel.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1785,10 +1787,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800080", 256, TRUE);
 	OutputLine(NULL, "　こういう死に方をすると必ず警察が検死をする。",
-		   NULL, "Mais dans ces cas-là, la police pratique une autopsie.", Line_WaitForInput);
+		   NULL, "Mais dans ces cas-là, la police pratique une autopsie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800081", 256, TRUE);
 	OutputLine(NULL, "…で、事件性は発見されなかったんだろ？",
-		   NULL, " Et l'autopsie a révélé que sa mort était vraiment tout simplement une mort par maladie.", Line_WaitForInput);
+		   NULL, "Et l'autopsie a révélé que sa mort était vraiment tout simplement une mort par maladie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800082", 256, TRUE);
 	OutputLine(NULL, "　本当に偶然の病死なんだよ。」",
 		   NULL, " Parce que bon, c'est vrai qu'une mort subite, comme ça, cela ne paraît pas naturel.", Line_Normal);
@@ -1811,13 +1815,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800083", 256, TRUE);
 	OutputLine(NULL, "「すでに説明したとおりさ。",
-		   NULL, "— Je t'ai déjà expliqué ce qui s'était passé.", Line_WaitForInput);
+		   NULL, "— Je t'ai déjà expliqué ce qui s'était passé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800084", 256, TRUE);
 	OutputLine(NULL, "３年目の事件に村人たちは動揺していた。",
-		   NULL, " La troisième année, tout le monde était sur les nerfs.", Line_WaitForInput);
+		   NULL, "La troisième année, tout le monde était sur les nerfs.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800085", 256, TRUE);
 	OutputLine(NULL, "信心深い人たちはすぐに祟りだと決めてかかったのさ。",
-		   NULL, " Lorsque le prêtre a été retrouvé mort, les plus croyants ont tout de suite affirmé que c'était la malédiction de la déesse Yashiro.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Lorsque le prêtre a été retrouvé mort, les plus croyants ont tout de suite affirmé que c'était la malédiction de la déesse Yashiro.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s01/08/120800086", 256, TRUE);
 	OutputLine(NULL, "……もちろん、神主の奥さんもね。",

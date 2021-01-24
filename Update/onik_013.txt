@@ -271,9 +271,10 @@ void main()
 //　俺を殺す気なら、もっと確実な方法でやるはずだ＠こんな、針を飲ませるなんて確実性の低い方法に訴えるはずがない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺を殺す気なら、もっと確実な方法でやるはずだ。",
-		   NULL, "Si elles avaient vraiment eu la ferme intention de me tuer, elles auraient utilisé un moyen ou une méthode beaucoup plus sûrs.", Line_WaitForInput);
+		   NULL, "Si elles avaient vraiment eu la ferme intention de me tuer, elles auraient utilisé un moyen ou une méthode beaucoup plus sûrs.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "こんな、針を飲ませるなんて確実性の低い方法に訴えるはずがない。",
-		   NULL, " Elles ne s'en seraient pas remises à une methode aussi aléatoire que le coup de l'aiguille à coudre cachée dans les aliments...", Line_Normal);
+		   NULL, "Elles ne s'en seraient pas remises à une methode aussi aléatoire que le coup de l'aiguille à coudre cachée dans les aliments...", Line_Normal);
 	ClearMessage();
 
 //　……つまり……信じたくはないのだが……＠ここまでしようとも…レナや魅音にとっては…脅迫なのだ＠
@@ -853,9 +854,10 @@ void main()
 	OutputLine(NULL, "みんな忘れる。",
 		   NULL, " J'oublierai tout ce qui a été dit entre nous.", Line_WaitForInput);
 	OutputLine(NULL, "おはぎのことも全部忘れる。",
-		   NULL, " J'oublierai les gâteaux de riz fourrés aux aiguilles à coudre.", Line_WaitForInput);
+		   NULL, " J'oublierai les gâteaux de riz fourrés aux aiguilles à coudre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "忘れる忘れる忘れる。",
-		   NULL, " J'oublierai, je le jure, j'oublierai !", Line_Normal);
+		   NULL, "J'oublierai, je le jure, j'oublierai !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 1000, TRUE );
@@ -2010,9 +2012,10 @@ void main()
 	OutputLine(NULL, "レナの期待するような音は出ない。",
 		   NULL, " Mais le bruit qu'elle attend ne vient pas.", Line_WaitForInput);
 	OutputLine(NULL, "周りのクラスメートたちも止めない。",
-		   NULL, " De plus, les autres élèves de la classe ne font rien pour l'arrêter.", Line_WaitForInput);
+		   NULL, " De plus, les autres élèves de la classe ne font rien pour l'arrêter.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "次のガラスになりたくないから。",
-		   NULL, " Évidemment, puisqu'aucun d'entre eux ne veut devenir la prochaine cible.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Évidemment, puisqu'aucun d'entre eux ne veut devenir la prochaine cible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2081,13 +2084,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700284", 256, TRUE);
 	OutputLine(NULL, "「…でですね、そのカウンセリングをした医師のカルテにレナさんの会話内容が記載されているんですがね……。",
-		   NULL, "— Il se trouve que tout ce qui fut dit lors des séances avec le médecin fut consigné pour pouvoir affiner le diagnostique et estimer l'évolution de la maladie. J'ai lu ces rapports et Rena...", Line_WaitForInput);
+		   NULL, "— Il se trouve que tout ce qui fut dit lors des séances avec le médecin fut consigné pour pouvoir affiner le diagnostique et estimer l'évolution de la maladie. J'ai lu ces rapports et Rena...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700285", 256, TRUE);
 	OutputLine(NULL, "その中に、出てくるんですよ。",
-		   NULL, "  parle de quelque chose...", Line_WaitForInput);
+		   NULL, " parle de quelque chose...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700286", 256, TRUE);
 	OutputLine(NULL, "結構。」",
-		   NULL, " assez souvent d'ailleurs.", Line_Normal);
+		   NULL, "assez souvent d'ailleurs.", Line_Normal);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2292,9 +2297,10 @@ void main()
 //　俺にとって、レナたちが一連の怪死事件に深く関わっているかもしれないことと＠オヤシロさまの祟りが実在することを認めるのと……どちらがマシなんだろう￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺にとって、レナたちが一連の怪死事件に深く関わっているかもしれないことと、",
-		   NULL, "En fait, pour moi, qu'est-ce qui est le plus important ? Est-ce que je serais plus prêt à accepter l'existence de la déesse Yashiro et de sa malédiction,", Line_WaitForInput);
+		   NULL, "En fait, pour moi, qu'est-ce qui est le plus important ? Est-ce que je serais plus prêt à accepter l'existence de la déesse Yashiro et de sa malédiction,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "オヤシロさまの祟りが実在することを認めるのと……どちらがマシなんだろう？",
-		   NULL, " ou bien le fait que les filles soient bien placées dans la liste des suspects ?", Line_Normal);
+		   NULL, "ou bien le fait que les filles soient bien placées dans la liste des suspects ?", Line_Normal);
 	ClearMessage();
 
 //　考えたくなかった＠
@@ -2981,7 +2987,7 @@ void main()
 
 
 //　裁縫針がどう間違ったらおはぎに混ざるんだ？！　お人好しも大概にしろ！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　裁縫針がどう間違ったらおはぎに混ざるんだ？！　お人好しも大概にしろ！！",
 		   NULL, "Ah ouais ? Et comment veux-tu que l'aiguille à coudre se retrouve par hasard dans le gâteau ? Tu crois qu'elle s'est bêtement trompée dans les ingrédients, peut-être ? Arrête d'être aussi naïf, parce que là, ça commence à bien faire !!", Line_Normal);
 	ClearMessage();
@@ -3119,7 +3125,7 @@ void main()
 	ClearMessage();
 
 //　先週の日曜日まで楽しく笑い合ってた仲間たちが…自分に殺意を抱いてるなんて…急に信じられるかよ…？！ !w600　なぁ…＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　先週の日曜日まで楽しく笑い合ってた仲間たちが…自分に殺意を抱いてるなんて…急に信じられるかよ…？！",
 		   NULL, "Franchement, est-ce que n'importe qui pourrait croire sans poser de questions que ses propres meilleurs amis veulent le tuer ? Ces mêmes amis avec lesquels on avait passé des moments formidables jusqu'à très récemment ?", Line_ContinueAfterTyping);
 
@@ -3619,7 +3625,7 @@ void main()
 
 
 //　自分という人格が体ごと引き裂かれてしまうような…そんな感覚だった＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分という人格が体ごと引き裂かれてしまうような…そんな感覚だった。",
 		   NULL, "Pour faire simple, ma personnalité était en train de se scinder. Je dirais même que quelque chose, ou quelqu'un, était en train de déchirer ma personnalité en deux, en fait. Enfin, en tout cas, c'était l'impression que j'en avais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3870,7 +3876,7 @@ void main()
 	ClearMessage();
 
 //　少々浮世離れした親父はとても理解できないだろうし、神経質なお袋なら、俺を引きずってそのまま精神科につれて行くだろう＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少々浮世離れした親父はとても理解できないだろうし、神経質なお袋なら、俺を引きずってそのまま精神科につれて行くだろう。",
 		   NULL, "Mon père est toujours dans sa tour d'ivoire, alors il ne risque pas de me comprendre, et ma mère est tellement terre-à-terre que je peux être certain de sa réaction. Elle me traînera dans l'hôpital psychiatrique le plus proche...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4119,9 +4125,10 @@ void main()
 //　例えば…予め緊急時の待ち合わせ場所を決めておくとか＠…俺はそこで大石さんが来てくれるまで隠れていればいいわけだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　例えば…予め緊急時の待ち合わせ場所を決めておくとか。",
-		   NULL, "Il faudrait par exemple... que je lui fixe un point de rendez-vous au cas où les choses tournent mal.", Line_WaitForInput);
+		   NULL, "Il faudrait par exemple... que je lui fixe un point de rendez-vous au cas où les choses tournent mal.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…俺はそこで大石さんが来てくれるまで隠れていればいいわけだ。",
-		   NULL, " Comme ça il sait tout de suite où je suis et ça m'évite de m'enfuir au hasard... Ensuite, je n'ai plus qu'à l'attendre là-bas.", Line_Normal);
+		   NULL, "Comme ça il sait tout de suite où je suis et ça m'évite de m'enfuir au hasard... Ensuite, je n'ai plus qu'à l'attendre là-bas.", Line_Normal);
 	ClearMessage();
 
 //「…よし………少し…見えてきたぞ…。＠

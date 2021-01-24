@@ -105,13 +105,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700516", 256, TRUE);
 	OutputLine(NULL, "「熊ちゃん、河を見て下さい。",
-		   NULL, "— Nounours, regarde les rivières..", Line_WaitForInput);
+		   NULL, "— Nounours, regarde les rivières..", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700517", 256, TRUE);
 	OutputLine(NULL, "五萬は全員切ってますから安牌なんですよ。",
-		   NULL, " Tous les autres joueurs ont déjà jeté le 5 de caractère, c'est une tuile sûre.", Line_WaitForInput);
+		   NULL, "Tous les autres joueurs ont déjà jeté le 5 de caractère, c'est une tuile sûre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s01/11/120700518", 256, TRUE);
 	OutputLine(NULL, "終盤で形テンに走った誰かがダマで待ってたら嫌でしょ。」",
-		   NULL, " Imagine que l'un des autres reste à une tuile du mahjong et n'annonce rien au dernier tour, tu aurais l'air fin.", Line_Normal);
+		   NULL, "Imagine que l'un des autres reste à une tuile du mahjong et n'annonce rien au dernier tour, tu aurais l'air fin.", Line_Normal);
 	ClearMessage();
 
 //　青年はうーんと唸りながら、タバコを捻り、もう一本を取り出す￥
@@ -1618,7 +1620,7 @@ void main()
 
 	PlayBGM( 2, "lsys24", 56, 0 );
 //　荒らされてはいなかったが、引越し以来、開放したままになっているガレージのシャッターが閉じられていた。
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　荒らされてはいなかったが、引越し以来、開放したままになっているガレージのシャッターが閉じられていた。",
 		   NULL, "Dans le garage, aucune trace de vandalisme ne put être détectée, mais la porte coulissante en fer était descendue, alors qu'elle était restée ouverte tout le temps depuis le premier jour où les Maebara avaient emménagé.", Line_ContinueAfterTyping);
 

@@ -596,7 +596,7 @@ void main()
 
 
 //　その無音の凍った時間の中で、俺は避ける術もないくらい眼前にせまったワゴン車と、後ろに振り返るために半身をねじった無様な姿を見比べた￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その無音の凍った時間の中で、俺は避ける術もないくらい眼前にせまったワゴン車と、後ろに振り返るために半身をねじった無様な姿を見比べた。",
 		   NULL, "Pendant ce moment de silence absolu, dans cet espace-temps immobile, je comparai la position de mon corps, torsadé, qui regardait en arrière, et la place exacte de la berline, si proche que j'étais certain de ne pas pouvoir l'éviter.", Line_Normal);
 	ClearMessage();
@@ -1626,10 +1626,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100406", 256, TRUE);
 	OutputLine(NULL, "「着替えをじーっと見てるレディーも躾がなってないと思うぞ。",
-		   NULL, "— En même temps, une lady qui mate un homme en train de se déshabiller en essayant de ne pas en perdre une miette n'a pas de bonnes manières non plus, si tu veux mon avis.", Line_WaitForInput);
+		   NULL, "— En même temps, une lady qui mate un homme en train de se déshabiller en essayant de ne pas en perdre une miette n'a pas de bonnes manières non plus, si tu veux mon avis.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s01/01/120100407", 256, TRUE);
 	OutputLine(NULL, "男子は更衣室がないんだから諦めろ。」",
-		   NULL, " Et je te signale que les garçons n'ont pas de salle spéciale pour se changer, alors n'insiste pas, je me changerai ici.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et je te signale que les garçons n'ont pas de salle spéciale pour se changer, alors n'insiste pas, je me changerai ici.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3038,9 +3039,10 @@ void main()
 //　常に俺と一定の距離を保ち、歩速を合わせていた＠あまつさえ足音まで合わせ、その気配を巧みに隠そうとしていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　常に俺と一定の距離を保ち、歩速を合わせていた。",
-		   NULL, "Elle s'est débrouillée pour conserver une certaine distance, en calquant son pas sur le mien.", Line_WaitForInput);
+		   NULL, "Elle s'est débrouillée pour conserver une certaine distance, en calquant son pas sur le mien.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あまつさえ足音まで合わせ、その気配を巧みに隠そうとしていた。",
-		   NULL, " Elle a même été jusqu'à faire en sorte de poser les pieds sur le sol en même temps que moi et à masquer sa présence de façon à ce que je ne sache pas qu'elle était derrière moi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle a même été jusqu'à faire en sorte de poser les pieds sur le sol en même temps que moi et à masquer sa présence de façon à ce que je ne sache pas qu'elle était derrière moi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

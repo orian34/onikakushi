@@ -81,10 +81,11 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200115", 256, TRUE);
 	OutputLine(NULL, "「今回の鬼隠し編では、雛見沢で近年起こった連続怪死事件が紹介されたでしょ？",
-		   NULL, "— Eh bien, dans ce tome, l'auteur a présenté la série de meurtres qui a été commise à Hinamizawa.", Line_WaitForInput);
+		   NULL, "— Eh bien, dans ce tome, l'auteur a présenté la série de meurtres qui a été commise à Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200116", 256, TRUE);
 	OutputLine(NULL, "　次回のシナリオでは雛見沢の古い歴史なんかが紹介されるんですって。」",
-		   NULL, " Dans le prochain jeu, il nous présentera le village tel qu'il était par le passé, et l'origine de certains de ses rites ancestraux.", Line_Normal);
+		   NULL, "Dans le prochain jeu, il nous présentera le village tel qu'il était par le passé, et l'origine de certains de ses rites ancestraux.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 3, "sprite/me1b_def_a1_", "0", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
@@ -119,13 +120,15 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700351", 256, TRUE);
 	OutputLine(NULL, "「なるほど。",
-		   NULL, "— Aaaah, je vois.", Line_WaitForInput);
+		   NULL, "— Aaaah, je vois.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700352", 256, TRUE);
 	OutputLine(NULL, "虐げられた某家の人たちが先祖の恨みを晴らすために…ってな感じですか？",
-		   NULL, " Un peu comme toutes ces séries à la télé où le descendant d'une noble famille, anéantie ou persécutée des siècles auparavant, vient prendre sa revanche sur les descendants des villageois ?", Line_WaitForInput);
+		   NULL, "Un peu comme toutes ces séries à la télé où le descendant d'une noble famille, anéantie ou persécutée des siècles auparavant, vient prendre sa revanche sur les descendants des villageois ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700353", 256, TRUE);
 	OutputLine(NULL, "　うーん………私はそれにも反対ですねぇ。」",
-		   NULL, " Je ne sais pas trop... je n'aime pas ce genre de films.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je ne sais pas trop... je n'aime pas ce genre de films.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 

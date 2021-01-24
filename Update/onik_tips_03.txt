@@ -281,11 +281,13 @@ void main()
 //　......ちなみに魅音が立派な玄関と言ってるのはこのアトリエ側の玄関で、普段は締め切られている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……ちなみに魅音が立派な玄関と言ってるのはこのアトリエ側の玄関で、普段は締め切られている。",
-		   NULL, "Au fait, nous avons deux vestibules. Celui dont parle Mion est celui de l'atelier, il est très spacieux pour pouvoir accueillir de nombreux visiteurs, mais ce n'est pas celui que nous utilisons en privé.", Line_Normal);
+		   NULL, "Au fait, nous avons deux vestibules. Celui dont parle Mion est celui de l'atelier, il est très spacieux pour pouvoir accueillir de nombreux visiteurs, mais ce n'est pas celui que nous utilisons en privé.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 //　実際に前原家が使用している玄関はごくごく平均的な、ささやかなものなのだ＠
 	OutputLine(NULL, "　実際に前原家が使用している玄関はごくごく平均的な、ささやかなものなのだ。",
-		   NULL, " Le nôtre, le vrai, est tout rikiki... un peu comme chez tout le monde en fait.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le nôtre, le vrai, est tout rikiki... un peu comme chez tout le monde en fait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -305,10 +307,11 @@ void main()
 		   NULL, "— Il faut absolument qu'on aille un jour explorer ta maison !", Line_Continue);
 	Wait( 1600 );
 	OutputLine(NULL, "…お金持ちじゃないと主張しながらもあの邸宅！！",
-		   NULL, " J'imagine déjà le truc, une baraque immense avec toi à côté en train de nous répéter que non, c'est une maison tout ce qu'il y a de plus banal...", Line_WaitForInput);
+		   NULL, " J'imagine déjà le truc, une baraque immense avec toi à côté en train de nous répéter que non, c'est une maison tout ce qu'il y a de plus banal...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300022", 256, TRUE);
 	OutputLine(NULL, "　一体何が隠されているのか！！」",
-		   NULL, " Je me demande ce qu'elle peut receler comme trésors !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je me demande ce qu'elle peut receler comme trésors !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

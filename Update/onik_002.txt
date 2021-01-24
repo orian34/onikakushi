@@ -3449,13 +3449,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200160", 256, TRUE);
 	OutputLine(NULL, "「他の山の下敷きになってるの。",
-		   NULL, "— Je voudrais bien, mais en fait elle est coincée sous une tonne de choses...", Line_WaitForInput);
+		   NULL, "— Je voudrais bien, mais en fait elle est coincée sous une tonne de choses...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200161", 256, TRUE);
 	OutputLine(NULL, "…簡単には掘り出せないし…。",
-		   NULL, " J'ai essayé de tirer dessus, mais ça n'a pas marché. Ça ne va pas être facile de la sortir de là...", Line_WaitForInput);
+		   NULL, "J'ai essayé de tirer dessus, mais ça n'a pas marché. Ça ne va pas être facile de la sortir de là...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s19/02/990200162", 256, TRUE);
 	OutputLine(NULL, "あそこ、灯りがないからすぐ暗くなっちゃうし…。」",
-		   NULL, " surtout qu'il n'y a pas de lumière là-dessous, il fait très sombre !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "surtout qu'il n'y a pas de lumière là-dessous, il fait très sombre !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

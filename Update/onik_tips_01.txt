@@ -427,7 +427,7 @@ void main()
 	ModDrawCharacter(1, 3, "sprite/me1a_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「興宮の駅前通りを抜けて病院に曲がって、小児科の向かいに学校あるのわかる？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300010", 256, TRUE);
 	OutputLine(NULL, "「興宮の駅前通りを抜けて病院に曲がって、小児科の向かいに学校あるのわかる？」",
 		   NULL, "— Je sais pas si tu vois, quand tu prends le virage après la rue de la gare à Okinomiya, il y a l'hôpital, tu continues et quand tu tournes encore, plus loin il y a une pédiatrie, et ben juste en face, le bâtiment, là, c'est une école.", GetGlobalFlag(GLinemodeSp));

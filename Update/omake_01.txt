@@ -43,13 +43,15 @@ void main()
 	OutputLine(NULL, "「この度は当サークル、０７ｔｈ　Ｅｘｐａｎｓｉｏｎのノベルゲーム、",
 		   NULL, "— Toute l'équipe et les membres du groupe 07th Expansion, créateurs de ce jeu-roman,", Line_Continue);
 	OutputLine(NULL, "ひぐらしのなく頃に〜鬼隠し編〜をお買い上げ下さいまして、誠にありがとうございました！",
-		   NULL, " vous remercient d'avoir acheté leur première œuvre, Le sanglot des cigales : enlevés par les démons", Line_WaitForInput);
+		   NULL, " vous remercient d'avoir acheté leur première œuvre, Le sanglot des cigales : enlevés par les démons", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200104", 256, TRUE);
 	OutputLine(NULL, "　いかがだったでしょうか？",
-		   NULL, " Alors, qu'en pensez vous ?", Line_WaitForInput);
+		   NULL, "Alors, qu'en pensez vous ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200105", 256, TRUE);
 	OutputLine(NULL, "　ちょっぴりでもお楽しみいただけたなら幸いです。」",
-		   NULL, " Nous serions vraiment très honorés si le jeu pouvait vous avoir intéressé.", Line_Normal);
+		   NULL, "Nous serions vraiment très honorés si le jeu pouvait vous avoir intéressé.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -126,10 +128,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300255", 256, TRUE);
 	OutputLine(NULL, "「異常事態の連続ですっかりわかんなくなっちゃったけど……オヤシロさまの祟りって、どういうものなのか。",
-		   NULL, "— Toutes ces morts plus bizarres les unes que les autres font un petit peu oublier tout ça, mais la malédiction de cette fameuse déesse Yashiro, c'est quoi au juste ?", Line_WaitForInput);
+		   NULL, "— Toutes ces morts plus bizarres les unes que les autres font un petit peu oublier tout ça, mais la malédiction de cette fameuse déesse Yashiro, c'est quoi au juste ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300256", 256, TRUE);
 	OutputLine(NULL, "いやそもそも、オヤシロさまって何なのか、あまり説明なかったからね。」",
-		   NULL, " Et d'ailleurs au fait, il n'a même pas expliqué qui c'était, cette déesse.", Line_Normal);
+		   NULL, "Et d'ailleurs au fait, il n'a même pas expliqué qui c'était, cette déesse.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "none");
@@ -793,16 +796,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s20/08/440800078", 256, TRUE);
 	OutputLine(NULL, "「得をするんじゃなくて…もっと心理的なもの。",
-		   NULL, "— Ce n'est pas une question de profit, en fait, ce serait plus... psychologique.", Line_WaitForInput);
+		   NULL, "— Ce n'est pas une question de profit, en fait, ce serait plus... psychologique.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s20/08/440800079", 256, TRUE);
 	OutputLine(NULL, "……僕は……何かの復讐じゃないかと思うね。",
-		   NULL, " Je pense que c'est une sorte de vengeance.", Line_WaitForInput);
+		   NULL, "Je pense que c'est une sorte de vengeance.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s20/08/440800080", 256, TRUE);
 	OutputLine(NULL, "土着的な何か。",
-		   NULL, " En rapport avec le village, peut-être.", Line_WaitForInput);
+		   NULL, "En rapport avec le village, peut-être.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 8, "ps3/s20/08/440800081", 256, TRUE);
 	OutputLine(NULL, "…今回のシナリオでは語られなかった因縁だよ！」",
-		   NULL, " C'est sûrement un aspect qui n'a pas encore été développé dans le jeu !", Line_Normal);
+		   NULL, "C'est sûrement un aspect qui n'a pas encore été développé dans le jeu !", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 11, "sprite/oisi1_1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
@@ -867,10 +873,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200135", 256, TRUE);
 	OutputLine(NULL, "「えっと……実はレナも大石さんと同じ意見なの。",
-		   NULL, "— Vous savez, sur ce point je suis d'accord avec vous.", Line_WaitForInput);
+		   NULL, "— Vous savez, sur ce point je suis d'accord avec vous.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200136", 256, TRUE);
 	OutputLine(NULL, "…あんなにやさしかったレナや魅ぃちゃんが突然おかしくなるなんて、そうじゃなきゃ説明つかないもの。」",
-		   NULL, " Rena et Mion étaient tellement gentilles, je ne vois pas comment ni pourquoi elles seraient devenues cruelles et méchantes du tac au tac... mais si un être surnaturel prend possession de leur corps, là, tout s'explique...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rena et Mion étaient tellement gentilles, je ne vois pas comment ni pourquoi elles seraient devenues cruelles et méchantes du tac au tac... mais si un être surnaturel prend possession de leur corps, là, tout s'explique...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1023,16 +1030,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300280", 256, TRUE);
 	OutputLine(NULL, "「レナも祟り派か。",
-		   NULL, "— Toi aussi, tu penches pour la malédiction ?", Line_WaitForInput);
+		   NULL, "— Toi aussi, tu penches pour la malédiction ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300281", 256, TRUE);
 	OutputLine(NULL, "じゃー祟り派の皆さんにお聞きしますけどさ。",
-		   NULL, " D'accord, alors, juste un truc.", Line_WaitForInput);
+		   NULL, "D'accord, alors, juste un truc.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300282", 256, TRUE);
 	OutputLine(NULL, "…祟りが起こるからにはそれなりの理由があるんでしょ？",
-		   NULL, " Il doit bien y avoir une raison pour laquelle Keiichi a été maudit, non ?", Line_WaitForInput);
+		   NULL, "Il doit bien y avoir une raison pour laquelle Keiichi a été maudit, non ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300283", 256, TRUE);
 	OutputLine(NULL, "　無差別に祟るとは思えないなー。",
-		   NULL, " Je pense pas que la déesse tire à plouf-plouf pour savoir qui elle va maudire. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense pas que la déesse tire à plouf-plouf pour savoir qui elle va maudire. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s20/03/440300284", 256, TRUE);
 	OutputLine(NULL, "そこんとこ説明できるの？」",
@@ -1814,16 +1824,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100198", 256, TRUE);
 	OutputLine(NULL, "「どっちなんてもんじゃねーよ！！",
-		   NULL, "— C'est pas une ou l'autre, c'est les deux !", Line_WaitForInput);
+		   NULL, "— C'est pas une ou l'autre, c'est les deux !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100199", 256, TRUE);
 	OutputLine(NULL, "　村の怪しげなヤツらに狙われて、さらにオヤシロさまとかいう怪しいのに祟られて！！！",
-		   NULL, " Les villageois sont complètement tarés et veulent ma peau, et en plus il y a une déesse pas normale dans sa tête qui m'a maudit !", Line_WaitForInput);
+		   NULL, "Les villageois sont complètement tarés et veulent ma peau, et en plus il y a une déesse pas normale dans sa tête qui m'a maudit !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100200", 256, TRUE);
 	OutputLine(NULL, "　人間も祟りも全部！！！",
-		   NULL, " C'est les deux ! Humains et malédiction !!!", Line_WaitForInput);
+		   NULL, "C'est les deux ! Humains et malédiction !!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 1, "ps3/s20/01/440100201", 256, TRUE);
 	OutputLine(NULL, "　これはなにかの嫌がらせかーー！！！！」",
-		   NULL, " C'est injuste !!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est injuste !!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

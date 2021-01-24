@@ -329,16 +329,17 @@ void main()
 	ModDrawCharacter(3, 2, "sprite/re1a_nande_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「...うん。それはレナも思うよ＠他にも体操服とかスクール水着のお古とかも扱ってるの＠...そういうののお古はちょっと嫌だよねぇ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200028", 256, TRUE);
 	OutputLine(NULL, "「…うん。それはレナも思うよ。",
 		   NULL, "— Oui, moi aussi je me suis posé la question.", Line_Continue);
 	Wait( 2650 );
 	OutputLine(NULL, "他にも体操服とかスクール水着のお古とかも扱ってるの。",
-		   NULL, " Il vend aussi des justaucorps de gym et des maillots de bain du cours de sport. Pourtant... ce n'est pas le genre d'habits qu'on prête, non ? Alors porter celui qu'un parfait inconnu a porté avant soi...", Line_WaitForInput);
+		   NULL, " Il vend aussi des justaucorps de gym et des maillots de bain du cours de sport. Pourtant... ce n'est pas le genre d'habits qu'on prête, non ? Alors porter celui qu'un parfait inconnu a porté avant soi...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 2, "ps3/s20/02/440200029", 256, TRUE);
 	OutputLine(NULL, "…そういうののお古はちょっと嫌だよねぇ。」",
-		   NULL, " Moi en tout cas, ça m'écœure un peu.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Moi en tout cas, ça m'écœure un peu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

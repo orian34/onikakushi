@@ -111,9 +111,10 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400015", 256, TRUE);
 	OutputLine(NULL, "「圭一さんのお弁当はきっと貧乏臭くパンの耳に決まってますわ〜！",
-		   NULL, "— Voyons, mon cher Keiichi, ne soyez pas embarrassé ! Nous nous doutons fort bien que, n'ayant pas les moyens, votre repas de midi consistera en de misérables sandwiches.", Line_WaitForInput);
+		   NULL, "— Voyons, mon cher Keiichi, ne soyez pas embarrassé ! Nous nous doutons fort bien que, n'ayant pas les moyens, votre repas de midi consistera en de misérables sandwiches.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 4, "ps3/s19/04/990400016", 256, TRUE);
 	OutputLine(NULL, "　さぁ恥ずかしがらずにお見せなさいな！ほらほら！」",
-		   NULL, " Mais ce n'est pas une raison pour traîner le pas, pressez-vous !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais ce n'est pas une raison pour traîner le pas, pressez-vous !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

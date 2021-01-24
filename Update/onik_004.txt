@@ -204,10 +204,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300223", 256, TRUE);
 	OutputLine(NULL, "「ってわけで温故知新！！",
-		   NULL, "— On va faire du neuf avec du vieux ! On va jouer à un vieux jeu, mais il a le mérite de répondre exactement à tous nos besoins.", Line_WaitForInput);
+		   NULL, "— On va faire du neuf avec du vieux ! On va jouer à un vieux jeu, mais il a le mérite de répondre exactement à tous nos besoins.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300224", 256, TRUE);
 	OutputLine(NULL, "　古いながらも全ての要素を詰め込んだ屋外乱戦の王様、",
-		   NULL, " Le prince des cours de récré, le roi des batailles livrées au grand air, j'ai nommé... ", Line_Continue);
+		   NULL, "Le prince des cours de récré, le roi des batailles livrées au grand air, j'ai nommé... ", Line_Continue);
 	Wait( 3000 );
 
 //「鬼ごっこ」で行こう！＠
@@ -1319,7 +1320,7 @@ void main()
 	Wait( 400 );
 
 	OutputLine(NULL, "ってな。」",
-		   NULL, " s’il vous plaît.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " s'il vous plaît.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
