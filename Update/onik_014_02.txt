@@ -4471,8 +4471,8 @@ void main()
 //　であることがわかるんだ......？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　であることがわかるんだ……？！",
-		   NULL, "Mais comment est-ce que...?!!", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "Mais comment est-ce que...?!!", Line_Normal);
+	ClearMessage();
 
 
 
