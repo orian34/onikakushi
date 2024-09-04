@@ -18,10 +18,28 @@ void main()
 	DrawSceneWithMask("background/gk3", "down", 0, 0, 1300 );
 	PlayBGM( 1, "msys01", 56, 0 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog000");}
-	//End
+//「ランディーくん人形ー？＠　あ～そりゃあレナのツボだわなぁ！＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 3, "org/mion0007", 256, TRUE);
+	OutputLine(NULL, "「ケンタくん人形ー？！",
+		   NULL, "— Une statue du colonel Sanders ?", Line_WaitForInput);
+	ModPlayVoiceLS(3, 3, "org/mion0008", 256, TRUE);
+	OutputLine(NULL, "　あ〜そりゃあレナのツボだわなぁ！」",
+		   NULL, " Aah, ça, effectivement... C'est son point faible...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「…レナが沙都子や梨花ちゃんをお持ち帰りしたくなるのは分かる＠だが、ランディーくん人形だけは理解できないぞ！　あんな眼鏡親父のどこがいいんだ！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 1, "org/keiichi0012", 256, TRUE);
+	OutputLine(NULL, "「…レナが沙都子や梨花ちゃんをお持ち帰りしたくなるのは分かる。",
+		   NULL, "— Je peux comprendre qu'elle veuille enlever Satoko ou Rika.", Line_WaitForInput);
+	ModPlayVoiceLS(3, 1, "org/keiichi0013", 256, TRUE);
+	OutputLine(NULL, "だが、ランディーくん人形だけは理解できないぞ！　あんな眼鏡親父のどこがいいんだ！」",
+		   NULL, " Mais lui ? Qu'est-ce qu'elle peut lui trouver, à ce personnage ? C'est un vieux mec avec des binocles !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -283,7 +301,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 5, "sprite/ri1_warai_a1_", "1", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+	ModDrawCharacter(2, 5, "sprite/ri1_warai_a1_", "1", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「…ボクも沙都子も賛成しますですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -2834,10 +2852,11 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog001");}
-	//End
+//　きっと昨日持ち帰り損ねた、かぁいいランディーくん人形を掘り出しに行くのだろう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　きっと昨日持ち帰り損ねた、かぁいいケンタくん人形を掘り出しに行くのだろう。",
+		   NULL, "Je parie qu'elle va essayer de prendre la statue du Colonel Sanders de l'autre jour.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3054,10 +3073,19 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zonik_003_vm0x_n01","dialog012");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zonik_003_vm00_n01","dialog012");}
-	//End
+//　富竹さんは「事件」と言い「腕が一本見つからない」と言っていた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　富竹さんは「事件」と言い「腕が一本見つからない」と言っていた。",
+		   NULL, "Tomitake avait parlé d'une « sale histoire » et parlait d'un bras que l'on n'aurait « jamais retrouvé ».", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　俺はてっきり…バラバラ殺人とかがあったのかと思っていたのだが…違うのだろうか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　俺はてっきり…バラバラ殺人とかがあったのかと思っていたのだが…違うのだろうか。",
+		   NULL, "À vrai dire, j'avais tout de suite pensé qu'il y avait eu une sordide affaire de meurtre ici. Mais peut-être pas, après tout.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3411,10 +3439,11 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog002");}
-	//End
+//　ひょっとするとランディーくん人形の発掘に手間取っているのかもしれない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ひょっとするとケンタくん人形の発掘に手間取っているのかもしれない。",
+		   NULL, "Elle a peut-être eu du mal à déloger la statue du Colonel Sanders.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3469,10 +3498,11 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zonik_003_vm0x_n01","dialog013");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zonik_003_vm00_n01","dialog013");}
-	//End
+//　…本当に雛見沢でバラバラ殺人なんかあったんですか？、って＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…本当に雛見沢でバラバラ殺人なんかあったんですか？、って。",
+		   NULL, "Lui demander, « Il y a vraiment eu un démembrement à Hinamizawa ? »", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　それが本音だった￥
@@ -3523,10 +3553,11 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog003");}
-	//End
+//　ランディーくん人形は、かなりしっかり埋まってしまっているように見える＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ケンタくん人形は、かなりしっかり埋まってしまっているように見える。",
+		   NULL, "Le Colonel Sanders était bien enterré...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3634,10 +3665,15 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog004");}
-	//End
+//「ケンタくん人形がゴミ山に生き埋めになっているとの通報でしたが…？！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 1, "org/keiichi0014", 256, TRUE);
+	OutputLine(NULL, "「ケンタくん人形がゴミ山に生き埋めになっているとの通報でしたが…？！」",
+		   NULL, "— Notre central a reçu un appel de détresse disant que le colonel Sanders était retenu prisonnier, enseveli sous une tonne de gravas. Est-ce bien vrai ?", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 2, "sprite/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「え？…っな、なぁんだ。びっくりした…＠圭一くん驚かさないでよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -3729,10 +3765,15 @@ void main()
 	ClearMessage();
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog005");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog005");}
-	//End
+//「ほれ、どいたどいた＠で、どこだよケンタくんは。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 1, "org/keiichi0015", 256, TRUE);
+	OutputLine(NULL, "「ほれ、どいたどいた。",
+		   NULL, "— Allez, pousse-toi de là.", Line_WaitForInput);
+	ModPlayVoiceLS(3, 1, "org/keiichi0016", 256, TRUE);
+	OutputLine(NULL, "で、どこだよケンタくんは。」",
+		   NULL, " Elle est où, cette statue ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3762,10 +3803,11 @@ void main()
 	DisableWindow();
 	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog006");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog006");}
-	//End
+//　横たわるケンタくん人形を、複雑に絡み合った木材や建材がまるで牢屋のように閉じこめていた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　横たわるケンタくん人形を、複雑に絡み合った木材や建材がまるで牢屋のように閉じこめていた。",
+		   NULL, "La statue était allongée à plat, coincée entre des tas de poutres, de branches, j'en passe et des meilleures. Cela formait un enchevêtrement qui la retenait prisonnière.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3811,10 +3853,25 @@ void main()
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/re1a_kaii_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog007");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog007");}
-	//End
+//「……でも……ケンタくん人形…かぁいいんだもん……＠お店のケンタくんには鎖がついてるけど……これならお持ち帰りできる !d200……はぅ……。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 2, "org/rena0008", 256, TRUE);
+	OutputLine(NULL, "「……でも……ケンタくん人形…かぁいいんだもん……。",
+		   NULL, "— Mais oui, mais il est tellement mimi...", Line_WaitForInput);
+	ModPlayVoiceLS(3, 2, "org/rena0009", 256, TRUE);
+	OutputLine(NULL, "お店のケンタくんには鎖がついてるけど……これならお持ち帰りできる",
+		   NULL, " Les statues devant les restaurants sont enchaînées à un gros bloc de béton, je ne pourrais pas en prendre un comme ça, alors que celui-ci est libre !...", Line_WaitForInput);
+	ModPlayVoiceLS(3, 2, "org/rena0010", 256, TRUE);
+	OutputLine(NULL, "……はぅ……。」",
+		   NULL, " hauu...", Line_Normal);
+	ClearMessage();
+
+
+//　このケンタくんを諦めさせれば、レナは多分、お店の店頭の人形の強奪を計画するだろう…＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このケンタくんを諦めさせれば、レナは多分、お店の店頭の人形の強奪を計画するだろう…。",
+		   NULL, "Si je la convainc d'abandonner ce projet, elle est capable de planifier un cambriolage devant le prochain restaurant... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -3969,10 +4026,11 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog008");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog008");}
-	//End
+//　ケンタくん人形は見えているのに！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ケンタくん人形は見えているのに！！",
+		   NULL, "La statue est pourtant là, juste devant moi !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n\n", Line_ContinueAfterTyping); }
 
 
 //　レナに大見得を切った手前、たいして進まないスピードに焦りを感じた￥
@@ -4188,10 +4246,21 @@ void main()
 
 	PlayBGM( 1, "msys15", 56, 0 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zonik_003_vm0x_n01","dialog014");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zonik_003_vm00_n01","dialog014");}
-	//End
+//（……嫌な事件だったね＠…腕が一本、まだ見つかってないんだろ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（……嫌な事件だったね。",
+		   NULL, "— C'était vraiment une sale histoire...", Line_WaitForInput);
+	OutputLine(NULL, "…腕が一本、まだ見つかってないんだろ？）",
+		   NULL, " La police n'a jamais retrouvé le deuxième bras, c'est bien ça ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　富竹さんの言葉通りなら、それは間違いなくバラバラ殺人を示唆していた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　富竹さんの言葉通りなら、それは間違いなくバラバラ殺人を示唆していた。",
+		   NULL, "Si Tomitake ne m'a pas raconté d'histoires, quelqu'un a été tué et découpé dans le coin.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -4666,10 +4735,25 @@ void main()
 
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zonik_003_vm0x_n01","dialog011");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zonik_003_vm00_n01","dialog011");}
-	//End
+//「なにしょんぼりしてるんだよ。明日にはランディーくんが掘り出せるんだぜ？！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 1, "org/keiichi0017", 256, TRUE);
+	OutputLine(NULL, "「なにしょんぼりしてるんだよ。明日にはケンタくんが掘り出せるんだぜ？！」",
+		   NULL, "— Mais tire pas cette tête, voyons. Tu l'auras demain, ta statue, promis-juré !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 2, "sprite/re1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「そうだよね。…あははは＠　早くランディーくんをお持ち帰りしたい～！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(3, 2, "org/rena0011", 256, TRUE);
+	OutputLine(NULL, "「そうだよね。…あははは！",
+		   NULL, "— Oui, après tout, ce n'est pas si mal ! Ahahahaha !", Line_WaitForInput);
+	ModPlayVoiceLS(3, 2, "org/rena0012", 256, TRUE);
+	OutputLine(NULL, "　早くケンタくんをお持ち帰りしたい〜！」",
+		   NULL, " Je l'aurai demain ! Demain !", Line_Normal);
+	ClearMessage();
 
 
 //　互いに、これ以上謝り合っても意味がないことは十分に分かっていた＠

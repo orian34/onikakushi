@@ -25,11 +25,11 @@ jobs:
     steps:
 
     # Download the repository
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     # Setup Python
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
 
@@ -92,12 +92,12 @@ jobs:
 
     # Upload the release
     - name: Upload Release Asset
-      id: upload-release-asset 
+      id: upload-release-asset
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
         asset_path: ./07th-mod-french-patch-staging/built_release.7z
         asset_name: Onikakushi.Patch.FR.${{ github.ref }}.7z
         asset_content_type: application/x-7z-compressed
