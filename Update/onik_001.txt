@@ -1111,7 +1111,7 @@ void main()
 	ModPlayVoiceLS(3, 1, "org/keiichi0004", 256, TRUE);
 	OutputLine(NULL, "「よしわかった。",
 		   NULL, "— OK, comme tu veux.", Line_WaitForInput);
-	dPlayVoiceLS(3, 1, "org/keiichi0005", 256, TRUE);
+	ModPlayVoiceLS(3, 1, "org/keiichi0005", 256, TRUE);
 	OutputLine(NULL, "大公開だ。",
 		   NULL, " Rien que pour tes yeux !", Line_WaitForInput);
 	ModPlayVoiceLS(3, 1, "org/keiichi0006", 256, TRUE);
