@@ -1680,7 +1680,7 @@ void main()
 //　すでにトータル優勝の確定している魅音には屈辱的なはず…￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すでにトータル優勝の確定している魅音には屈辱的なはず…！",
-		   NULL, "Le petit rire, c'était du bonus. Je voulais absolument que Mion se sentît humiliée...", Line_Normal);
+		   NULL, "Le petit rire, c'était du bonus. Je voulais absolument que Mion se sente humiliée...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
