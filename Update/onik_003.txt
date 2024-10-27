@@ -1162,7 +1162,7 @@ void main()
 //　多分、クラス全員が無人島で自爆首輪付きで殺し合いなんて状況下では水を得た魚と化すだろうな＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　多分、クラス全員が無人島で自爆首輪付きで殺し合いなんて状況下では水を得た魚と化すだろうな。",
-		   NULL, "Si par exemple on les mettait, disons...  sur une île déserte avec tous leurs camarades de classe et qu'on leur disait de... je sais pas, moi, tuer tous leurs camarades jusqu'au dernier par exemple... Et ben je parie qu'elles n'auraient aucun problème à le faire.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si par exemple on les mettait, disons... sur une île déserte avec tous leurs camarades de classe et qu'on leur disait de... je sais pas, moi, tuer tous leurs camarades jusqu'au dernier par exemple... Et ben je parie qu'elles n'auraient aucun problème à le faire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
