@@ -2514,7 +2514,7 @@ void main()
 //　ぷッ！!w1000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ぷッ！",
-		   NULL, "Et là, d'un coup,", Line_Normal);
+		   NULL, "Et là, d'un coup, ", Line_Normal);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );

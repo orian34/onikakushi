@@ -1162,7 +1162,7 @@ void main()
 //　多分、クラス全員が無人島で自爆首輪付きで殺し合いなんて状況下では水を得た魚と化すだろうな＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　多分、クラス全員が無人島で自爆首輪付きで殺し合いなんて状況下では水を得た魚と化すだろうな。",
-		   NULL, "Si par exemple on les mettait, disons...  sur une île déserte avec tous leurs camarades de classe et qu'on leur disait de... je sais pas, moi, tuer tous leurs camarades jusqu'au dernier par exemple... Et ben je parie qu'elles n'auraient aucun problème à le faire.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si par exemple on les mettait, disons... sur une île déserte avec tous leurs camarades de classe et qu'on leur disait de... je sais pas, moi, tuer tous leurs camarades jusqu'au dernier par exemple... Et ben je parie qu'elles n'auraient aucun problème à le faire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1680,7 +1680,7 @@ void main()
 //　すでにトータル優勝の確定している魅音には屈辱的なはず…￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すでにトータル優勝の確定している魅音には屈辱的なはず…！",
-		   NULL, "Le petit rire, c'était du bonus. Je voulais absolument que Mion se sentît humiliée...", Line_Normal);
+		   NULL, "Le petit rire, c'était du bonus. Je voulais absolument que Mion se sente humiliée...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1762,7 +1762,7 @@ void main()
 //　魅音は２枚の手札の片方を捨て、今までゲームに加えていなかったジョーカーを加えると、それを背中に回してよく切った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は２枚の手札の片方を捨て、今までゲームに加えていなかったジョーカーを加えると、それを背中に回してよく切った。",
-		   NULL, "Mion prit quelques cartes et plaça l'une d'entre elles du côté. Puis elle prit un joker et mélangea les deux cartes longuement.", Line_Normal);
+		   NULL, "Mion prit quelques cartes et plaça l'une d'entre elles de côté. Puis elle prit un joker et mélangea les deux cartes longuement.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1844,7 +1844,7 @@ void main()
 //　右のカードは特徴的な傷がなく、まったく正体がわからない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　右のカードは特徴的な傷がなく、まったく正体がわからない。",
-		   NULL, "La carte de droite ne présente aucune trace vraiment particulière. Je ne vois pas de quelle carte il pourrait s'agir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La carte de droite ne présente aucune trace particulière. Je ne vois pas de quelle carte il pourrait s'agir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -2604,7 +2604,7 @@ void main()
 	Wait( 1000 );
 
 	OutputLine(NULL, "…前原圭一〜！！！」",
-		   NULL, "  Keiichi Maebara !!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Keiichi Maebara !!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
