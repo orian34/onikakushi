@@ -1762,7 +1762,7 @@ void main()
 //　魅音は２枚の手札の片方を捨て、今までゲームに加えていなかったジョーカーを加えると、それを背中に回してよく切った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は２枚の手札の片方を捨て、今までゲームに加えていなかったジョーカーを加えると、それを背中に回してよく切った。",
-		   NULL, "Mion prit quelques cartes et plaça l'une d'entre elles du côté. Puis elle prit un joker et mélangea les deux cartes longuement.", Line_Normal);
+		   NULL, "Mion prit quelques cartes et en plaça une de côté. Puis elle prit un joker et mélangea les deux cartes longuement.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
