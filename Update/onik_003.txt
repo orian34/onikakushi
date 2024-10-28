@@ -1844,7 +1844,7 @@ void main()
 //　右のカードは特徴的な傷がなく、まったく正体がわからない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　右のカードは特徴的な傷がなく、まったく正体がわからない。",
-		   NULL, "La carte de droite ne présente aucune trace vraiment particulière. Je ne vois pas de quelle carte il pourrait s'agir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La carte de droite ne présente aucune trace particulière. Je ne vois pas de quelle carte il pourrait s'agir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
