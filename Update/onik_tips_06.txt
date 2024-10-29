@@ -245,7 +245,7 @@ void main()
 		   NULL, "— Il semblerait qu'il ait dit vouloir cacher le corps (le bras droit, NdlR) dans le marais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "実際、沼の近くにＸＸの乗用車が乗り捨ててあったのですが、その後の足取りはまったくわかりません。」",
-		   NULL, "Les enquêteurs ont effectivement trouvé sa voiture, abandonnée, près du marais. Mais il n'y a absolument aucune trace de pas autour.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Les enquêteurs ont effectivement trouvé sa voiture, abandonnée, près du marais. Mais il n'y a absolument aucune trace de pas autour.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
