@@ -208,7 +208,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300224", 256, TRUE);
 	OutputLine(NULL, "　古いながらも全ての要素を詰め込んだ屋外乱戦の王様、",
-		   NULL, "Le prince des cours de récré, le roi des batailles livrées au grand air, j'ai nommé... ", Line_Continue);
+		   NULL, " Le prince des cours de récré, le roi des batailles livrées au grand air, j'ai nommé... ", Line_Continue);
 	Wait( 3000 );
 
 //「鬼ごっこ」で行こう！＠
