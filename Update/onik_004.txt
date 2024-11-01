@@ -204,7 +204,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300223", 256, TRUE);
 	OutputLine(NULL, "「ってわけで温故知新！！",
-		   NULL, "— On va faire du neuf avec du vieux ! On va jouer à un vieux jeu, mais il a le mérite de répondre exactement à tous nos besoins.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— On va faire du neuf avec du vieux ! On va jouer à un vieux jeu, mais il a le mérite de répondre exactement à tous nos besoins. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(3, 3, "ps3/s19/03/990300224", 256, TRUE);
 	OutputLine(NULL, "　古いながらも全ての要素を詰め込んだ屋外乱戦の王様、",
@@ -4052,7 +4052,7 @@ void main()
 //　さっきのごろんと転がった腕がやけに不吉に思えたが、そこでふと気付き、俺はちょっと自分の情けなさに苦笑した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さっきのごろんと転がった腕がやけに不吉に思えたが、そこでふと気付き、俺はちょっと自分の情けなさに苦笑した。",
-		   NULL, "C'est peut-être pour cela que j'ai été aussi surpris par le bras cassé.  C'est un signe de mauvais augure. Je décidai d'en rire... mais je rigolai jaune.", Line_Normal);
+		   NULL, "C'est peut-être pour cela que j'ai été aussi surpris par le bras cassé. C'est un signe de mauvais augure. Je décidai d'en rire... mais je rigolai jaune.", Line_Normal);
 	ClearMessage();
 
 
