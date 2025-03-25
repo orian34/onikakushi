@@ -859,7 +859,7 @@ void main()
 		   NULL, "— Le personnage de Maebara s'imagine que la déesse prend possession du corps de Rena et de Mion pour commettre ses forfaits.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700355", 256, TRUE);
 	OutputLine(NULL, "……一番つじつまが合うんです。",
-		   NULL, "À bien y réfléchir, c'est ce qui permettrait d'expliquer le plus de choses.", Line_WaitForInput);
+		   NULL, " À bien y réfléchir, c'est ce qui permettrait d'expliquer le plus de choses.", Line_WaitForInput);
 	ModPlayVoiceLS(3, 11, "ps3/s20/11/440700356", 256, TRUE);
 	OutputLine(NULL, "残念ながら。」",
 		   NULL, " Malheureusement.", GetGlobalFlag(GLinemodeSp));
