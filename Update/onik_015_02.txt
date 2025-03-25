@@ -869,7 +869,7 @@ void main()
 //　レナは医者を呼ぶために電話をし＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは医者を呼ぶために電話をし、",
-		   NULL, "Rena a passé un coup de réléphone pour appeler un médecin,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rena a passé un coup de téléphone pour appeler un médecin,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
